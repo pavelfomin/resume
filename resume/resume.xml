@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="resume.xsl"?>
+
+<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" revision="$Revision: 1.17 $" updated="$Date: 2013/07/27 20:27:51 $">
+  <contact-list>
+    <contact type="City, State" value="Plymouth, MN, USA"/>
+  </contact-list>
+
+  <profile>
+    <entry>
+     Over 15 years of software design and development experience in diverse industry environment
+    </entry>
+    <entry>
+     Strong expertise in Java and JEE architecture with multiple Application and Web servers
+    </entry>
+    <entry>
+     Solid RDBMS background
+    </entry>
+  </profile>
+
+  <skill-list>
+    <skill id="os">
+      <type>
+       Operating Systems
+      </type>
+      <value>
+       Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), MS Windows
+      </value>
+    </skill>
+    <skill id="lng">
+      <type>
+       Languages
+      </type>
+      <value>
+       Java 1.1/1.2/1.3/1.4/1.5/1.6, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript
+      </value>
+    </skill>
+    <skill id="frameworks">
+      <type>
+       Frameworks
+      </type>
+      <value description="JSE/JEE">
+       JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets 
+      </value>
+      <value description="Spring">
+       Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP 
+      </value>
+      <value description="Web">
+       Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
+      </value>
+      <value description="XML">
+       SOAP, JAXB 2.x, Axis 1.4, Castor 0.9/1.2, JDOM
+      </value>
+      <value description="ORM">
+       Hibernate 3.0, OpenORM
+      </value>
+      <value description="Caching">
+	   Ehcache 2, Memcached 2
+      </value>
+      <value description="Logging">
+	   SLF4J, Log4j, Apache Commons Logging, Java Logging API 
+      </value>
+      <value description="Testing">
+	   JUnit, DbUnit, Mockito, Emma, EasyMock
+      </value>
+      <value description="Groovy">
+	    Grails
+      </value>
+      <value description="Other">
+	   Google Guava, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, <a href="http://commons.apache.org/">Apache Commons</a>, Apache HttpClient, <a href="http://www.reportingengines.com/">Formula One for Java (F1J 9)</a>
+      </value>
+    </skill>
+    <skill id="db">
+      <type>
+       Databases
+      </type>
+      <value>
+       Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MYSQL, MS SQL, BTRIEVE, DBASE, FOXPRO
+      </value>
+    </skill>
+    <skill id="srv">
+      <type>
+       Application Servers
+      </type>
+      <value>
+       Tomcat 3/4/5/6/7, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+      </value>
+    </skill>
+    <skill id="tls">
+      <type>
+       Tools
+      </type>
+      <value description="Cloud">
+       Amazon EC2, 2lemetry
+      </value>
+      <value description="IDE">
+       Eclipse, RAD, WSAD, JBuilder, Emacs
+      </value>
+      <value description="Modeling">
+       ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
+      </value>
+      <value description="Messaging">
+	   RabbitMQ, 2lemetry, IBM MQ
+      </value>
+      <value description="Browsers">
+        Chrome, Firefox, MS IE
+      </value>
+      <value description="Revision Control">
+       SVN, CVS, Git, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
+      </value>
+      <value description="Monitor/Profile">
+	   VisualVM, Optimizeit
+      </value>
+      <value description="Build">
+	   Maven, Ivy, Ant, GNU Make
+      </value>
+      <value description="Continuous integration">
+	   Jenkins, Hudson, Bamboo
+      </value>
+      <value description="Bug Tracking">
+       Jira, Bugzilla
+      </value>
+      <value description="Code Review">
+       Crucible
+      </value>
+      <value description="Agile Project Management">
+       Version One, GreenHopper, Rally, XPlanner
+      </value>
+      <value description="Wiki">
+	   Atlassian Confluence, <a href="http://www.dokuwiki.org/">DokuWiki</a>
+      </value>
+      <value description="Testing">
+       SoapUI
+      </value>
+    </skill>
+    <skill id="Methodologies">
+      <type>
+       Methodologies
+      </type>
+      <value>
+	   Agile, SCRUM, Test Driven Development, OOAD, RUP
+      </value>
+    </skill>
+    <skill id="Industries">
+      <type>
+       Industries
+      </type>
+      <value>
+	   Banking, E-commerce, Education, Finance, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
+      </value>
+    </skill>
+  </skill-list>
+
+  <work-history>
+    <!-- sample
+    <company id="" name="" url="" department="" position="" startDate="" endDate="">
+      <assignment id="" name="" url="" department="">
+        <assignment-environment>
+        </assignment-environment>
+        <assignment-tools> 
+        </assignment-tools> 
+        <assignment-description>
+        </assignment-description>
+        <assignment-details>
+          <detail>
+          </detail>
+        </assignment-details>
+      </assignment>
+    </company>
+    -->
+
+    <company id="opi" name="Object Partners" url="http://www.objectpartners.com/" department="Professional Services" position="Senior Consultant" startDate="12/2011" endDate="Present">
+      <assignment id="mnd" name="Menards" url="http://www.menards.com/" department="Web Development">
+        <assignment-environment>
+		  JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
+        </assignment-environment>
+        <assignment-tools>
+		  JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins
+        </assignment-tools> 
+        <assignment-description>
+		  Added new features to the Menards e-commerce web site and internal web site administration tool.
+        </assignment-description>
+      </assignment>
+      <assignment id="pnt" name="PeopleNet" url="http://www.peoplenetonline.com/" department="Backend Services">
+        <assignment-environment>
+		  JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
+        </assignment-environment>
+        <assignment-tools>
+		  JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
+        </assignment-tools> 
+        <assignment-description>
+		 Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
+        </assignment-description>
+      </assignment>
+      <assignment id="rnb" name="Room and Board" url="http://www.roomandboard.com/" department="Web Development">
+        <assignment-environment>
+		  JEE, Tomcat 7.x, Oracle 11, Windows 7, Linux
+        </assignment-environment>
+        <assignment-tools>
+		  JDK 1.6, Spring 3.1, JDBC, JSP, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira, GreenHopper
+        </assignment-tools> 
+        <assignment-description>
+		  Developed new and modified existing components of the web site and internal web site administration tool. Focussed primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScrpit and jQuery.
+        </assignment-description>
+      </assignment>
+    </company>
+
+    <company id="moneygram" name="MoneyGram International" url="http://www.moneygram.com/" department="Systems Development" position="Lead Developer (Software Engineer IV)" startDate="10/2007" endDate="12/2011">
+      <assignment id="moneygram">
+        <assignment-environment>
+          JEE, Websphere Application Server 7.x/6.x/5.x, Tomcat 4.x/6.x, Websphere Portal 6.1, Oracle, IBM MQ, Windows XP, Linux
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.4/1.5/1.6, Spring (MVC), JSP, JSF, Portlet, Servlet, Ajax, jQuery, Wicket 1.2, Struts, JAX-WS, Axis 1.4, Ehcache 2, JDBC, XML, Ant, Log4j, JUnit, WSS4J, Castor 0.9/1.2, SoapUI, Eclipse, RAD 6/7/8, Emacs, CVS, Git, UML, Hudson, DokuWiki, Rally, XPlanner
+        </assignment-tools> 
+        <assignment-description>
+Led the design and development of the JAX-WS based web services layer for the new Web Point of Entry system (Web POE). Created two prototypes of the new web site using JSF 2 and Spring MVC 3 frameworks. The Spring MVC based prototype became the foundation for the Web POE. Created the device authentication component using the signed java applet technology to enhance the security of the Web POE site. Demonstrated the Eclipse and Tomcat servlet container efficiency for the web development while supporting the deployment of the same code base on Websphere application server.
+        </assignment-description>
+        <assignment-details>
+          <detail>
+Implemented the continuous build and deployment processes using Ant and Hudson. Automated deployments simplified the builds and deployments of the applications drastically reducing the time and effort spent on the deployments by the developers, qa personel and administrators, and allowed greater development and testing scalability.
+          </detail>
+          <detail>
+Led the design and development of the web services layer for the new redesigned MoneyGramOnline money transfer web site. Created the user interface components using Portal and JSF technologies.
+          </detail>
+          <detail>
+Led the web services non-repudiation requirement implementation based on OASIS Web Services Security and the global compliance implementation of the consumer identity and transaction rules engine.
+          </detail>
+          <detail>
+Designed and developed software solutions for multiple projects in agile development environment including creation of the Money Transfer Notification Service, Transaction Loader and enhancements to the money transfer service, AgentConnect.
+          </detail>
+        </assignment-details>
+      </assignment>
+    </company>
+
+    <company id="metris" name="HSBC (former Metris Companies)" url="http://www.metriscompanies.com/" department="Enterprise Application Management" position="Lead J2EE Developer (Senior Consultant, Business Systems)" startDate="07/2004" endDate="10/2007">
+      <assignment id="metris">
+        <assignment-environment>
+          J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
+        </assignment-tools> 
+        <assignment-description>
+Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
+        </assignment-description>
+        <assignment-details>
+          <detail>
+            Led the design and development effort of the Internet applications including customer facing (C2B) and partner XML based (B2B) solutions. Responsible for Webcache/Apache setup for all of the Internet sites. Led migration of the 24/7 Internet environment from one data center to another and then later from Apache/Resin to OAS 10g platform. After HSBC acquisition, led the migration of the Metris web applications from OAS 10g to the HSBC Websphere environment.
+          </detail>
+          <detail>
+             Created fully automated, extendable build and deployment process based on Ant's templated approach and CVS to support release based applications deployments. Administrated the CVS based source code repository.
+          </detail>
+          <detail>
+             Installed, configured and administrated Bugzilla, a defect tracking software used by the development, QA and business teams. Installed and 
+administrated the MySQL database server required by Bugzilla.
+          </detail>
+        </assignment-details>
+      </assignment>
+    </company>
+
+    <company id="compuware" name="Compuware Corporation" url="http://www.compuware.com" department="Professional Services" position="Senior Java Developer, Full Time Consultant" startDate="07/2001" endDate="07/2004">
+
+      <assignment id="chp" name="HealthPartners" url="http://www.healthpartners.com" department="Center of Health Promotion">
+        <assignment-environment>
+          J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
+        </assignment-tools> 
+        <assignment-description>
+Redesigned old web based <a href="http://www.healthpartners.com/ha/">Health Assessment application</a> to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the <a href="http://www.nclm.us/">Weight Management Preferred Provider Program</a>. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
+        </assignment-description>
+      </assignment>
+
+      <assignment id="hci" name="Compuware Product Division" url="http://www.compuware.com" department="Software Product Development">
+        <assignment-environment>
+          Windows 2000, z/OS
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
+        </assignment-tools> 
+        <assignment-description>
+Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM.
+        </assignment-description>
+      </assignment>
+
+      <assignment id="target" name="Target Corporation" url="http://www.target.com/" department="E-Commerce Retail Financials">
+        <assignment-environment>
+          J2EE, IBM Websphere 4.02, Tomcat 3.2, Oracle 8.1.7, Solaris/NT
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.2.2/1.3, JSP, JDBC, XML, XSLT, Formula One for Java (F1J 9), Struts, Ant, WSAD, Emacs, JBuilder, Telelogic Tau UML, Visio, PVCS
+        </assignment-tools> 
+        <assignment-description>
+Designed and developed an extendible framework for the intranet-based data
+  retrieval system in the J2EE architecture environment on the SUN Solaris and
+  Windows NT platforms. The main goal of the framework was to provide a consistent way of presenting e-commerce financial information on the intranet in different formats such as HTML, Excel as well as graphics.
+        </assignment-description>
+        <assignment-details>
+  <detail>
+Concentrated on the middle tier design and development. Created new and enhanced existing components including generic servlet controller, business and data access objects.
+  </detail>
+  <detail>
+Created a generic cache engine to improve the application
+  performance by reading reusable data from any storage and keeping it
+  in the memory of the application server with a generic interface to view,
+  modify and remove the cached content.
+  </detail>
+  <detail>
+Developed the generic parameter form based on Java applet technology to
+  dynamically create complex parameter screens. Also created a number of Java
+  Server Pages (JSP) to provide the graphical web based user interface.
+  </detail>
+  <detail>
+Set up the build process based on GNU Make that compiled all the source code,
+  created jar files and the final war file for the deployment.
+  Created an alternative build process using Ant.
+  </detail>
+        </assignment-details>
+      </assignment>
+    </company>
+
+    <company id="comsys" name="Comsys (former Cotelligent Inc.)" url="http://www.comsys.com/" department="Professional Services" position="Senior Software Engineer / Systems Analyst, Full Time Consultant" startDate="11/1998" endDate="05/2001">
+      <assignment id="innuity" name="Innuity, Inc" url="http://www.innuity.com/" department="E-Commerce">
+        <assignment-environment>
+          J2EE, Borland Inprise Application Server, Oracle 8i, Solaris/NT
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.2, EJB 1.1, JSP, JDBC, XML, UML, Rational Rose, TogetherJ, JBuilder, Emacs, SourceSafe, GNU Make, MySQL, Bugzilla, Perl
+        </assignment-tools> 
+        <assignment-description>
+Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture
+environment on the SUN Solaris and Windows NT platforms for the new web site builder tool. This new application provided a web based user interface for the clients to make changes to their web sites. 
+        </assignment-description>
+        <assignment-details>
+          <detail>
+Concentrated on the design and development of the middle tier business 
+logic services and the data access objects. Used both, the XML SAX 1.0
+parsing and the DOM object model APIs. 
+Created a number of servlets and Java Server 
+Pages (JSP) to provide the graphical web based user interface. 
+          </detail>
+          <detail>
+Created the build process based on GNU make that compiled all the java code
+and created the final jar file for deployment.
+Also created a bean code generation tool that generated the code 
+for RMI and Home interfaces, the entity bean itself, value object 
+and the respective portions of xml deployment descriptors 
+based on the single property file.
+          </detail>
+          <detail>
+As a background task installed and configured Bugzilla, a defect tracking software used for the project. Installed and 
+administrated the MySQL database server required by Bugzilla.
+          </detail>
+        </assignment-details>
+      </assignment>
+
+      <assignment id="prometric" name="Thomson Prometric" url="http://www.prometric.com/" department="Education and Certification">
+        <assignment-environment>
+          J2EE, Bea Weblogic Application Server, Sybase 11.9.2, Solaris/NT
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.2, EJB 1.1, JSP, JConnect JDBC, Swing, UML, Rational Rose, Visio Diagram Designer, Sybase Power Designer 6.1, JBuilder, Emacs, SourceSafe, GNU Make, MySQL, Bugzilla, Perl
+        </assignment-tools> 
+        <assignment-description>
+Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture
+environment on the SUN Solaris and Windows NT platforms for new Prometric Unified Financial Module. This module was the server side business logic package that provided all the financial services for the international corporate use by any J2EE complaint services or applications.
+        </assignment-description>
+        <assignment-details>
+          <detail>
+Concentrated on the design and development of the middle tier business logic services and the data access objects. Also created the graphical user interfaces using Swing and JSP/Servlets.
+          </detail>
+          <detail>
+Created a generic data load utility (similar to Oracle SQLLOAD)
+for loading the data into Sybase database using Perl 5 with Sybase::DBlib 
+and Sybase::Sybperl packages. Administrated the Sybase development server. 
+Created the KSH scripts and crontab jobs to perform the backup. 
+Designed a number of the database sub-models using Sybase Power Designer 6.1.
+          </detail>
+          <detail>
+As a background task installed and made a number of enhancement changes 
+in Perl CGI scripts of Bugzilla, a defect tracking software used for the project. Installed and administrated
+the MySQL database server required by Bugzilla.
+Installed and administrated Apache HTTP Server 1.3 and Samba 2.0.0.
+Created a number of static HTML pages for the project's web site.
+Modified and created new rules of the build process for GNU make.
+          </detail>
+        </assignment-details>
+      </assignment>
+
+      <assignment id="medtronic" name="Medtronic" url="http://www.medtronic.com/" department="Medical Devices">
+        <assignment-environment>
+          Apache 1.3.6 WEB Server, Oracle 7, UNIX AIX/NT
+        </assignment-environment>
+        <assignment-tools> 
+          C/PRO*C, Perl, Unix RCS
+        </assignment-tools> 
+        <assignment-description>
+Created a number of data transfer processes under UNIX AIX 4.*, Oracle environment. Created new and modified existing C/PRO*C code, KSH scripts, 
+SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet 
+new requirements. Created generic Perl CGI programs to replace old 
+application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
+        </assignment-description>
+      </assignment>
+
+      <assignment id="umn" name="University of Minnesota Facilities Management" url="http://umn.edu/" department="Education">
+        <assignment-environment>
+          Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT
+        </assignment-environment>
+        <assignment-tools> 
+          JDK 1.1.7, JDBC, SQL, PL/SQL, Emacs, SourceSafe
+        </assignment-tools> 
+        <assignment-description>
+Responsible for applications software development and optimization in 
+Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment. Created Java 
+applets with Oracle JDBC "thin" driver to provide access to the Oracle 
+database via WEB. Developed a number of data transfers using PL/SQL, SQLPLUS scripting, UNIX KSH scripting and ODBC. Improved HTML documents by adding some 
+JavaScript code for MS IExplorer 4.x and Netscape Navigator 4.x. 
+        </assignment-description>
+        <assignment-details>
+          <detail>
+Responsible for source code repository administration with 
+Visual SourceSafe 5.0. (VSS) and provided VSS and shell scripts to get the 
+source of the particular version of the subproject and install it.
+          </detail>
+        </assignment-details>
+      </assignment>
+    </company>
+
+    <company id="siemens" name="Siemens" url="http://www.siemens-psc.com/" department="Energy Management and Information Software" position="Software Engineer / Systems Analyst" startDate="07/1997" endDate="10/1998">
+      <assignment id="siemens">
+        <assignment-environment>
+          Oracle 7, UNIX AIX/Solaris, NT
+        </assignment-environment>
+        <assignment-tools> 
+          C, C++, PRO*C, SQL, PL/SQL, Perl, RCS
+        </assignment-tools> 
+        <assignment-description>
+Responsible for database design, development, tuning and optimization for Spectrum, an Energy Management and Information System in UNIX AIX, SUN Solaris, Windows NT, Oracle, C/C++ environment. Served as C and Oracle expert for several large-scale projects.
+        </assignment-description>
+        <assignment-details>
+          <detail>
+Performed control processing using C, C++, Pro*C, OCI, PL/SQL and RDBMS 
+packages, KSH, AWK, Perl and SQL*PLUS. Created Universal Pro*C library based on Pro*C method 4. Created the Oracle database access support library for 
+the Motif applications (based on Universal Pro*C library) which included a local archiver based on Oracle export/import. 
+          </detail>
+          <detail>
+Developed additional Oracle sub-systems required by a particular 
+project for Spectrum. Designed and developed GUI and console applications 
+along with database objects and stored procedures. Calculated
+the storage parameters values for Oracle tables and indices. Developed Oracle 
+server side installation procedures for all Oracle objects of new sub-systems 
+using SQL*PLUS, KSH, Perl and AWK. Managed database table spaces and files.
+          </detail>
+          <detail>
+Created number of UI displays based on Oracle Forms 4.5. 
+          </detail>
+        </assignment-details>
+      </assignment>
+    </company>
+
+    <company id="ftc" name="Center Of Financial Technologies" url="http://www.ftc.ru/" department="Financial Software" position="Lead Software Developer" startDate="03/1993" endDate="07/1997">
+      <assignment id="ftc">
+        <assignment-environment>
+          Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
+        </assignment-environment>
+        <assignment-tools> 
+          VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
+        </assignment-tools> 
+        <assignment-description>
+Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
+        </assignment-description>
+      </assignment>
+    </company>
+
+    <company id="interface" name="Interface Inc." url="http://www.interface.nsk.su/" department="Application Software" position="Software Engineer" startDate="09/1992" endDate="03/1993">
+      <assignment id="" name="" url="" department="">
+        <assignment-environment>
+          DOS, Novell
+        </assignment-environment>
+        <assignment-tools> 
+          C, FoxPro, dBase
+        </assignment-tools> 
+        <assignment-description>
+Designed, developed, deployed and supported automated auctions maintenance system for Energy Management Equipment Stock Exchange.
+        </assignment-description>
+      </assignment>
+    </company>
+  </work-history>
+
+  <education>
+    <degree school="Novosibirsk Technical University, Novosibirsk, Russia" url="http://www.nstu.ru" award="M.S. in Computer Science and B.S. in Mathematics" year="1992">
+      Evaluated by International Education Evaluation, Inc. (March 10, 1997. REF # 116-0369)
+    </degree>
+
+    <degree school="Oracle University" url="http://www.oracle.com/" award="Oracle Application Server Administration course" year="2005"/>
+
+    <degree school="Red Hat, Inc." url="http://www.redhat.com/" award="RH033 - Red Hat Linux Essentials, Red Hat Enterprise Linux 4 course" year="2005"/>
+
+    <degree school="Red Hat, Inc." url="http://www.redhat.com/" award="RH133 - System Administration, Red Hat Enterprise Linux 4 course" year="2005">
+       Successfully completed all Red Hat Certified Technician program requirements and is certified as a Red Hat Certified Technician, Red Hat Enterprise Linux 4.
+    </degree>
+
+    <degree school="The George Washington University School of Business" url="http://www.gwu.edu/" award="Managing IT Projects course" year="2006"/>
+
+    <degree school="The George Washington University School of Business" url="http://www.gwu.edu/" award="IT Risk Management course" year="2007"/>
+
+    <degree school="Object Partners" url="http://www.objectpartners.com/" award="Groovy and Grails" year="2012"/>
+
+  </education>
+</resume>

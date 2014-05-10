@@ -1,0 +1,49 @@
+head	1.2;
+access;
+symbols;
+locks; strict;
+comment	@:: @;
+
+
+1.2
+date	2007.07.24.22.20.51;	author pfomin;	state Exp;
+branches;
+next	1.1;
+
+1.1
+date	2006.09.10.22.48.04;	author pfomin;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.2
+log
+@Email handling changed
+@
+text
+@set ZIP=c:\apps\pkzip25
+set ARCHIVE=resume.zip
+
+cvs log >project.log
+
+%ZIP% -add=update -exclude="*~ CVS" %ARCHIVE% *
+c:\apps\scripts\util\email.bat %ARCHIVE%
+@
+
+
+1.1
+log
+@*** empty log message ***
+@
+text
+@d7 1
+a7 3
+c:\apps\scripts\util\email.bat /cygdrive/d/pavel/resume/%ARCHIVE% pvlf@@yahoo.com
+
+pause
+@
+
