@@ -1,6 +1,4 @@
-@rem call \pavel\projects\jxoffice\set_env.bat
-
-@set XALAN_HOME=../libs/xalan-j_2_4_1/bin
+@set XALAN_HOME=/ws/private/libs/xalan-j_2_4_1/bin
 
 @set XERCES_HOME=%XALAN_HOME%
 @set XALAN_LIBS=%XALAN_HOME%/xalan.jar;%XERCES_HOME%/xml-apis.jar;%XERCES_HOME%/xercesImpl.jar

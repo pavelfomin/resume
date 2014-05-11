@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" revision="$Revision: 1.17 $" updated="$Date: 2013/07/27 20:27:51 $">
+<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2014/05/10 $">
   <contact-list>
     <contact type="City, State" value="Plymouth, MN, USA"/>
+    <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
   </contact-list>
 
   <profile>

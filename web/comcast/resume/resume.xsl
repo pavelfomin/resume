@@ -2,8 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" indent="yes" />
 
-<!-- $Revision: 1.5 $" $Date: 2006/09/10 22:25:31 $ -->
-
 <xsl:template match="resume">
 <html>
   <head>
@@ -103,6 +101,18 @@
         </xsl:with-param>
       </xsl:call-template>
     </xsl:when>
+
+    <xsl:when test="contains($value, 'http')">
+        <xsl:call-template name="formatURL">
+          <xsl:with-param name="url">
+            <xsl:value-of select="$value"/>
+          </xsl:with-param>
+          <xsl:with-param name="protocol">
+            <xsl:value-of select="'http://'"/>
+          </xsl:with-param>
+        </xsl:call-template>
+    </xsl:when>
+
     <xsl:otherwise>
       <xsl:value-of select="$value"/>
     </xsl:otherwise>
