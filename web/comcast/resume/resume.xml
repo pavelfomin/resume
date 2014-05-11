@@ -9,7 +9,7 @@
 
   <profile>
     <entry>
-     Over 15 years of software design and development experience in diverse industry environment
+     Over 20 years of software design and development experience in diverse industry environment
     </entry>
     <entry>
      Strong expertise in Java and JEE architecture with multiple Application and Web servers
@@ -33,7 +33,7 @@
        Languages
       </type>
       <value>
-       Java 1.1/1.2/1.3/1.4/1.5/1.6, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript
+       Java 1.1-1.7, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript
       </value>
     </skill>
     <skill id="frameworks">
@@ -47,13 +47,16 @@
        Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP 
       </value>
       <value description="Web">
-       Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
+       Spring MVC, Grails, Gorm Freemarker, Velocity, Struts 1.x, Wicket 1.2, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Apache HttpClient, jQuery, JSON
+      </value>
+      <value description="Mobile">
+       Android
       </value>
       <value description="XML">
        SOAP, JAXB 2.x, Axis 1.4, Castor 0.9/1.2, JDOM
       </value>
       <value description="ORM">
-       Hibernate 3.0, OpenORM
+       Hibernate 3.0, Gorm, OpenORM
       </value>
       <value description="Caching">
 	   Ehcache 2, Memcached 2
@@ -62,13 +65,7 @@
 	   SLF4J, Log4j, Apache Commons Logging, Java Logging API 
       </value>
       <value description="Testing">
-	   JUnit, DbUnit, Mockito, Emma, EasyMock
-      </value>
-      <value description="Groovy">
-	    Grails
-      </value>
-      <value description="Other">
-	   Google Guava, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, <a href="http://commons.apache.org/">Apache Commons</a>, Apache HttpClient, <a href="http://www.reportingengines.com/">Formula One for Java (F1J 9)</a>
+	   JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock 
       </value>
     </skill>
     <skill id="db">
@@ -76,7 +73,7 @@
        Databases
       </type>
       <value>
-       Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MYSQL, MS SQL, BTRIEVE, DBASE, FOXPRO
+       Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MySQL, MS SQL, BTRIEVE, DBASE, FOXPRO
       </value>
     </skill>
     <skill id="srv">
@@ -107,7 +104,7 @@
         Chrome, Firefox, MS IE
       </value>
       <value description="Revision Control">
-       SVN, CVS, Git, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
+       Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
       </value>
       <value description="Monitor/Profile">
 	   VisualVM, Optimizeit
@@ -119,10 +116,10 @@
 	   Jenkins, Hudson, Bamboo
       </value>
       <value description="Bug Tracking">
-       Jira, Bugzilla
+       Jira, Redmine, Bugzilla
       </value>
       <value description="Code Review">
-       Crucible
+       GitHub, Crucible, CodeCollaborator
       </value>
       <value description="Agile Project Management">
        Version One, GreenHopper, Rally, XPlanner
@@ -147,7 +144,7 @@
        Industries
       </type>
       <value>
-	   Banking, E-commerce, Education, Finance, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
+	   Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
       </value>
     </skill>
   </skill-list>
@@ -170,13 +167,28 @@
     </company>
     -->
 
-    <company id="opi" name="Object Partners" url="http://www.objectpartners.com/" department="Professional Services" position="Senior Consultant" startDate="12/2011" endDate="Present">
+    <company id="drc" name="Data Recognition Corporation" url="http://www.datarecognitioncorp.com" department="Information Services" position="Senior Software Developer" startDate="10/2013" endDate="Present">
+      <assignment id="drc">
+        <assignment-environment>
+        	JEE, Tomcat 7.x, MongoDB, MySQL, MS Sql Server, OpenAM, Linux, Windows 7, Amazon EC2
+        </assignment-environment>
+        <assignment-tools>
+        	JDK 1.7, Spring 3.x, Groovy, Grails, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Jira
+        </assignment-tools> 
+        <assignment-description>
+        	Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality 
+        	across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal.
+        </assignment-description>
+      </assignment>
+    </company>
+    
+    <company id="opi" name="Object Partners" url="http://www.objectpartners.com/" department="Professional Services" position="Senior Consultant" startDate="12/2011" endDate="10/2013">
       <assignment id="mnd" name="Menards" url="http://www.menards.com/" department="Web Development">
         <assignment-environment>
 		  JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
         </assignment-environment>
         <assignment-tools>
-		  JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins
+		  JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
         </assignment-tools> 
         <assignment-description>
 		  Added new features to the Menards e-commerce web site and internal web site administration tool.

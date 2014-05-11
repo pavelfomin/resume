@@ -9,26 +9,25 @@ LinkedIn: http://www.linkedin.com/in/pfomin
 
 Profile
 
-	- Over 15 years of software design and development experience in diverse industry environment
+	- Over 20 years of software design and development experience in diverse industry environment
 	- Strong expertise in Java and JEE architecture with multiple Application and Web servers
 	- Solid RDBMS background
 
 Skills Summary
 
 	Operating Systems: Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), MS Windows
-	Languages: Java 1.1/1.2/1.3/1.4/1.5/1.6, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript
+	Languages: Java 1.1-1.7, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript
 	Frameworks: 
 		JSE/JEE: JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets
 		Spring: Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP
-		Web: Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
+		Web: Spring MVC, Grails, Gorm Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache WSS4J, Apache HttpClient, jQuery, JSON
+		Mobile: Android
 		XML: SOAP, JAXB 2.x, Axis 1.4, Castor 0.9/1.2, JDOM
-		ORM: Hibernate 3.0, OpenORM
+		ORM: Hibernate 3.0, Gorm, OpenORM
 		Caching: Ehcache 2, Memcached 2
 		Logging: SLF4J, Log4j, Apache Commons Logging, Java Logging API
-		Testing: JUnit, DbUnit, Mockito, Emma, EasyMock
-		Groovy: Grails
-		Other: Google Guava, Apache WSS4J, Apache Commons, Apache HttpClient, Formula One for Java (F1J 9)
-	Databases: Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MYSQL, MS SQL, BTRIEVE, DBASE, FOXPRO
+		Testing: JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock
+	Databases: Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MySQL, MS SQL, BTRIEVE, DBASE, FOXPRO
 	Application Servers: Tomcat 3/4/5/6/7, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
 	Tools: 
 		Cloud: Amazon EC2, 2lemetry
@@ -36,31 +35,39 @@ Skills Summary
 		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
 		Browsers: Chrome, Firefox, MS IE
-		Revision Control: SVN, CVS, Git, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
+		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
 		Monitor/Profile: VisualVM, Optimizeit
 		Build: Maven, Ivy, Ant, GNU Make
-		Continuous integration: Jenkins, Hudson, Bamboo
-		Bug Tracking: Jira, Bugzilla
-		Code Review: Crucible
+		Continuous integration: Jenkins, Hudson, Bamboo 
+		Bug Tracking: Jira, Redmine, Bugzilla
+		Code Review: GitHub, Crucible, CodeCollaborator
 		Agile Project Management: Version One, GreenHopper, Rally, XPlanner
 		Wiki: Atlassian Confluence, DokuWiki
 		Testing: SoapUI
 	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP
-	Industries: Banking, E-commerce, Education, Finance, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
+	Industries: Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
 
 Work History
 
+Data Recognition Corporation, Information Services
+Senior Software Developer			10/2013 - Present
+
+	
+	Environment: JEE, Tomcat 7.x, MongoDB, MySQL, MS Sql Server, OpenAM, Linux, Windows 7, Amazon EC2
+	Tools: JDK 1.7, Spring 3.x, Groovy, Grails, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Jira
+		Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal.
+
 Object Partners, Professional Services
-Senior Consultant			12/2011 - Present
+Senior Consultant			12/2011 - 10/2013
 
 	Menards, Web Development
 	Environment: JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
-	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins
-		Added new features to the Menards e-commerce web site and internal web site administration tool. 
+	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
+		Added new features to the Menards e-commerce web site and internal web site administration tool.
 
 	PeopleNet, Backend Services
 	Environment: JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
-	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
+	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One 
 		Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
 
 	Room and Board, Web Development
@@ -116,7 +123,7 @@ Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/
 		Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture environment on the SUN Solaris and Windows NT platforms for new Prometric Unified Financial Module. This module was the server side business logic package that provided all the financial services for the international corporate use by any J2EE complaint services or applications.
 
 	Medtronic, Medical Devices
-	Environment: Apache 1.3.6 WEB Server, Oracle 7, UNIX AIX/NT 
+	Environment: Apache 1.3.6 WEB Server, Oracle 7, UNIX AIX/NT
 	Tools: C/PRO*C, Perl, Unix RCS
 		Created a number of data transfer processes under UNIX AIX 4.*, Oracle environment. Created new and modified existing C/PRO*C code, KSH scripts, SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet new requirements. Created generic Perl CGI programs to replace old application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
 
@@ -153,7 +160,7 @@ Education
 
 Novosibirsk Technical University, Novosibirsk, Russia
 M.S. in Computer Science and B.S. in Mathematics, 1992
-Evaluated by International Education Evaluation, Inc. (March 10, 1997. REF # 116-0369) 
+Evaluated by International Education Evaluation, Inc. (March 10, 1997. REF # 116-0369)
 
 Oracle University
 Oracle Application Server Administration course, 2005
