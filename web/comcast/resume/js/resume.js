@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
-	//Shows the element defined by the data attribute, then hides itself
+	//Set the email text based on the data attributes.
+	$(document).find('.email').each (function() {
+		var user = $(this).data("user");
+		var domain = $(this).data("domain");
+		$(this).text(user +"@"+ domain);
+	});
+	
+	//Shows the element defined by the data attribute, then hides itself.
 	$(".action-show").click(function() {
 		var id = $(this).data("elementId");
 		$("#"+ id).show();

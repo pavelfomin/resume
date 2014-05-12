@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../main.css" type="text/css" />
     <script language="JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script language="JavaScript" src="js/resume.js"></script>
-    <script language="JavaScript" src="../js/util.js"></script>
   </head>
   <body>
     <center>
@@ -63,12 +62,8 @@
     <!-- add email address as a contact info -->
     <xsl:choose>
       <xsl:when test="../@email">
-        <xsl:call-template name="render-contact">
-          <xsl:with-param name="type">Email</xsl:with-param>
-          <xsl:with-param name="value">
-            <xsl:value-of select="concat(../@email, '@', ../@domain)"/>
-          </xsl:with-param>
-        </xsl:call-template>
+    	<b>Email: </b>
+    	<span class="email" data-user="{../@email}" data-domain="{../@domain}"/>
       </xsl:when>
     </xsl:choose>
   
@@ -92,17 +87,9 @@
   <xsl:param name="type"/>
   <xsl:param name="value"/>
 
-  <b><xsl:value-of select="concat($type, ': ')"/></b>
+  <b><xsl:value-of select="$type"/>: </b>
 
   <xsl:choose>
-    <xsl:when test="contains($value, '@')">
-      <xsl:call-template name="writeEmail">
-        <xsl:with-param name="email">
-          <xsl:value-of select="$value"/>
-        </xsl:with-param>
-      </xsl:call-template>
-    </xsl:when>
-
     <xsl:when test="contains($value, 'http')">
         <xsl:call-template name="formatURL">
           <xsl:with-param name="url">
@@ -350,7 +337,9 @@
 
 <div id="{../@id}-details" style="display: none;">
   <xsl:apply-templates select="detail"/>
-  <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
+  <div class="level3">
+	  <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
+  </div>
 </div>
 </xsl:template>
 
@@ -463,7 +452,6 @@
 
 <!-- footer's template -->
 <xsl:template name="footer">
-  <xsl:param name="email"/>
   <xsl:param name="updated"/>
 
   <hr/>
@@ -473,12 +461,6 @@
     Last modified: <xsl:value-of select="substring-before(substring-after($updated, ':'), '$')"/>
     <xsl:text>  </xsl:text>
 
-    <xsl:call-template name="writeEmail">
-      <xsl:with-param name="email">
-        <xsl:value-of select="$email"/>
-      </xsl:with-param>
-    </xsl:call-template>
-
   </div>
 </xsl:template>
   
@@ -487,19 +469,6 @@
   <a href="{@href}" class="tool" target="_blank">
     <xsl:value-of select="text()"/>
   </a>
-</xsl:template>
-
-<!-- email template -->
-<xsl:template name="writeEmail">
-  <xsl:param name="email"/>
-
-  <!-- the following script will not work in Firefox/Mozilla 
-   comment out for Firefox -->
-  <script language="JavaScript">
-    writeEmail("<xsl:value-of select="substring-before($email, '@')"/>",
-               "<xsl:value-of select="substring-after($email, '@')"/>");
-  </script>
-
 </xsl:template>
 
 </xsl:stylesheet>
