@@ -10,7 +10,8 @@
       <xsl:value-of select="concat(@name, ', ', @title)"/>
     </title>
     <link rel="stylesheet" href="../main.css" type="text/css" />
-    <script language="JavaScript" src="../js/layers.js"></script>
+    <script language="JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script language="JavaScript" src="js/resume.js"></script>
     <script language="JavaScript" src="../js/util.js"></script>
   </head>
   <body>
@@ -338,9 +339,7 @@
   <xsl:choose>
     <xsl:when test="boolean($showDetailsLink) 
                     and boolean(../assignment-details)">
-      <a href="" onclick="return showDiv('{../@id}-details', 'show');">
-        More...
-      </a>
+      <a href="#" class="action-show {../@id}-details" data-element-id="{../@id}-details">More details</a>
     </xsl:when>
   </xsl:choose>
 </div>
@@ -351,6 +350,7 @@
 
 <div id="{../@id}-details" style="display: none;">
   <xsl:apply-templates select="detail"/>
+  <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
 </div>
 </xsl:template>
 
