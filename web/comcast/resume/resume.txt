@@ -20,7 +20,7 @@ Skills Summary
 	Frameworks: 
 		JSE/JEE: JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets
 		Spring: Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP
-		Web: Spring MVC, Grails, Gorm Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache WSS4J, Apache HttpClient, jQuery, JSON
+		Web: Spring MVC, Grails, Gorm, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache WSS4J, Apache HttpClient, jQuery, JSON
 		Mobile: Android
 		XML: SOAP, JAXB 2.x, Axis 1.4, Castor 0.9/1.2, JDOM
 		ORM: Hibernate 3.0, Gorm, OpenORM
@@ -32,19 +32,19 @@ Skills Summary
 	Tools: 
 		Cloud: Amazon EC2, 2lemetry
 		IDE: Eclipse, RAD, WSAD, JBuilder, Emacs
-		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
+		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer 
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
 		Browsers: Chrome, Firefox, MS IE
 		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
 		Monitor/Profile: VisualVM, Optimizeit
 		Build: Maven, Ivy, Ant, GNU Make
-		Continuous integration: Jenkins, Hudson, Bamboo 
+		Continuous integration: Jenkins, Hudson, Bamboo
 		Bug Tracking: Jira, Redmine, Bugzilla
 		Code Review: GitHub, Crucible, CodeCollaborator
 		Agile Project Management: Version One, GreenHopper, Rally, XPlanner
 		Wiki: Atlassian Confluence, DokuWiki
 		Testing: SoapUI
-	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP
+	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP 
 	Industries: Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
 
 Work History
@@ -67,7 +67,7 @@ Senior Consultant			12/2011 - 10/2013
 
 	PeopleNet, Backend Services
 	Environment: JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
-	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One 
+	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
 		Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
 
 	Room and Board, Web Development
