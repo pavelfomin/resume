@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
+<<<<<<< HEAD
 <resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2014/09/27 $">
+=======
+<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2014/05/12 $">
+>>>>>>> 5605b523173e61e869a27ad2994141ee0711823f
   <contact-list>
     <contact type="City, State" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -47,7 +51,11 @@
        Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP 
       </value>
       <value description="Web">
+<<<<<<< HEAD
        Spring MVC, Grails, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
+=======
+       Spring MVC, Grails, Freemarker, Velocity, Struts 1.x, Wicket 1.2, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Apache HttpClient, jQuery, JSON
+>>>>>>> 5605b523173e61e869a27ad2994141ee0711823f
       </value>
       <value description="Mobile">
        Android
