@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2014/05/11 $">
+<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2014/09/27 $">
   <contact-list>
     <contact type="City, State" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -47,13 +47,13 @@
        Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP 
       </value>
       <value description="Web">
-       Spring MVC, Grails, Gorm, Freemarker, Velocity, Struts 1.x, Wicket 1.2, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Apache HttpClient, jQuery, JSON
+       Spring MVC, Grails, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
       </value>
       <value description="Mobile">
        Android
       </value>
       <value description="XML">
-       SOAP, JAXB 2.x, Axis 1.4, Castor 0.9/1.2, JDOM
+       SOAP, JAXB 2.x, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Axis 1.4, Castor 0.9/1.2, JDOM
       </value>
       <value description="ORM">
        Hibernate 3.0, Gorm, OpenORM
@@ -73,7 +73,7 @@
        Databases
       </type>
       <value>
-       Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MySQL, MS SQL, BTRIEVE, DBASE, FOXPRO
+       Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase, MongoDB
       </value>
     </skill>
     <skill id="srv">
@@ -88,9 +88,6 @@
       <type>
        Tools
       </type>
-      <value description="Cloud">
-       Amazon EC2, 2lemetry
-      </value>
       <value description="IDE">
        Eclipse, RAD, WSAD, JBuilder, Emacs
       </value>
@@ -100,12 +97,6 @@
       <value description="Messaging">
 	   RabbitMQ, 2lemetry, IBM MQ
       </value>
-      <value description="Browsers">
-        Chrome, Firefox, MS IE
-      </value>
-      <value description="Revision Control">
-       Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
-      </value>
       <value description="Monitor/Profile">
 	   VisualVM, Optimizeit
       </value>
@@ -114,6 +105,15 @@
       </value>
       <value description="Continuous integration">
 	   Jenkins, Hudson, Bamboo
+      </value>
+      <value description="VM / Cloud">
+	   Vagrant, Puppet, Oracle VirtualBox, Amazon EC2
+      </value>
+      <value description="Browsers">
+        Chrome, Firefox, MS IE
+      </value>
+      <value description="Revision Control">
+       Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
       </value>
       <value description="Bug Tracking">
        Jira, Redmine, Bugzilla
@@ -173,11 +173,10 @@
         	JEE, Tomcat 7.x, MongoDB, MySQL, MS Sql Server, OpenAM, Linux, Windows 7, Amazon EC2
         </assignment-environment>
         <assignment-tools>
-        	JDK 1.7, Spring 3.x, Groovy, Grails, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Jira
+        	JDK 1.7, Spring 3.x, SiteMesh, Groovy, Grails, Node.js, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Vagrant, Oracle VirtualBox, Puppet, Jira
         </assignment-tools> 
         <assignment-description>
-        	Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality 
-        	across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal.
+        	Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. Developed new components of Text To Speech implementation using Node.js
         </assignment-description>
       </assignment>
     </company>
@@ -210,10 +209,10 @@
 		  JEE, Tomcat 7.x, Oracle 11, Windows 7, Linux
         </assignment-environment>
         <assignment-tools>
-		  JDK 1.6, Spring 3.1, JDBC, JSP, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira, GreenHopper
+		  JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira, GreenHopper
         </assignment-tools> 
         <assignment-description>
-		  Developed new and modified existing components of the web site and internal web site administration tool. Focussed primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScrpit and jQuery.
+		  Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
         </assignment-description>
       </assignment>
     </company>

@@ -20,31 +20,31 @@ Skills Summary
 	Frameworks: 
 		JSE/JEE: JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets
 		Spring: Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP
-		Web: Spring MVC, Grails, Gorm, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache WSS4J, Apache HttpClient, jQuery, JSON
+		Web: Spring MVC, Grails, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
 		Mobile: Android
-		XML: SOAP, JAXB 2.x, Axis 1.4, Castor 0.9/1.2, JDOM
+		XML: SOAP, JAXB 2.x, Apache WSS4J, Axis 1.4, Castor 0.9/1.2, JDOM
 		ORM: Hibernate 3.0, Gorm, OpenORM
 		Caching: Ehcache 2, Memcached 2
 		Logging: SLF4J, Log4j, Apache Commons Logging, Java Logging API
 		Testing: JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock
-	Databases: Oracle 7/8/9/10g/11g, Sybase 11.5.1/11.9.2, MySQL, MS SQL, BTRIEVE, DBASE, FOXPRO
+	Databases: Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase, MongoDB
 	Application Servers: Tomcat 3/4/5/6/7, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
 	Tools: 
-		Cloud: Amazon EC2, 2lemetry
 		IDE: Eclipse, RAD, WSAD, JBuilder, Emacs
-		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer 
+		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
-		Browsers: Chrome, Firefox, MS IE
-		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
 		Monitor/Profile: VisualVM, Optimizeit
 		Build: Maven, Ivy, Ant, GNU Make
 		Continuous integration: Jenkins, Hudson, Bamboo
+		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2
+		Browsers: Chrome, Firefox, MS IE
+		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
 		Bug Tracking: Jira, Redmine, Bugzilla
 		Code Review: GitHub, Crucible, CodeCollaborator
 		Agile Project Management: Version One, GreenHopper, Rally, XPlanner
 		Wiki: Atlassian Confluence, DokuWiki
 		Testing: SoapUI
-	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP 
+	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP
 	Industries: Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
 
 Work History
@@ -54,14 +54,14 @@ Senior Software Developer			10/2013 - Present
 
 	
 	Environment: JEE, Tomcat 7.x, MongoDB, MySQL, MS Sql Server, OpenAM, Linux, Windows 7, Amazon EC2
-	Tools: JDK 1.7, Spring 3.x, Groovy, Grails, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Jira
-		Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal.
+	Tools: JDK 1.7, Spring 3.x, SiteMesh, Groovy, Grails, Node.js, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Vagrant, Oracle VirtualBox, Puppet, Jira
+		Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. Developed new components of Text To Speech implementation using Node.js
 
 Object Partners, Professional Services
 Senior Consultant			12/2011 - 10/2013
 
 	Menards, Web Development
-	Environment: JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
+	Environment: JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux 
 	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
 		Added new features to the Menards e-commerce web site and internal web site administration tool.
 
@@ -72,8 +72,8 @@ Senior Consultant			12/2011 - 10/2013
 
 	Room and Board, Web Development
 	Environment: JEE, Tomcat 7.x, Oracle 11, Windows 7, Linux
-	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira, GreenHopper
-		Developed new and modified existing components of the web site and internal web site administration tool. Focussed primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScrpit and jQuery.
+	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira, GreenHopper
+		Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
 
 MoneyGram International, Systems Development
 Lead Developer (Software Engineer IV)			10/2007 - 12/2011
@@ -100,7 +100,7 @@ Senior Java Developer, Full Time Consultant			07/2001 - 07/2004
 		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the Weight Management Preferred Provider Program. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
 
 	Compuware Product Division, Software Product Development
-	Environment: Windows 2000, z/OS
+	Environment: Windows 2000, z/OS 
 	Tools: JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
 		Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM.
 
