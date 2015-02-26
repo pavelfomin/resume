@@ -16,24 +16,24 @@ Profile
 Skills Summary
 
 	Operating Systems: Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), MS Windows
-	Languages: Java 1.1-1.7, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript
+	Languages: Java 1.1-1.7, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript, CSS
 	Frameworks: 
 		JSE/JEE: JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets
-		Spring: Spring Core 2.x/3.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP
+		Spring: Spring Core 2.x/3.x/4.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
 		Web: Spring MVC, Grails, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
 		Mobile: Android
 		XML: SOAP, JAXB 2.x, Apache WSS4J, Axis 1.4, Castor 0.9/1.2, JDOM
-		ORM: Hibernate 3.0, Gorm, OpenORM
+		ORM: Hibernate 3.0, Gorm
 		Caching: Ehcache 2, Memcached 2
 		Logging: SLF4J, Log4j, Apache Commons Logging, Java Logging API
 		Testing: JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock
 	Databases: Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase, MongoDB
-	Application Servers: Tomcat 3/4/5/6/7, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+	Application Servers: Tomcat 3/4/5/6/7, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
 	Tools: 
 		IDE: Eclipse, RAD, WSAD, JBuilder, Emacs
 		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
-		Monitor/Profile: VisualVM, Optimizeit
+		Monitor/Profile: VisualVM, DynaTrace, Optimizeit
 		Build: Maven, Ivy, Ant, GNU Make
 		Continuous integration: Jenkins, Hudson, Bamboo
 		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2
@@ -41,27 +41,35 @@ Skills Summary
 		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
 		Bug Tracking: Jira, Redmine, Bugzilla
 		Code Review: GitHub, Crucible, CodeCollaborator
-		Agile Project Management: Version One, GreenHopper, Rally, XPlanner
+		Agile Project Management: Jira GreenHopper, Version One, Rally, XPlanner
 		Wiki: Atlassian Confluence, DokuWiki
 		Testing: SoapUI
 	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP
-	Industries: Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
+	Industries: Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
 
 Work History
 
+Solution Design Group, Professional Services
+Senior Consultant			10/2014 - Present
+
+	McKesson Medical-Surgical, Web Development
+	Environment: Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Nutch, Windows 7, Linux
+	Tools: JDK 1.7, Spring 4.0, Solr, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira
+		Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling the content authors to publish changes without the application code deployment. Created several Liferay portal plugins to customize the Liferay implementation for the client. Setup the clustered site search using separate Solr server and Liferay Solr plugin. Created custom page level search implementations, first extending Liferay search infrastructure and, second using Apache Solr and Nutch directly. Created build and deployment process for the custom Liferay plugins using Jenkins and Maven. Provisioned the development and production servers with Liferay, Solr and Nutch installations.
+
 Data Recognition Corporation, Information Services
-Senior Software Developer			10/2013 - Present
+Senior Software Developer			10/2013 - 10/2014
 
 	
 	Environment: JEE, Tomcat 7.x, MongoDB, MySQL, MS Sql Server, OpenAM, Linux, Windows 7, Amazon EC2
 	Tools: JDK 1.7, Spring 3.x, SiteMesh, Groovy, Grails, Node.js, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Vagrant, Oracle VirtualBox, Puppet, Jira
-		Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. Developed new components of Text To Speech implementation using Node.js
+		Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. Developed new components of Text To Speech implementation using Node.js. Created build and deployment process for the Java, Grails and Nodejs projects using Jenkins and RPM packaging.
 
 Object Partners, Professional Services
 Senior Consultant			12/2011 - 10/2013
 
 	Menards, Web Development
-	Environment: JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux 
+	Environment: JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
 	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
 		Added new features to the Menards e-commerce web site and internal web site administration tool.
 
@@ -72,7 +80,7 @@ Senior Consultant			12/2011 - 10/2013
 
 	Room and Board, Web Development
 	Environment: JEE, Tomcat 7.x, Oracle 11, Windows 7, Linux
-	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira, GreenHopper
+	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira
 		Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
 
 MoneyGram International, Systems Development
@@ -96,11 +104,11 @@ Senior Java Developer, Full Time Consultant			07/2001 - 07/2004
 
 	HealthPartners, Center of Health Promotion
 	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX
-	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
+	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML 
 		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the Weight Management Preferred Provider Program. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
 
 	Compuware Product Division, Software Product Development
-	Environment: Windows 2000, z/OS 
+	Environment: Windows 2000, z/OS
 	Tools: JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
 		Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM.
 
@@ -146,7 +154,7 @@ Lead Software Developer			03/1993 - 07/1997
 	
 	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
 	Tools: VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
-		Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
+		Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide. 
 
 Interface Inc., Application Software
 Software Engineer			09/1992 - 03/1993
