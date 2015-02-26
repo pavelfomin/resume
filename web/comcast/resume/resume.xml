@@ -3,7 +3,7 @@
 
 <resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2015/02/26 $">
   <contact-list>
-    <contact type="City, State" value="Plymouth, MN, USA"/>
+    <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
   </contact-list>
 
@@ -170,10 +170,10 @@
     <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="Present">
       <assignment id="mms" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
         <assignment-environment>
-		  Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Nutch, Windows 7, Linux
+		  Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
         </assignment-environment>
         <assignment-tools>
-		  JDK 1.7, Spring 4.0, Solr, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira
+		  JDK 1.7, Spring 4.0, Solr, Nutch, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira, DynaTrace
         </assignment-tools> 
         <assignment-description>
 		  Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling the content authors to publish changes without the application code deployment.
@@ -182,6 +182,7 @@
           Created custom page level search implementations, first extending Liferay search infrastructure and, second using Apache Solr and Nutch directly.
           Created build and deployment process for the custom Liferay plugins using Jenkins and Maven.
           Provisioned the development and production servers with Liferay, Solr and Nutch installations.
+          Used DynaTrace to identify the performance bottlenecks during the load tests.
         </assignment-description>
       </assignment>
     </company>

@@ -3,7 +3,7 @@ Pavel V. Fomin
 
 Lead Enterprise Developer
 
-City, State: Plymouth, MN, USA
+Location: Plymouth, MN, USA
 LinkedIn: http://www.linkedin.com/in/pfomin
 
 
@@ -53,9 +53,9 @@ Solution Design Group, Professional Services
 Senior Consultant			10/2014 - Present
 
 	McKesson Medical-Surgical, Web Development
-	Environment: Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Nutch, Windows 7, Linux
-	Tools: JDK 1.7, Spring 4.0, Solr, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira
-		Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling the content authors to publish changes without the application code deployment. Created several Liferay portal plugins to customize the Liferay implementation for the client. Setup the clustered site search using separate Solr server and Liferay Solr plugin. Created custom page level search implementations, first extending Liferay search infrastructure and, second using Apache Solr and Nutch directly. Created build and deployment process for the custom Liferay plugins using Jenkins and Maven. Provisioned the development and production servers with Liferay, Solr and Nutch installations.
+	Environment: Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
+	Tools: JDK 1.7, Spring 4.0, Solr, Nutch, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira, DynaTrace
+		Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling the content authors to publish changes without the application code deployment. Created several Liferay portal plugins to customize the Liferay implementation for the client. Setup the clustered site search using separate Solr server and Liferay Solr plugin. Created custom page level search implementations, first extending Liferay search infrastructure and, second using Apache Solr and Nutch directly. Created build and deployment process for the custom Liferay plugins using Jenkins and Maven. Provisioned the development and production servers with Liferay, Solr and Nutch installations. Used DynaTrace to identify the performance bottlenecks during the load tests.
 
 Data Recognition Corporation, Information Services
 Senior Software Developer			10/2013 - 10/2014
@@ -104,7 +104,7 @@ Senior Java Developer, Full Time Consultant			07/2001 - 07/2004
 
 	HealthPartners, Center of Health Promotion
 	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX
-	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML 
+	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
 		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the Weight Management Preferred Provider Program. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
 
 	Compuware Product Division, Software Product Development
@@ -136,7 +136,7 @@ Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/
 		Created a number of data transfer processes under UNIX AIX 4.*, Oracle environment. Created new and modified existing C/PRO*C code, KSH scripts, SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet new requirements. Created generic Perl CGI programs to replace old application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
 
 	University of Minnesota Facilities Management, Education
-	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT
+	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT 
 	Tools: JDK 1.1.7, JDBC, SQL, PL/SQL, Emacs, SourceSafe
 		Responsible for applications software development and optimization in Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment. Created Java applets with Oracle JDBC "thin" driver to provide access to the Oracle database via WEB. Developed a number of data transfers using PL/SQL, SQLPLUS scripting, UNIX KSH scripting and ODBC. Improved HTML documents by adding some JavaScript code for MS IExplorer 4.x and Netscape Navigator 4.x.
 
@@ -152,9 +152,9 @@ Center Of Financial Technologies, Financial Software
 Lead Software Developer			03/1993 - 07/1997
 
 	
-	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
+	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO 
 	Tools: VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
-		Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide. 
+		Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
 
 Interface Inc., Application Software
 Software Engineer			09/1992 - 03/1993
