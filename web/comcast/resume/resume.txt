@@ -10,33 +10,35 @@ LinkedIn: http://www.linkedin.com/in/pfomin
 Profile
 
 	- Over 20 years of software design and development experience in diverse industry environment
-	- Strong expertise in Java and JEE architecture with multiple Application and Web servers
-	- Solid RDBMS background
+	- Strong expertise in Java and JEE architecture with various Application and Web servers
+	- Solid RDBMS and NoSQL background
 
 Skills Summary
 
-	Operating Systems: Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), MS Windows
-	Languages: Java 1.1-1.7, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript, CSS
+	Operating Systems: Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
+	Languages: Java 1.1-1.8, XML, WSDL, SQL, UML, Groovy, Bash, HTML, JavaScript, CSS
 	Frameworks: 
 		JSE/JEE: JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets
 		Spring: Spring Core 2.x/3.x/4.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
-		Web: Spring MVC, Grails, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
-		Mobile: Android
+		Web: Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
+		Mobile: Android SDK
 		XML: SOAP, JAXB 2.x, Apache WSS4J, Axis 1.4, Castor 0.9/1.2, JDOM
 		ORM: Hibernate 3.0, Gorm
-		Caching: Ehcache 2, Memcached 2
+		Caching: Ehcache 2, Memcached 2, Akamai
 		Logging: SLF4J, Log4j, Apache Commons Logging, Java Logging API
 		Testing: JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock
-	Databases: Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase, MongoDB
+	Databases: 
+		NoSQL: Riak, MongoDB
+		Relational: Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase
 	Application Servers: Tomcat 3/4/5/6/7, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
 	Tools: 
-		IDE: Eclipse, RAD, WSAD, JBuilder, Emacs
+		IDE: Eclipse, Intellij, Emacs
 		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
 		Monitor/Profile: VisualVM, DynaTrace, Optimizeit
 		Build: Maven, Ivy, Ant, GNU Make
-		Continuous integration: Jenkins, Hudson, Bamboo
-		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2
+		Continuous integration: Jenkins / Hudson, Bamboo
+		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
 		Browsers: Chrome, Firefox, MS IE
 		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
 		Bug Tracking: Jira, Redmine, Bugzilla
@@ -45,12 +47,17 @@ Skills Summary
 		Wiki: Atlassian Confluence, DokuWiki
 		Testing: SoapUI
 	Methodologies: Agile, SCRUM, Test Driven Development, OOAD, RUP
-	Industries: Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
+	Industries: Retail, Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Software Development, Energy Management, Telematics
 
 Work History
 
 Solution Design Group, Professional Services
 Senior Consultant			10/2014 - Present
+
+	Best Buy, Cloud Services Development
+	Environment: Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
+	Tools: JDK 1.7 / 1.8, Spring 4.x, Groovy, Spock, Intellij, Emacs, Git, Maven, Jenkins, Oracle VirtualBox, Jira
+		As part of the browse services engineering team, provided highly scalable, configurable aggregation and transformation cloud based services for BestBuy.com to support functionality of new business initiatives. Implemented various architectural initiatives including domain services development, service integration with Node rendering tier and responsive front end redesign using Groovy and Spring framework in Amazon EC2 and OpenStack cloud environments. Used Akamai CDN and Edge Side Includes to offload edge traffic while providing configurable cache expiration and flushing capabilities of page fragments. Utilized Memcached and Ehcache to increase performance of the services tier.
 
 	McKesson Medical-Surgical, Web Development
 	Environment: Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
@@ -73,13 +80,13 @@ Senior Consultant			12/2011 - 10/2013
 	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
 		Added new features to the Menards e-commerce web site and internal web site administration tool.
 
-	PeopleNet, Backend Services
+	PeopleNet, Backend Services Development
 	Environment: JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
 	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
 		Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
 
 	Room and Board, Web Development
-	Environment: JEE, Tomcat 7.x, Oracle 11, Windows 7, Linux
+	Environment: JEE, Tomcat 7.x, Oracle 11, Akamai, Windows 7, Linux
 	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira
 		Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
 
@@ -136,7 +143,7 @@ Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/
 		Created a number of data transfer processes under UNIX AIX 4.*, Oracle environment. Created new and modified existing C/PRO*C code, KSH scripts, SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet new requirements. Created generic Perl CGI programs to replace old application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
 
 	University of Minnesota Facilities Management, Education
-	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT 
+	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT
 	Tools: JDK 1.1.7, JDBC, SQL, PL/SQL, Emacs, SourceSafe
 		Responsible for applications software development and optimization in Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment. Created Java applets with Oracle JDBC "thin" driver to provide access to the Oracle database via WEB. Developed a number of data transfers using PL/SQL, SQLPLUS scripting, UNIX KSH scripting and ODBC. Improved HTML documents by adding some JavaScript code for MS IExplorer 4.x and Netscape Navigator 4.x.
 
@@ -152,7 +159,7 @@ Center Of Financial Technologies, Financial Software
 Lead Software Developer			03/1993 - 07/1997
 
 	
-	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO 
+	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
 	Tools: VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
 		Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
 

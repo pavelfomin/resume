@@ -10,7 +10,7 @@ $(document).ready(function() {
 	//Shows the element defined by the data attribute, then hides itself.
 	$(".action-show").click(function() {
 		var id = $(this).data("elementId");
-		$("#"+ id).show();
+		$("."+ id).show();
 		$(this).hide();
 		return false; //to avoid href action
 	});
@@ -18,7 +18,7 @@ $(document).ready(function() {
 	//Hides the element defined by the data attribute, then restores the corresponding link to show details.
 	$(".action-hide").click(function() {
 		var id = $(this).data("elementId");
-		$("#"+ id).hide();
+		$("."+ id).hide();
 		$("a.action-show."+ id).show();
 		return false; //to avoid href action
 	});

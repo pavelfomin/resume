@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2015/02/26 $">
+<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/01/17 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -12,10 +12,10 @@
      Over 20 years of software design and development experience in diverse industry environment
     </entry>
     <entry>
-     Strong expertise in Java and JEE architecture with multiple Application and Web servers
+     Strong expertise in Java and JEE architecture with various Application and Web servers
     </entry>
     <entry>
-     Solid RDBMS background
+     Solid RDBMS and NoSQL background
     </entry>
   </profile>
 
@@ -25,7 +25,7 @@
        Operating Systems
       </type>
       <value>
-       Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), MS Windows
+       Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
       </value>
     </skill>
     <skill id="lng">
@@ -33,7 +33,7 @@
        Languages
       </type>
       <value>
-       Java 1.1-1.7, XML, WSDL, SQL, UML, Groovy, Bash, Perl, HTML, JavaScript, CSS
+       Java 1.1-1.8, XML, WSDL, SQL, UML, Groovy, Bash, HTML, JavaScript, CSS
       </value>
     </skill>
     <skill id="frameworks">
@@ -47,10 +47,10 @@
        Spring Core 2.x/3.x/4.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
       </value>
       <value description="Web">
-       Spring MVC, Grails, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
+       Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
       </value>
       <value description="Mobile">
-       Android
+       Android SDK
       </value>
       <value description="XML">
        SOAP, JAXB 2.x, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Axis 1.4, Castor 0.9/1.2, JDOM
@@ -59,7 +59,7 @@
        Hibernate 3.0, Gorm
       </value>
       <value description="Caching">
-	   Ehcache 2, Memcached 2
+	   Ehcache 2, Memcached 2, Akamai
       </value>
       <value description="Logging">
 	   SLF4J, Log4j, Apache Commons Logging, Java Logging API 
@@ -72,8 +72,11 @@
       <type>
        Databases
       </type>
-      <value>
-       Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase, MongoDB
+      <value description="NoSQL">
+       Riak, MongoDB
+      </value>
+      <value description="Relational">
+       Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase
       </value>
     </skill>
     <skill id="srv">
@@ -89,7 +92,7 @@
        Tools
       </type>
       <value description="IDE">
-       Eclipse, RAD, WSAD, JBuilder, Emacs
+       Eclipse, Intellij, Emacs
       </value>
       <value description="Modeling">
        ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
@@ -104,10 +107,10 @@
 	   Maven, Ivy, Ant, GNU Make
       </value>
       <value description="Continuous integration">
-	   Jenkins, Hudson, Bamboo
+	   Jenkins / Hudson, Bamboo
       </value>
       <value description="VM / Cloud">
-	   Vagrant, Puppet, Oracle VirtualBox, Amazon EC2
+	   Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
       </value>
       <value description="Browsers">
         Chrome, Firefox, MS IE
@@ -144,7 +147,7 @@
        Industries
       </type>
       <value>
-	   Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Retail, Software Development, Energy Management, Telematics
+	   Retail, Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Software Development, Energy Management, Telematics
       </value>
     </skill>
   </skill-list>
@@ -168,6 +171,20 @@
     -->
 
     <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="Present">
+      <assignment id="bby" name="Best Buy" url="http://www.bestbuy.com" department="Cloud Services Development">
+        <assignment-environment>
+		  	Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
+        </assignment-environment>
+        <assignment-tools>
+		  	JDK 1.7 / 1.8, Spring 4.x, Groovy, Spock, Intellij, Emacs, Git, Maven, Jenkins, Oracle VirtualBox, Jira
+        </assignment-tools> 
+        <assignment-description>
+			As part of the browse services engineering team, provided highly scalable, configurable aggregation and transformation cloud based services for BestBuy.com to support functionality of new business initiatives.
+			Implemented various architectural initiatives including domain services development, service integration with Node rendering tier and responsive front end redesign using Groovy and Spring framework in Amazon EC2 and OpenStack cloud environments.
+			Used Akamai CDN and Edge Side Includes to offload edge traffic while providing configurable cache expiration and flushing capabilities of page fragments.
+			Utilized Memcached and Ehcache to increase performance of the services tier.
+        </assignment-description>
+      </assignment>
       <assignment id="mms" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
         <assignment-environment>
 		  Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
@@ -216,7 +233,7 @@
 		  Added new features to the Menards e-commerce web site and internal web site administration tool.
         </assignment-description>
       </assignment>
-      <assignment id="pnt" name="PeopleNet" url="http://www.peoplenetonline.com/" department="Backend Services">
+      <assignment id="pnt" name="PeopleNet" url="http://www.peoplenetonline.com/" department="Backend Services Development">
         <assignment-environment>
 		  JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
         </assignment-environment>
@@ -229,7 +246,7 @@
       </assignment>
       <assignment id="rnb" name="Room and Board" url="http://www.roomandboard.com/" department="Web Development">
         <assignment-environment>
-		  JEE, Tomcat 7.x, Oracle 11, Windows 7, Linux
+		  JEE, Tomcat 7.x, Oracle 11, Akamai, Windows 7, Linux
         </assignment-environment>
         <assignment-tools>
 		  JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira

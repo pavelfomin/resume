@@ -10,7 +10,7 @@
       <xsl:value-of select="concat(@name, ', ', @title)"/>
     </title>
     <link rel="stylesheet" href="../main.css" type="text/css" />
-    <script language="JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script language="JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script language="JavaScript" src="js/resume.js"></script>
   </head>
   <body>
@@ -335,7 +335,7 @@
 <!-- template for assignment details -->
 <xsl:template match="assignment-details">
 
-<div id="{../@id}-details" style="display: none;">
+<div id="{../@id}-details" class="{../@id}-details" style="display: none;">
   <xsl:apply-templates select="detail"/>
   <div class="level3">
 	  <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
