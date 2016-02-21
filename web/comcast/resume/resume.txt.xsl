@@ -90,10 +90,33 @@
       <xsl:value-of select="$tab"/>
     </xsl:with-param>
   </xsl:apply-templates>
+
+  <xsl:apply-templates select="skill-details">
+    <xsl:with-param name="tab">
+      <xsl:value-of select="$tab"/>
+    </xsl:with-param>
+  </xsl:apply-templates>
+</xsl:template>
+
+<!-- template for skill details -->
+<xsl:template match="skill-details">
+  <xsl:param name="tab"/>
+
+  <xsl:apply-templates select="main-detail">
+    <xsl:with-param name="tab">
+      <xsl:value-of select="$tab"/>
+    </xsl:with-param>
+  </xsl:apply-templates>
+
+  <xsl:apply-templates select="value">
+    <xsl:with-param name="tab">
+      <xsl:value-of select="$tab"/>
+    </xsl:with-param>
+  </xsl:apply-templates>
 </xsl:template>
 
 <!-- template for skill value -->
-<xsl:template match="value">
+<xsl:template match="value|main-detail">
   <xsl:param name="tab"/>
 
   <xsl:apply-templates select="@description">

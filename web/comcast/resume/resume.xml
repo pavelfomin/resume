@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Lead Enterprise Developer" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/01/17 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/02/21 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -25,7 +25,7 @@
        Operating Systems
       </type>
       <value>
-       Linux (Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
+       Linux (Mint, Ubuntu, Redhat, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
       </value>
     </skill>
     <skill id="lng">
@@ -40,12 +40,13 @@
       <type>
        Frameworks
       </type>
-      <value description="JSE/JEE">
-       JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets, Portlets, Applets 
-      </value>
-      <value description="Spring">
-       Spring Core 2.x/3.x/4.x, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
-      </value>
+<skill-details>
+      <main-detail description="JSE/JEE">
+       JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets
+      </main-detail>
+      <main-detail description="Spring">
+       Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
+      </main-detail>
       <value description="Web">
        Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
       </value>
@@ -67,6 +68,7 @@
       <value description="Testing">
 	   JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock 
       </value>
+</skill-details>
     </skill>
     <skill id="db">
       <type>
@@ -91,9 +93,10 @@
       <type>
        Tools
       </type>
-      <value description="IDE">
+<skill-details>
+      <main-detail description="IDE">
        Eclipse, Intellij, Emacs
-      </value>
+      </main-detail>
       <value description="Modeling">
        ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
       </value>
@@ -112,11 +115,8 @@
       <value description="VM / Cloud">
 	   Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
       </value>
-      <value description="Browsers">
-        Chrome, Firefox, MS IE
-      </value>
       <value description="Revision Control">
-       Git, SVN, CVS, MKS, PVCS, RCS, Visual SourceSafe 5.0/6.0 (VSS)
+       Git, SVN, CVS, MKS, PVCS, RCS, VSS
       </value>
       <value description="Bug Tracking">
        Jira, Redmine, Bugzilla
@@ -130,16 +130,14 @@
       <value description="Wiki">
 	   Atlassian Confluence, <a href="http://www.dokuwiki.org/">DokuWiki</a>
       </value>
-      <value description="Testing">
-       SoapUI
-      </value>
+</skill-details>
     </skill>
     <skill id="Methodologies">
       <type>
        Methodologies
       </type>
       <value>
-	   Agile, SCRUM, Test Driven Development, OOAD, RUP
+	   Agile, SCRUM, Test Driven Development
       </value>
     </skill>
     <skill id="Industries">
@@ -176,7 +174,7 @@
 		  	Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
         </assignment-environment>
         <assignment-tools>
-		  	JDK 1.7 / 1.8, Spring 4.x, Groovy, Spock, Intellij, Emacs, Git, Maven, Jenkins, Oracle VirtualBox, Jira
+		  	JDK 1.7 / 1.8, Spring 4.x, Groovy, Spock, Intellij, Emacs, Git, Maven, Gradle, Jenkins, Oracle VirtualBox, Jira
         </assignment-tools> 
         <assignment-description>
 			As part of the browse services engineering team, provided highly scalable, configurable aggregation and transformation cloud based services for BestBuy.com to support functionality of new business initiatives.

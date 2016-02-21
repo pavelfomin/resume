@@ -171,12 +171,31 @@
   </td>
   <td valign="top">
     <xsl:apply-templates select="value"/>
+    <xsl:apply-templates select="skill-details"/>
   </td>
 </tr>
 </xsl:template>
 
+<!-- template for skill details -->
+<xsl:template match="skill-details">
+  <xsl:param name="showDetailsLink" select="'notnull'"/>
+
+  <xsl:apply-templates select="main-detail"/>
+
+  <xsl:choose>
+    <xsl:when test="boolean($showDetailsLink)">
+      <a href="#" class="action-show {../@id}-details" data-element-id="{../@id}-details">More details</a>
+    </xsl:when>
+  </xsl:choose>
+
+  <span id="{../@id}-details" class="{../@id}-details" style="display: none;">
+    <xsl:apply-templates select="value"/>
+    <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
+  </span>
+</xsl:template>
+
 <!-- template for skill value -->
-<xsl:template match="value">
+<xsl:template match="value|main-detail">
   <xsl:apply-templates select="@description"/>
 
   <!--allow the embedded html tags to be processed-->
