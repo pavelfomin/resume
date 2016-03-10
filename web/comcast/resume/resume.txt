@@ -18,9 +18,9 @@ Skills Summary
 	Operating Systems: Linux (Mint, Ubuntu, Redhat, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
 	Languages: Java 1.1-1.8, XML, WSDL, SQL, UML, Groovy, Bash, HTML, JavaScript, CSS
 	Frameworks: 
-		JSE/JEE: JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets
+		JSE/JEE: JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
 		Spring: Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
-		Web: Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
+		Web: Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
 		Mobile: Android SDK
 		XML: SOAP, JAXB 2.x, Apache WSS4J, Axis 1.4, Castor 0.9/1.2, JDOM
 		ORM: Hibernate 3.0, Gorm
@@ -39,7 +39,7 @@ Skills Summary
 		Build: Maven, Ivy, Ant, GNU Make
 		Continuous integration: Jenkins / Hudson, Bamboo
 		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
-		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, VSS
+		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, VSS 
 		Bug Tracking: Jira, Redmine, Bugzilla
 		Code Review: GitHub, Crucible, CodeCollaborator
 		Agile Project Management: Jira GreenHopper, Version One, Rally, XPlanner
@@ -55,7 +55,7 @@ Senior Consultant			10/2014 - Present
 	Best Buy, Cloud Services Development
 	Environment: Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
 	Tools: JDK 1.7 / 1.8, Spring 4.x, Groovy, Spock, Intellij, Emacs, Git, Maven, Gradle, Jenkins, Oracle VirtualBox, Jira
-		As part of the browse services engineering team, provided highly scalable, configurable aggregation and transformation cloud based services for BestBuy.com to support functionality of new business initiatives. Implemented various architectural initiatives including domain services development, service integration with Node rendering tier and responsive front end redesign using Groovy and Spring framework in Amazon EC2 and OpenStack cloud environments. Used Akamai CDN and Edge Side Includes to offload edge traffic while providing configurable cache expiration and flushing capabilities of page fragments. Utilized Memcached and Ehcache to increase performance of the services tier.
+		Created highly scalable aggregation and transformation services for BestBuy.com to support functionality of new business initiatives. Implemented various architectural initiatives including domain services development, service integration with Node rendering tier and responsive front end redesign using Groovy and Spring framework in Amazon EC2 and OpenStack cloud environments. Used Akamai CDN and Edge Side Includes to offload edge traffic while providing configurable cache expiration and flushing capabilities of page fragments. Utilized Memcached and Ehcache to increase performance of the services tier.
 
 	McKesson Medical-Surgical, Web Development
 	Environment: Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
@@ -85,7 +85,7 @@ Senior Consultant			12/2011 - 10/2013
 
 	Room and Board, Web Development
 	Environment: JEE, Tomcat 7.x, Oracle 11, Akamai, Windows 7, Linux
-	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira
+	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira 
 		Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
 
 MoneyGram International, Systems Development
@@ -101,21 +101,21 @@ Lead J2EE Developer (Senior Consultant, Business Systems)			07/2004 - 10/2007
 
 	
 	Environment: J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
-	Tools: JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
-		Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side. 
+	Tools: JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla 
+		Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
 
 Compuware Corporation, Professional Services
 Senior Java Developer, Full Time Consultant			07/2001 - 07/2004
 
 	HealthPartners, Center of Health Promotion
-	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX 
+	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX
 	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
 		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the Weight Management Preferred Provider Program. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
 
 	Compuware Product Division, Software Product Development
 	Environment: Windows 2000, z/OS
 	Tools: JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
-		Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM.
+		Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM. 
 
 	Target Corporation, E-Commerce Retail Financials
 	Environment: J2EE, IBM Websphere 4.02, Tomcat 3.2, Oracle 8.1.7, Solaris/NT
@@ -165,7 +165,7 @@ Interface Inc., Application Software
 Software Engineer			09/1992 - 03/1993
 
 	
-	Environment: DOS, Novell 
+	Environment: DOS, Novell
 	Tools: C, FoxPro, dBase
 		Designed, developed, deployed and supported automated auctions maintenance system for Energy Management Equipment Stock Exchange.
 

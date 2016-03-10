@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/02/21 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/03/09 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -42,13 +42,13 @@
       </type>
 <skill-details>
       <main-detail description="JSE/JEE">
-       JDBC, JAX-WS, Web Services, JMS, JMX, EJB 3, JSP, JSTL, JSF, Servlets
+       JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
       </main-detail>
       <main-detail description="Spring">
        Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
       </main-detail>
       <value description="Web">
-       Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, Apache HttpClient, jQuery, JSON
+       Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
       </value>
       <value description="Mobile">
        Android SDK
@@ -177,7 +177,7 @@
 		  	JDK 1.7 / 1.8, Spring 4.x, Groovy, Spock, Intellij, Emacs, Git, Maven, Gradle, Jenkins, Oracle VirtualBox, Jira
         </assignment-tools> 
         <assignment-description>
-			As part of the browse services engineering team, provided highly scalable, configurable aggregation and transformation cloud based services for BestBuy.com to support functionality of new business initiatives.
+			Created highly scalable aggregation and transformation services for BestBuy.com to support functionality of new business initiatives.
 			Implemented various architectural initiatives including domain services development, service integration with Node rendering tier and responsive front end redesign using Groovy and Spring framework in Amazon EC2 and OpenStack cloud environments.
 			Used Akamai CDN and Edge Side Includes to offload edge traffic while providing configurable cache expiration and flushing capabilities of page fragments.
 			Utilized Memcached and Ehcache to increase performance of the services tier.
