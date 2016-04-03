@@ -486,10 +486,11 @@ source of the particular version of the subproject and install it.
         <assignment-tools> 
           C, C++, PRO*C, SQL, PL/SQL, Perl, RCS
         </assignment-tools> 
-        <assignment-description>
-Responsible for database design, development, tuning and optimization for Spectrum, an Energy Management and Information System in UNIX AIX, SUN Solaris, Windows NT, Oracle, C/C++ environment. Served as C and Oracle expert for several large-scale projects.
-        </assignment-description>
+        <assignment-description/>
         <assignment-details>
+          <detail>
+Responsible for database design, development, tuning and optimization for Spectrum, an Energy Management and Information System in UNIX AIX, SUN Solaris, Windows NT, Oracle, C/C++ environment. Served as C and Oracle expert for several large-scale projects.
+          </detail>
           <detail>
 Performed control processing using C, C++, Pro*C, OCI, PL/SQL and RDBMS 
 packages, KSH, AWK, Perl and SQL*PLUS. Created Universal Pro*C library based on Pro*C method 4. Created the Oracle database access support library for 
@@ -518,9 +519,12 @@ Created number of UI displays based on Oracle Forms 4.5.
         <assignment-tools> 
           VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
         </assignment-tools> 
-        <assignment-description>
+        <assignment-description/>
+        <assignment-details>
+          <detail>
 Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
-        </assignment-description>
+          </detail>
+        </assignment-details>
       </assignment>
     </company>
 
@@ -532,9 +536,12 @@ Responsible for technical and team leadership in design, development and deploym
         <assignment-tools> 
           C, FoxPro, dBase
         </assignment-tools> 
-        <assignment-description>
+        <assignment-description/>
+        <assignment-details>
+          <detail>
 Designed, developed, deployed and supported automated auctions maintenance system for Energy Management Equipment Stock Exchange.
-        </assignment-description>
+          </detail>
+        </assignment-details>
       </assignment>
     </company>
   </work-history>
