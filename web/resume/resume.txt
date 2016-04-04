@@ -60,7 +60,7 @@ Senior Consultant			10/2014 - Present
 	McKesson Medical-Surgical, Web Development
 	Environment: Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
 	Tools: JDK 1.7, Spring 4.0, Solr, Nutch, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira, DynaTrace
-		Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling the content authors to publish changes without the application code deployment. Created several Liferay portal plugins to customize the Liferay implementation for the client. Setup the clustered site search using separate Solr server and Liferay Solr plugin. Created custom page level search implementations, first extending Liferay search infrastructure and, second using Apache Solr and Nutch directly. Created build and deployment process for the custom Liferay plugins using Jenkins and Maven. Provisioned the development and production servers with Liferay, Solr and Nutch installations. Used DynaTrace to identify the performance bottlenecks during the load tests.
+		Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling content authors to publish changes without application code deployment. Created several Liferay portal plugins to customize the Liferay implementation for the client. Setup clustered site search using separate Solr server and Liferay Solr plugin. Used DynaTrace to identify the performance bottlenecks during the load tests.
 
 Data Recognition Corporation, Information Services
 Senior Software Developer			10/2013 - 10/2014
@@ -68,7 +68,7 @@ Senior Software Developer			10/2013 - 10/2014
 	
 	Environment: JEE, Tomcat 7.x, MongoDB, MySQL, MS Sql Server, OpenAM, Linux, Windows 7, Amazon EC2
 	Tools: JDK 1.7, Spring 3.x, SiteMesh, Groovy, Grails, Node.js, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Vagrant, Oracle VirtualBox, Puppet, Jira
-		Developed new and modified existing components of the IAT, the school test creation and administration tool. Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. Developed new components of Text To Speech implementation using Node.js. Created build and deployment process for the Java, Grails and Nodejs projects using Jenkins and RPM packaging.
+		Developed new components of the IAT, the school test creation and administration tool. Created new Text To Speech implementation service using Node.js.
 
 Object Partners, Professional Services
 Senior Consultant			12/2011 - 10/2013
@@ -85,7 +85,7 @@ Senior Consultant			12/2011 - 10/2013
 
 	Room and Board, Web Development
 	Environment: JEE, Tomcat 7.x, Oracle 11, Akamai, Windows 7, Linux
-	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira 
+	Tools: JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira
 		Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
 
 MoneyGram International, Systems Development
@@ -101,7 +101,7 @@ Lead J2EE Developer (Senior Consultant, Business Systems)			07/2004 - 10/2007
 
 	
 	Environment: J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
-	Tools: JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla 
+	Tools: JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
 		Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
 
 Compuware Corporation, Professional Services
@@ -110,17 +110,17 @@ Senior Java Developer, Full Time Consultant			07/2001 - 07/2004
 	HealthPartners, Center of Health Promotion
 	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX
 	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
-		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the Weight Management Preferred Provider Program. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
+		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Health Assessment application had been then refactored to work under HealthPartners custom portal environment.
 
 	Compuware Product Division, Software Product Development
 	Environment: Windows 2000, z/OS
 	Tools: JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
-		Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM. 
+		Created a TCP/IP communication driver to exchange data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication.
 
 	Target Corporation, E-Commerce Retail Financials
 	Environment: J2EE, IBM Websphere 4.02, Tomcat 3.2, Oracle 8.1.7, Solaris/NT
 	Tools: JDK 1.2.2/1.3, JSP, JDBC, XML, XSLT, Formula One for Java (F1J 9), Struts, Ant, WSAD, Emacs, JBuilder, Telelogic Tau UML, Visio, PVCS
-		Designed and developed an extendible framework for the intranet-based data retrieval system in the J2EE architecture environment on the SUN Solaris and Windows NT platforms. The main goal of the framework was to provide a consistent way of presenting e-commerce financial information on the intranet in different formats such as HTML, Excel as well as graphics.
+		Designed and developed an extendable framework for the intranet-based data retrieval and reporting system. The main goal of the framework was to provide a consistent way of presenting e-commerce financial information on the intranet in different formats such as HTML, Excel as well as graphics.
 
 Comsys (former Cotelligent Inc.), Professional Services
 Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/2001
@@ -128,28 +128,28 @@ Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/
 	Innuity, Inc, E-Commerce
 	Environment: J2EE, Borland Inprise Application Server, Oracle 8i, Solaris/NT
 	Tools: JDK 1.2, EJB 1.1, JSP, JDBC, XML, UML, Rational Rose, TogetherJ, JBuilder, Emacs, SourceSafe, GNU Make, MySQL, Bugzilla, Perl
-		Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture environment on the SUN Solaris and Windows NT platforms for the new web site builder tool. This new application provided a web based user interface for the clients to make changes to their web sites.
+		Designed and developed enterprise services for new web site builder tool. This application provided a web based user interface for the clients to make changes to their web sites.
 
 	Thomson Prometric, Education and Certification
 	Environment: J2EE, Bea Weblogic Application Server, Sybase 11.9.2, Solaris/NT
 	Tools: JDK 1.2, EJB 1.1, JSP, JConnect JDBC, Swing, UML, Rational Rose, Visio Diagram Designer, Sybase Power Designer 6.1, JBuilder, Emacs, SourceSafe, GNU Make, MySQL, Bugzilla, Perl
-		Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture environment on the SUN Solaris and Windows NT platforms for new Prometric Unified Financial Module. This module was the server side business logic package that provided all the financial services for the international corporate use by any J2EE complaint services or applications.
+		Designed and developed enterprise services for new Prometric Unified Financial Module. This module was the server side business logic package that provided financial services for the international corporate use by other J2EE complaint services and applications.
 
 	Medtronic, Medical Devices
 	Environment: Apache 1.3.6 WEB Server, Oracle 7, UNIX AIX/NT
 	Tools: C/PRO*C, Perl, Unix RCS
-		Created a number of data transfer processes under UNIX AIX 4.*, Oracle environment. Created new and modified existing C/PRO*C code, KSH scripts, SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet new requirements. Created generic Perl CGI programs to replace old application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
+		Created a number of data transfer processes in UNIX AIX 4.*, Oracle environment.
 
 	University of Minnesota Facilities Management, Education
 	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT
 	Tools: JDK 1.1.7, JDBC, SQL, PL/SQL, Emacs, SourceSafe
-		Responsible for applications software development and optimization in Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment. Created Java applets with Oracle JDBC "thin" driver to provide access to the Oracle database via WEB. Developed a number of data transfers using PL/SQL, SQLPLUS scripting, UNIX KSH scripting and ODBC. Improved HTML documents by adding some JavaScript code for MS IExplorer 4.x and Netscape Navigator 4.x.
+		Responsible for applications software development and optimization in Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment.
 
 Siemens, Energy Management and Information Software
 Software Engineer / Systems Analyst			07/1997 - 10/1998
 
 	
-	Environment: Oracle 7, UNIX AIX/Solaris, NT
+	Environment: Oracle 7, UNIX AIX/Solaris, NT 
 	Tools: C, C++, PRO*C, SQL, PL/SQL, Perl, RCS
 		Responsible for database design, development, tuning and optimization for Spectrum, an Energy Management and Information System in UNIX AIX, SUN Solaris, Windows NT, Oracle, C/C++ environment. Served as C and Oracle expert for several large-scale projects.
 
@@ -159,29 +159,13 @@ Lead Software Developer			03/1993 - 07/1997
 	
 	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
 	Tools: VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
-		Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
-
-Interface Inc., Application Software
-Software Engineer			09/1992 - 03/1993
-
-	
-	Environment: DOS, Novell
-	Tools: C, FoxPro, dBase
-		Designed, developed, deployed and supported automated auctions maintenance system for Energy Management Equipment Stock Exchange.
+		Responsible for technical leadership in design, development and deployment of large scale financial applications for banking industry.
 
 Education
 
 Novosibirsk Technical University, Novosibirsk, Russia
 M.S. in Computer Science and B.S. in Mathematics, 1992
 Evaluated by International Education Evaluation, Inc. (March 10, 1997. REF # 116-0369)
-
-Oracle University
-Oracle Application Server Administration course, 2005
-
-
-Red Hat, Inc.
-RH033 - Red Hat Linux Essentials, Red Hat Enterprise Linux 4 course, 2005
-
 
 Red Hat, Inc.
 RH133 - System Administration, Red Hat Enterprise Linux 4 course, 2005

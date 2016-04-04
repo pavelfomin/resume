@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/03/09 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/04/03 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -191,14 +191,20 @@
 		  JDK 1.7, Spring 4.0, Solr, Nutch, JSP, Freemarker, jQuery, Sass, Bourbon with Bitters and Neat, Maven, Eclipse (Luna), Emacs, CVS, Git, Jenkins, Jira, DynaTrace
         </assignment-tools> 
         <assignment-description>
-		  Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling the content authors to publish changes without the application code deployment.
+		  Implemented new public web site for McKesson using Liferay 6.2 EE Portal server enabling content authors to publish changes without application code deployment.
           Created several Liferay portal plugins to customize the Liferay implementation for the client.
-          Setup the clustered site search using separate Solr server and Liferay Solr plugin.
-          Created custom page level search implementations, first extending Liferay search infrastructure and, second using Apache Solr and Nutch directly.
-          Created build and deployment process for the custom Liferay plugins using Jenkins and Maven.
-          Provisioned the development and production servers with Liferay, Solr and Nutch installations.
+          Setup clustered site search using separate Solr server and Liferay Solr plugin.
           Used DynaTrace to identify the performance bottlenecks during the load tests.
         </assignment-description>
+        <assignment-details>
+          <detail>
+          Created custom page level search implementations, first extending Liferay search infrastructure and then using Apache Solr and Nutch directly.
+          </detail>
+          <detail>
+          Created build and deployment process for the custom Liferay plugins using Jenkins and Maven.
+          Provisioned development and production servers with Liferay, Solr and Nutch installations.
+          </detail>
+        </assignment-details>
       </assignment>
     </company>
 
@@ -211,11 +217,16 @@
         	JDK 1.7, Spring 3.x, SiteMesh, Groovy, Grails, Node.js, jQuery, Junit, Spock, Eclipse, Emacs, Git, GitHub, Maven, Jenkins, Vagrant, Oracle VirtualBox, Puppet, Jira
         </assignment-tools> 
         <assignment-description>
-        	Developed new and modified existing components of the IAT, the school test creation and administration tool. 
-        	Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. 
-        	Developed new components of Text To Speech implementation using Node.js.
-        	Created build and deployment process for the Java, Grails and Nodejs projects using Jenkins and RPM packaging.
+        	Developed new components of the IAT, the school test creation and administration tool. Created new Text To Speech implementation service using Node.js.
         </assignment-description>
+        <assignment-details>
+          <detail>
+        	Created successful OpenAM POC to implement SSO functionality across different applications using a J2EE agent and a Post Authentication Plug to inject custom roles and permissions into the JEE user principal. 
+          </detail>
+          <detail>
+        	Created build and deployment process for the Java, Grails and Nodejs projects using Jenkins and RPM packaging.
+          </detail>
+        </assignment-details>
       </assignment>
     </company>
     
@@ -319,8 +330,13 @@ administrated the MySQL database server required by Bugzilla.
           JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
         </assignment-tools> 
         <assignment-description>
-Redesigned old web based <a href="http://www.healthpartners.com/ha/">Health Assessment application</a> to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Later HA application had been refactored to work under HealthPartners custom portal environment. Also created a new web based application to collect and process data for the <a href="http://www.nclm.us/">Weight Management Preferred Provider Program</a>. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
+Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Health Assessment application had been then refactored to work under HealthPartners custom portal environment.
         </assignment-description>
+        <assignment-details>
+          <detail>
+Created new web based application to collect and process data for the Weight Management Preferred Provider Program. Application had been deployed under Tomcat application server and used MySQL and MS SQL server database as the data source. Both applications were created using Struts framework.
+          </detail>
+        </assignment-details>
       </assignment>
 
       <assignment id="hci" name="Compuware Product Division" url="http://www.compuware.com" department="Software Product Development">
@@ -331,7 +347,7 @@ Redesigned old web based <a href="http://www.healthpartners.com/ha/">Health Asse
           JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
         </assignment-tools> 
         <assignment-description>
-Created a generic communication driver to send data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication. The data was sent and received via TCP/IP in XML format and Apache's Xerces was used for XML processing. Created the graphical request/response processing tool based on Java Swing and JDOM.
+Created a TCP/IP communication driver to exchange data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication.
         </assignment-description>
       </assignment>
 
@@ -343,13 +359,12 @@ Created a generic communication driver to send data between Java client and Main
           JDK 1.2.2/1.3, JSP, JDBC, XML, XSLT, Formula One for Java (F1J 9), Struts, Ant, WSAD, Emacs, JBuilder, Telelogic Tau UML, Visio, PVCS
         </assignment-tools> 
         <assignment-description>
-Designed and developed an extendible framework for the intranet-based data
-  retrieval system in the J2EE architecture environment on the SUN Solaris and
-  Windows NT platforms. The main goal of the framework was to provide a consistent way of presenting e-commerce financial information on the intranet in different formats such as HTML, Excel as well as graphics.
+Designed and developed an extendable framework for the intranet-based data
+  retrieval and reporting system. The main goal of the framework was to provide a consistent way of presenting e-commerce financial information on the intranet in different formats such as HTML, Excel as well as graphics.
         </assignment-description>
         <assignment-details>
   <detail>
-Concentrated on the middle tier design and development. Created new and enhanced existing components including generic servlet controller, business and data access objects.
+Focused on the middle tier design and development. Created new and enhanced existing components including generic servlet controller, business and data access objects.
   </detail>
   <detail>
 Created a generic cache engine to improve the application
@@ -380,13 +395,12 @@ Set up the build process based on GNU Make that compiled all the source code,
           JDK 1.2, EJB 1.1, JSP, JDBC, XML, UML, Rational Rose, TogetherJ, JBuilder, Emacs, SourceSafe, GNU Make, MySQL, Bugzilla, Perl
         </assignment-tools> 
         <assignment-description>
-Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture
-environment on the SUN Solaris and Windows NT platforms for the new web site builder tool. This new application provided a web based user interface for the clients to make changes to their web sites. 
+Designed and developed enterprise services for new web site builder tool. This application provided a web based user interface for the clients to make changes to their web sites.
         </assignment-description>
         <assignment-details>
           <detail>
-Concentrated on the design and development of the middle tier business 
-logic services and the data access objects. Used both, the XML SAX 1.0
+Focused on the design and development of the middle tier business 
+logic services and the data access layer. Used both, the XML SAX 1.0
 parsing and the DOM object model APIs. 
 Created a number of servlets and Java Server 
 Pages (JSP) to provide the graphical web based user interface. 
@@ -414,8 +428,7 @@ administrated the MySQL database server required by Bugzilla.
           JDK 1.2, EJB 1.1, JSP, JConnect JDBC, Swing, UML, Rational Rose, Visio Diagram Designer, Sybase Power Designer 6.1, JBuilder, Emacs, SourceSafe, GNU Make, MySQL, Bugzilla, Perl
         </assignment-tools> 
         <assignment-description>
-Designed and developed Enterprise Java Beans in the J2EE multi-tier architecture
-environment on the SUN Solaris and Windows NT platforms for new Prometric Unified Financial Module. This module was the server side business logic package that provided all the financial services for the international corporate use by any J2EE complaint services or applications.
+Designed and developed enterprise services for new Prometric Unified Financial Module. This module was the server side business logic package that provided financial services for the international corporate use by other J2EE complaint services and applications.
         </assignment-description>
         <assignment-details>
           <detail>
@@ -447,11 +460,13 @@ Modified and created new rules of the build process for GNU make.
           C/PRO*C, Perl, Unix RCS
         </assignment-tools> 
         <assignment-description>
-Created a number of data transfer processes under UNIX AIX 4.*, Oracle environment. Created new and modified existing C/PRO*C code, KSH scripts, 
-SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet 
-new requirements. Created generic Perl CGI programs to replace old 
-application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
+Created a number of data transfer processes in UNIX AIX 4.*, Oracle environment. 
         </assignment-description>
+        <assignment-details>
+          <detail>
+Created new and modified existing C/PRO*C code, KSH scripts, SQL*PLUS scripts, SQL and PL/SQL code, SQL*LOADER control files to meet new requirements. Created generic Perl CGI programs to replace old application interfaces with WEB based ones. Responsible for the Revision Control System (Unix RCS) administration.
+          </detail>
+        </assignment-details>
       </assignment>
 
       <assignment id="umn" name="University of Minnesota Facilities Management" url="http://umn.edu/" department="Education">
@@ -462,13 +477,13 @@ application interfaces with WEB based ones. Responsible for the Revision Control
           JDK 1.1.7, JDBC, SQL, PL/SQL, Emacs, SourceSafe
         </assignment-tools> 
         <assignment-description>
-Responsible for applications software development and optimization in 
-Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment. Created Java 
-applets with Oracle JDBC "thin" driver to provide access to the Oracle 
-database via WEB. Developed a number of data transfers using PL/SQL, SQLPLUS scripting, UNIX KSH scripting and ODBC. Improved HTML documents by adding some 
-JavaScript code for MS IExplorer 4.x and Netscape Navigator 4.x. 
+Responsible for applications software development and optimization in Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment.
         </assignment-description>
         <assignment-details>
+          <detail>
+Created Java applets with Oracle JDBC "thin" driver to provide access to the Oracle database via WEB. Developed a number of data transfers using PL/SQL, SQLPLUS scripting, UNIX KSH scripting and ODBC. Improved HTML documents by adding some 
+JavaScript code for MS IExplorer 4.x and Netscape Navigator 4.x. 
+          </detail>
           <detail>
 Responsible for source code repository administration with 
 Visual SourceSafe 5.0. (VSS) and provided VSS and shell scripts to get the 
@@ -486,11 +501,10 @@ source of the particular version of the subproject and install it.
         <assignment-tools> 
           C, C++, PRO*C, SQL, PL/SQL, Perl, RCS
         </assignment-tools> 
-        <assignment-description/>
-        <assignment-details>
-          <detail>
+        <assignment-description>
 Responsible for database design, development, tuning and optimization for Spectrum, an Energy Management and Information System in UNIX AIX, SUN Solaris, Windows NT, Oracle, C/C++ environment. Served as C and Oracle expert for several large-scale projects.
-          </detail>
+        </assignment-description>
+        <assignment-details>
           <detail>
 Performed control processing using C, C++, Pro*C, OCI, PL/SQL and RDBMS 
 packages, KSH, AWK, Perl and SQL*PLUS. Created Universal Pro*C library based on Pro*C method 4. Created the Oracle database access support library for 
@@ -519,27 +533,12 @@ Created number of UI displays based on Oracle Forms 4.5.
         <assignment-tools> 
           VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
         </assignment-tools> 
-        <assignment-description/>
+        <assignment-description>
+Responsible for technical leadership in design, development and deployment of large scale financial applications for banking industry.
+        </assignment-description>
         <assignment-details>
           <detail>
-Responsible for technical and team leadership in design, development and deployment of large scale financial applications for banking industry. Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
-          </detail>
-        </assignment-details>
-      </assignment>
-    </company>
-
-    <company id="interface" name="Interface Inc." url="http://www.interface.nsk.su/" department="Application Software" position="Software Engineer" startDate="09/1992" endDate="03/1993">
-      <assignment id="" name="" url="" department="">
-        <assignment-environment>
-          DOS, Novell
-        </assignment-environment>
-        <assignment-tools> 
-          C, FoxPro, dBase
-        </assignment-tools> 
-        <assignment-description/>
-        <assignment-details>
-          <detail>
-Designed, developed, deployed and supported automated auctions maintenance system for Energy Management Equipment Stock Exchange.
+Major projects included Integrated Bank System and Smart Credit/Debit Card Payment System, "Golden Grown" distributed to over 150 banks nation wide.
           </detail>
         </assignment-details>
       </assignment>
@@ -550,11 +549,10 @@ Designed, developed, deployed and supported automated auctions maintenance syste
     <degree school="Novosibirsk Technical University, Novosibirsk, Russia" url="http://www.nstu.ru" award="M.S. in Computer Science and B.S. in Mathematics" year="1992">
       Evaluated by International Education Evaluation, Inc. (March 10, 1997. REF # 116-0369)
     </degree>
-
+<!--
     <degree school="Oracle University" url="http://www.oracle.com/" award="Oracle Application Server Administration course" year="2005"/>
-
     <degree school="Red Hat, Inc." url="http://www.redhat.com/" award="RH033 - Red Hat Linux Essentials, Red Hat Enterprise Linux 4 course" year="2005"/>
-
+-->
     <degree school="Red Hat, Inc." url="http://www.redhat.com/" award="RH133 - System Administration, Red Hat Enterprise Linux 4 course" year="2005">
        Successfully completed all Red Hat Certified Technician program requirements and is certified as a Red Hat Certified Technician, Red Hat Enterprise Linux 4.
     </degree>
