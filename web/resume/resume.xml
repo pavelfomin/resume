@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2016/04/03 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/05/02 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -57,7 +57,7 @@
        SOAP, JAXB 2.x, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Axis 1.4, Castor 0.9/1.2, JDOM
       </value>
       <value description="ORM">
-       Hibernate 3.0, Gorm
+       Hibernate 3/4/5, Gorm
       </value>
       <value description="Caching">
 	   Ehcache 2, Memcached 2, Akamai
@@ -66,7 +66,7 @@
 	   SLF4J, Log4j, Apache Commons Logging, Java Logging API 
       </value>
       <value description="Testing">
-	   JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock 
+	   JUnit, Mockito, Spock, DbUnit, JaCoCo, Cobertura, Emma
       </value>
 </skill-details>
     </skill>
@@ -107,7 +107,7 @@
 	   VisualVM, DynaTrace, Optimizeit
       </value>
       <value description="Build">
-	   Maven, Ivy, Ant, GNU Make
+	   Gradle, Maven, Ivy, Ant, GNU Make
       </value>
       <value description="Continuous integration">
 	   Jenkins / Hudson, Bamboo
@@ -122,7 +122,7 @@
        Jira, Redmine, Bugzilla
       </value>
       <value description="Code Review">
-       GitHub, Crucible, CodeCollaborator
+       GitHub, Bitbucket, Crucible, CodeCollaborator
       </value>
       <value description="Agile Project Management">
        Jira GreenHopper, Version One, Rally, XPlanner
@@ -169,6 +169,26 @@
     -->
 
     <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="Present">
+      <assignment id="mms2" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
+        <assignment-environment>
+		  Tomcat 7.x, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
+        </assignment-environment>
+        <assignment-tools>
+		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
+        </assignment-tools> 
+        <assignment-description>
+			Created two new spring-boot based micro services to provide patient and formulary functionality, enable independent scalabitlity and cloud deployment.
+			Helped establish best practices in test driven development, automated build and deployment processes.
+			Ran several Docker POCs using Docker Swarm, Kubernetes, and Cloud Foundry using Azure and private VMware cloud platforms.
+			Assisted project managers with running agile projects using SCRUM methodology and taking full advantage of Jira.        
+		</assignment-description>
+        <!-- assignment-details>
+          <detail>
+          </detail>
+          <detail>
+          </detail>
+        </assignment-details-->
+      </assignment>    
       <assignment id="bby" name="Best Buy" url="http://www.bestbuy.com" department="Cloud Services Development">
         <assignment-environment>
 		  	Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
@@ -183,7 +203,7 @@
 			Utilized Memcached and Ehcache to increase performance of the services tier.
         </assignment-description>
       </assignment>
-      <assignment id="mms" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
+      <assignment id="mms1" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
         <assignment-environment>
 		  Liferay 6.2 EE, Tomcat 7.x, Oracle 11g, Windows 7, Linux
         </assignment-environment>

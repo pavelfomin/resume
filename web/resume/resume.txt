@@ -23,10 +23,10 @@ Skills Summary
 		Web: Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
 		Mobile: Android SDK
 		XML: SOAP, JAXB 2.x, Apache WSS4J, Axis 1.4, Castor 0.9/1.2, JDOM
-		ORM: Hibernate 3.0, Gorm
+		ORM: Hibernate 3/4/5, Gorm
 		Caching: Ehcache 2, Memcached 2, Akamai
 		Logging: SLF4J, Log4j, Apache Commons Logging, Java Logging API
-		Testing: JUnit, DbUnit, Mockito, EasyMock, Emma, Cobertura, Spock
+		Testing: JUnit, Mockito, Spock, DbUnit, JaCoCo, Cobertura, Emma
 	Databases: 
 		NoSQL: Riak, MongoDB
 		Relational: Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase
@@ -35,13 +35,13 @@ Skills Summary
 		IDE: Eclipse, Intellij, Emacs
 		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
-		Monitor/Profile: VisualVM, DynaTrace, Optimizeit
-		Build: Maven, Ivy, Ant, GNU Make
+		Monitor/Profile: VisualVM, DynaTrace, Optimizeit 
+		Build: Gradle, Maven, Ivy, Ant, GNU Make
 		Continuous integration: Jenkins / Hudson, Bamboo
 		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
-		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, VSS 
+		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, VSS
 		Bug Tracking: Jira, Redmine, Bugzilla
-		Code Review: GitHub, Crucible, CodeCollaborator
+		Code Review: GitHub, Bitbucket, Crucible, CodeCollaborator
 		Agile Project Management: Jira GreenHopper, Version One, Rally, XPlanner
 		Wiki: Atlassian Confluence, DokuWiki
 	Methodologies: Agile, SCRUM, Test Driven Development
@@ -51,6 +51,11 @@ Work History
 
 Solution Design Group, Professional Services
 Senior Consultant			10/2014 - Present
+
+	McKesson Medical-Surgical, Web Development
+	Environment: Tomcat 7.x, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
+	Tools: JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
+		Created two new spring-boot based micro services to provide new patient and formulary functionality, enable independent scalabitlity and cloud deployment. Helped establish best practices in test driven development, automated build and deployment processes. Ran several Docker POCs using Docker Swarm, Kubernetes, and Cloud Foundry using Azure and private VMware cloud platforms. Assisted project managers with running agile projects using scrum methodology and taking full advantage of JIRA.
 
 	Best Buy, Cloud Services Development
 	Environment: Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
@@ -138,7 +143,7 @@ Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/
 	Medtronic, Medical Devices
 	Environment: Apache 1.3.6 WEB Server, Oracle 7, UNIX AIX/NT
 	Tools: C/PRO*C, Perl, Unix RCS
-		Created a number of data transfer processes in UNIX AIX 4.*, Oracle environment.
+		Created a number of data transfer processes in UNIX AIX 4.*, Oracle environment. 
 
 	University of Minnesota Facilities Management, Education
 	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT
@@ -149,7 +154,7 @@ Siemens, Energy Management and Information Software
 Software Engineer / Systems Analyst			07/1997 - 10/1998
 
 	
-	Environment: Oracle 7, UNIX AIX/Solaris, NT 
+	Environment: Oracle 7, UNIX AIX/Solaris, NT
 	Tools: C, C++, PRO*C, SQL, PL/SQL, Perl, RCS
 		Responsible for database design, development, tuning and optimization for Spectrum, an Energy Management and Information System in UNIX AIX, SUN Solaris, Windows NT, Oracle, C/C++ environment. Served as C and Oracle expert for several large-scale projects.
 
