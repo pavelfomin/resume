@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/05/02 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/05/09 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -177,10 +177,10 @@
 		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
         </assignment-tools> 
         <assignment-description>
-			Created two new spring-boot based micro services to provide patient and formulary functionality, enable independent scalabitlity and cloud deployment.
-			Helped establish best practices in test driven development, automated build and deployment processes.
-			Ran several Docker POCs using Docker Swarm, Kubernetes, and Cloud Foundry using Azure and private VMware cloud platforms.
-			Assisted project managers with running agile projects using SCRUM methodology and taking full advantage of Jira.        
+			Created two Spring Boot based micro services providing new patient and formulary functionality, enabling independent scalability and cloud deployment.
+			Helped establish best practices in the test driven development, automated build and deployment processes.
+			Completed Docker Swarm, Kubernetes and Cloud Foundry POCs using Azure and private VMware cloud platforms helping with the cloud deployment strategy selection.
+			Assisted in running agile projects using SCRUM methodology and taking full advantage of Jira.
 		</assignment-description>
         <!-- assignment-details>
           <detail>
