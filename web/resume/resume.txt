@@ -30,12 +30,12 @@ Skills Summary
 	Databases: 
 		NoSQL: Riak, MongoDB
 		Relational: Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase
-	Application Servers: Tomcat 3/4/5/6/7, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+	Application Servers: Tomcat 3/4/5/6/7/8, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, BEA Weblogic 4.5.1/5.1/6.1, Borland Inprise Application Server 4.x, JBoss, Apache Web Server, Oracle Web Server 2.1.1
 	Tools: 
 		IDE: Eclipse, Intellij, Emacs
 		Modeling: ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
-		Monitor/Profile: VisualVM, DynaTrace, Optimizeit 
+		Monitor/Profile: VisualVM, DynaTrace, Optimizeit
 		Build: Gradle, Maven, Ivy, Ant, GNU Make
 		Continuous integration: Jenkins / Hudson, Bamboo
 		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
@@ -53,9 +53,9 @@ Solution Design Group, Professional Services
 Senior Consultant			10/2014 - Present
 
 	McKesson Medical-Surgical, Web Development
-	Environment: Tomcat 7.x, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
+	Environment: Tomcat 7/8, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
 	Tools: JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
-		Created two Spring Boot based micro services providing new patient and formulary functionality, enabling independent scalability and cloud deployment. Helped establish best practices in the test driven development, automated build and deployment processes. Completed Docker Swarm, Kubernetes and Cloud Foundry POCs using Azure and private VMware cloud platforms helping with the cloud deployment strategy selection. Assisted in running agile projects using SCRUM methodology and taking full advantage of Jira.
+		Created two Spring Boot based micro services providing new patient and formulary functionality, enabling independent scalability and cloud deployment. Helped establish best practices in the test driven development, automated build and deployment processes. Completed Docker Swarm, Kubernetes and Cloud Foundry POCs using Azure and private VMware cloud platforms helping with the cloud deployment strategy selection.
 
 	Best Buy, Cloud Services Development
 	Environment: Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
@@ -85,7 +85,7 @@ Senior Consultant			12/2011 - 10/2013
 
 	PeopleNet, Backend Services Development
 	Environment: JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
-	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One 
+	Tools: JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
 		Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
 
 	Room and Board, Web Development
@@ -105,7 +105,7 @@ HSBC (former Metris Companies), Enterprise Application Management
 Lead J2EE Developer (Senior Consultant, Business Systems)			07/2004 - 10/2007
 
 	
-	Environment: J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
+	Environment: J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX 
 	Tools: JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
 		Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
 
@@ -164,7 +164,7 @@ Lead Software Developer			03/1993 - 07/1997
 	
 	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
 	Tools: VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
-		Responsible for technical leadership in design, development and deployment of large scale financial applications for banking industry.
+		Responsible for technical leadership in design, development and deployment of large scale financial applications for banking industry. 
 
 Education
 

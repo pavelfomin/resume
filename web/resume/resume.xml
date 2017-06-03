@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/05/09 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/06/03 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -86,7 +86,7 @@
        Application Servers
       </type>
       <value>
-       Tomcat 3/4/5/6/7, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+       Tomcat 3/4/5/6/7/8, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
       </value>
     </skill>
     <skill id="tls">
@@ -171,7 +171,7 @@
     <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="Present">
       <assignment id="mms2" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
         <assignment-environment>
-		  Tomcat 7.x, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
+		  Tomcat 7/8, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
         </assignment-environment>
         <assignment-tools>
 		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
@@ -180,7 +180,6 @@
 			Created two Spring Boot based micro services providing new patient and formulary functionality, enabling independent scalability and cloud deployment.
 			Helped establish best practices in the test driven development, automated build and deployment processes.
 			Completed Docker Swarm, Kubernetes and Cloud Foundry POCs using Azure and private VMware cloud platforms helping with the cloud deployment strategy selection.
-			Assisted in running agile projects using SCRUM methodology and taking full advantage of Jira.
 		</assignment-description>
         <!-- assignment-details>
           <detail>
