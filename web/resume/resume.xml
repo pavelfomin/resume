@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/06/03 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/12/26 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -45,7 +45,7 @@
        JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
       </main-detail>
       <main-detail description="Spring">
-       Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
+       Spring Boot 1.5, Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
       </main-detail>
       <value description="Web">
        Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
@@ -63,7 +63,7 @@
 	   Ehcache 2, Memcached 2, Akamai
       </value>
       <value description="Logging">
-	   SLF4J, Log4j, Apache Commons Logging, Java Logging API 
+	   SLF4J, Logback, Log4j, Apache Commons Logging, Java Logging API 
       </value>
       <value description="Testing">
 	   JUnit, Mockito, Spock, DbUnit, JaCoCo, Cobertura, Emma
@@ -110,7 +110,7 @@
 	   Gradle, Maven, Ivy, Ant, GNU Make
       </value>
       <value description="Continuous integration">
-	   Jenkins / Hudson, Bamboo
+	   Jenkins / Hudson, Bamboo, Concourse
       </value>
       <value description="VM / Cloud">
 	   Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
@@ -137,7 +137,7 @@
        Methodologies
       </type>
       <value>
-	   Agile, SCRUM, Test Driven Development
+	   Agile, SCRUM, Kanban, Test Driven Development
       </value>
     </skill>
     <skill id="Industries">
@@ -171,15 +171,16 @@
     <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="Present">
       <assignment id="mms2" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
         <assignment-environment>
-		  Tomcat 7/8, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
+		  Tomcat 7/8, Oracle 11g, Azure, Pivotal Cloud Foundry and private VMware OneCloud platforms, Linux, Windows 7
         </assignment-environment>
         <assignment-tools>
-		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
+		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Concourse, Oracle VirtualBox, Jira, DynaTrace
         </assignment-tools> 
         <assignment-description>
-			Created two Spring Boot based micro services providing new patient and formulary functionality, enabling independent scalability and cloud deployment.
+			Created several Spring Boot based micro services providing new patient, formulary, order validation and submission functionality.
+			Used private Vmware OneCloud, Azure and Pivotal Cloud Foundry to enable application independent scalability and cloud deployment.
 			Helped establish best practices in the test driven development, automated build and deployment processes.
-			Completed Docker Swarm, Kubernetes and Cloud Foundry POCs using Azure and private VMware cloud platforms helping with the cloud deployment strategy selection.
+			Completed Docker Swarm, Kubernetes and Pivotal Cloud Foundry POCs using Azure and private VMware OneCloud platforms helping with the cloud deployment strategy selection.
 		</assignment-description>
         <!-- assignment-details>
           <detail>

@@ -19,13 +19,13 @@ Skills Summary
 	Languages: Java 1.1-1.8, XML, WSDL, SQL, UML, Groovy, Bash, HTML, JavaScript, CSS
 	Frameworks: 
 		JSE/JEE: JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
-		Spring: Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
+		Spring: Spring Boot 1.5, Spring Core 2/3/4, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
 		Web: Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
 		Mobile: Android SDK
 		XML: SOAP, JAXB 2.x, Apache WSS4J, Axis 1.4, Castor 0.9/1.2, JDOM
 		ORM: Hibernate 3/4/5, Gorm
 		Caching: Ehcache 2, Memcached 2, Akamai
-		Logging: SLF4J, Log4j, Apache Commons Logging, Java Logging API
+		Logging: SLF4J, Logback, Log4j, Apache Commons Logging, Java Logging API
 		Testing: JUnit, Mockito, Spock, DbUnit, JaCoCo, Cobertura, Emma
 	Databases: 
 		NoSQL: Riak, MongoDB
@@ -37,14 +37,14 @@ Skills Summary
 		Messaging: RabbitMQ, 2lemetry, IBM MQ
 		Monitor/Profile: VisualVM, DynaTrace, Optimizeit
 		Build: Gradle, Maven, Ivy, Ant, GNU Make
-		Continuous integration: Jenkins / Hudson, Bamboo
+		Continuous integration: Jenkins / Hudson, Bamboo, Concourse
 		VM / Cloud: Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
 		Revision Control: Git, SVN, CVS, MKS, PVCS, RCS, VSS
 		Bug Tracking: Jira, Redmine, Bugzilla
 		Code Review: GitHub, Bitbucket, Crucible, CodeCollaborator
 		Agile Project Management: Jira GreenHopper, Version One, Rally, XPlanner
 		Wiki: Atlassian Confluence, DokuWiki
-	Methodologies: Agile, SCRUM, Test Driven Development
+	Methodologies: Agile, SCRUM, Kanban, Test Driven Development
 	Industries: Retail, Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Software Development, Energy Management, Telematics
 
 Work History
@@ -53,9 +53,9 @@ Solution Design Group, Professional Services
 Senior Consultant			10/2014 - Present
 
 	McKesson Medical-Surgical, Web Development
-	Environment: Tomcat 7/8, Oracle 11g, Azure and private VMware cloud platforms, Linux, Windows 7
-	Tools: JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Oracle VirtualBox, Jira, DynaTrace
-		Created two Spring Boot based micro services providing new patient and formulary functionality, enabling independent scalability and cloud deployment. Helped establish best practices in the test driven development, automated build and deployment processes. Completed Docker Swarm, Kubernetes and Cloud Foundry POCs using Azure and private VMware cloud platforms helping with the cloud deployment strategy selection.
+	Environment: Tomcat 7/8, Oracle 11g, Azure, Pivotal Cloud Foundry and private VMware OneCloud platforms, Linux, Windows 7
+	Tools: JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Concourse, Oracle VirtualBox, Jira, DynaTrace
+		Created several Spring Boot based micro services providing new patient, formulary, order validation and submission functionality. Used private Vmware OneCloud, Azure and Pivotal Cloud Foundry to enable application independent scalability and cloud deployment. Helped establish best practices in the test driven development, automated build and deployment processes. Completed Docker Swarm, Kubernetes and Pivotal Cloud Foundry POCs using Azure and private VMware OneCloud platforms helping with the cloud deployment strategy selection.
 
 	Best Buy, Cloud Services Development
 	Environment: Tomcat 7.x, Riak, Memcached, Ehcache, Amazon EC2, OpenStack, Akamai, Linux, Mac OS X
@@ -105,20 +105,20 @@ HSBC (former Metris Companies), Enterprise Application Management
 Lead J2EE Developer (Senior Consultant, Business Systems)			07/2004 - 10/2007
 
 	
-	Environment: J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX 
+	Environment: J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
 	Tools: JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
-		Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
+		Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side. 
 
 Compuware Corporation, Professional Services
 Senior Java Developer, Full Time Consultant			07/2001 - 07/2004
 
 	HealthPartners, Center of Health Promotion
-	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX
+	Environment: J2EE, Bea Weblogic 6.1, Tomcat 4.27, Oracle 8.1.7, MySQL 4, MS SQL Server, Windows 2000, AIX 
 	Tools: JDK 1.3/1.4, JSP, Servlet, Struts 1.1, JDBC, XML, XSLT, JDOM, Ant, Log4j, Eclipse, Emacs, CVS, MS Visio, UML
 		Redesigned old web based Health Assessment application to make it more flexible, data driven. New application had been deployed under Weblogic application server and used Oracle database as the data source. Health Assessment application had been then refactored to work under HealthPartners custom portal environment.
 
 	Compuware Product Division, Software Product Development
-	Environment: Windows 2000, z/OS
+	Environment: Windows 2000, z/OS 
 	Tools: JDK 1.4, UML, XML, JDOM, Log4j, Swing, Ant, Eclipse, Emacs, CVS, Visio
 		Created a TCP/IP communication driver to exchange data between Java client and Mainframe server. This driver, written in Java, was designed to be used by multiple software products for the client-server communication.
 
@@ -146,7 +146,7 @@ Senior Software Engineer / Systems Analyst, Full Time Consultant			11/1998 - 05/
 		Created a number of data transfer processes in UNIX AIX 4.*, Oracle environment.
 
 	University of Minnesota Facilities Management, Education
-	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT
+	Environment: Oracle WEB 2.1.1, Oracle 7/8, Unix AIX 4.3/NT 
 	Tools: JDK 1.1.7, JDBC, SQL, PL/SQL, Emacs, SourceSafe
 		Responsible for applications software development and optimization in Unix AIX 4.3, Windows 95/NT, Oracle 7.3.3/8.0.3 environment.
 
@@ -164,11 +164,11 @@ Lead Software Developer			03/1993 - 07/1997
 	
 	Environment: Oracle 7, Btrieve, Windows 95, Unix Solaris/SCO
 	Tools: VB 4.0/5.0, VC++ 2.0, OCI, SQL, PL/SQL, Java 1.0/1.1, SourceSafe
-		Responsible for technical leadership in design, development and deployment of large scale financial applications for banking industry. 
+		Responsible for technical leadership in design, development and deployment of large scale financial applications for banking industry.
 
 Education
 
-Novosibirsk Technical University, Novosibirsk, Russia
+Novosibirsk State Technical University, Novosibirsk, Russia
 M.S. in Computer Science and B.S. in Mathematics, 1992
 Evaluated by International Education Evaluation, Inc. (March 10, 1997. REF # 116-0369)
 
