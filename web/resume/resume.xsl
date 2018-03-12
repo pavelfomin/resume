@@ -23,6 +23,7 @@
     <xsl:apply-templates select="profile"/>
     <xsl:apply-templates select="skill-list"/>
     <xsl:apply-templates select="work-history"/>
+    <xsl:apply-templates select="work-history-more"/>
     <xsl:apply-templates select="education"/>
 
     <xsl:call-template name="footer">
@@ -224,6 +225,20 @@
 </div>
 </xsl:template>
 
+<!-- template for additional work history -->
+<xsl:template match="work-history-more">
+<h2>
+	<a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
+</h2>
+
+<div id="work-history-more" class="work-history-more" style="display: none;">
+  <xsl:apply-templates select="company"/>
+  <h2>
+	  <a href="#" class="action-hide" data-element-id="work-history-more">Less work history</a>
+  </h2>
+</div>
+</xsl:template>
+
 <!-- template for company -->
 <xsl:template match="company">
 <div class="level1">
@@ -403,7 +418,15 @@
     </xsl:with-param>
   </xsl:call-template>
 
-  <br/><b><xsl:value-of select="concat(@award, ', ', @year)"/></b>
+  <br/>
+  	<b>
+		<xsl:value-of select="@award"/>
+		<xsl:choose>
+			<xsl:when test="@year">
+				<xsl:value-of select="concat(', ', @year)" />
+			</xsl:when>
+		</xsl:choose>
+  	</b>
   <br/><xsl:value-of select="."/>
 </div>
 </xsl:template>
