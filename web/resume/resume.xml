@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2017/12/26 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pavel.fomin" domain="yahoo.com" updated="$Date: 2019/05/19 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -33,7 +33,7 @@
        Languages
       </type>
       <value>
-       Java 1.1-1.8, XML, WSDL, SQL, UML, Groovy, Bash, HTML, JavaScript, CSS
+       Java 1.1-11, XML, WSDL, SQL, UML, Groovy, Bash, HTML, JavaScript, CSS
       </value>
     </skill>
     <skill id="frameworks">
@@ -78,7 +78,7 @@
        Riak, MongoDB
       </value>
       <value description="Relational">
-       Oracle 7/8/9/10g/11g, MySQL, MS SQL Server, Sybase
+       Oracle 7-12c, MySQL, MS SQL Server, Sybase
       </value>
     </skill>
     <skill id="srv">
@@ -86,7 +86,7 @@
        Application Servers
       </type>
       <value>
-       Tomcat 3/4/5/6/7/8, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+       Tomcat 3-9, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
       </value>
     </skill>
     <skill id="tls">
@@ -110,10 +110,10 @@
 	   Gradle, Maven, Ivy, Ant, GNU Make
       </value>
       <value description="Continuous integration">
-	   Jenkins / Hudson, Bamboo, Concourse
+	   Drone, Jenkins / Hudson, Bamboo, Concourse
       </value>
       <value description="VM / Cloud">
-	   Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
+	   Docker, Chef, PCF, Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
       </value>
       <value description="Revision Control">
        Git, SVN, CVS, MKS, PVCS, RCS, VSS
@@ -168,13 +168,27 @@
     </company>
     -->
 
-    <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="Present">
-      <assignment id="mms2" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
+	<company id="dbee-trg" name="Target Corporation" url="http://www.target.com" department="Enterprise Payment Gateway" position="Consultant" startDate="05/2018" endDate="Present">
+      <assignment id="dbee-trg">
         <assignment-environment>
-		  Tomcat 7/8, Oracle 11g, Azure, Pivotal Cloud Foundry and private VMware OneCloud platforms, Linux, Windows 7
+        	Tomcat 9, Consul, Apache / Nginx, Kafka, VMASS, OpenStack, Docker, Linux, Mac OS X, Oracle 11 / 12
         </assignment-environment>
         <assignment-tools>
-		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Concourse, Oracle VirtualBox, Jira, DynaTrace
+        	JDK 1.8 / 11, Spring Boot 1.5 / 2.1, Spring Cloud Netflix / Consul, Consul Template, Hystrix, Maven, Intellij, Emacs, Git, Drone, SonarQube, Oracle VirtualBox, Grafana, ELK Stack, Jira, Slack
+        </assignment-tools> 
+        <assignment-description>
+		  Led a number of technical initiatives to improve security, stability, maintainability and scalability of the Enterprise Payment Gateway technical stack. Focused on foundational engineering tasks including creation of shared Spring Boot based libraries, migration of the application security model from Basic to OAuth 2.0 / JWT authentication and authorization, transition from Netflix to Consul based cloud registration, discovery and configuration services and migration to Java 11. Helped with establishing best practices in the test driven development, build, release, deployment and provisioning automation using Git, Drone and Chef.
+		</assignment-description>
+      </assignment>
+    </company>
+
+    <company id="sdg" name="Solution Design Group" url="http://solutiondesign.com/" department="Professional Services" position="Senior Consultant" startDate="10/2014" endDate="05/2018">
+      <assignment id="mms2" name="McKesson Medical-Surgical" url="http://mms.mckesson.com" department="Web Development">
+        <assignment-environment>
+		  Tomcat 7/8, Azure, Pivotal Cloud Foundry and private VMware OneCloud platforms, Linux, Windows 7, Oracle 11g
+        </assignment-environment>
+        <assignment-tools>
+		  JDK 1.8, Spring Boot 1.5, Spring 4.x, Maven, Gradle, Eclipse (Mars), Emacs, Git, Bamboo, Concourse, Oracle VirtualBox, Jira, Slack
         </assignment-tools> 
         <assignment-description>
 			Created several Spring Boot based micro services providing new patient, formulary, order validation and submission functionality.
@@ -340,6 +354,9 @@ administrated the MySQL database server required by Bugzilla.
       </assignment>
     </company>
 
+  </work-history>
+  
+  <work-history-more>
     <company id="compuware" name="Compuware Corporation" url="http://www.compuware.com" department="Professional Services" position="Senior Java Developer, Full Time Consultant" startDate="07/2001" endDate="07/2004">
 
       <assignment id="chp" name="HealthPartners" url="http://www.healthpartners.com" department="Center of Health Promotion">
@@ -406,9 +423,6 @@ Set up the build process based on GNU Make that compiled all the source code,
       </assignment>
     </company>
 
-  </work-history>
-  
-  <work-history-more>
     <company id="comsys" name="Comsys (former Cotelligent Inc.)" url="http://www.comsys.com/" department="Professional Services" position="Senior Software Engineer / Systems Analyst, Full Time Consultant" startDate="11/1998" endDate="05/2001">
       <assignment id="innuity" name="Innuity, Inc" url="http://www.innuity.com/" department="E-Commerce">
         <assignment-environment>
