@@ -1,9 +1,5 @@
 set -x
-XALAN_HOME=~/dev/libs/xalan-j_2_4_1/bin
-
-XERCES_HOME=$XALAN_HOME
-XALAN_LIBS=$XALAN_HOME/xalan.jar:$XERCES_HOME/xml-apis.jar:$XERCES_HOME/xercesImpl.jar
-XSL_CMD="java -Xbootclasspath/p:$XALAN_LIBS org.apache.xalan.xslt.Process"
+XSL_CMD="java -jar $(ls $XSLT_PROCESSOR_HOME/target/xslt-processor-*.jar)"
 
 XML_FILE=resume.xml
 XSL_FILE=resume.xsl
