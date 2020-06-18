@@ -227,9 +227,15 @@
 
 <!-- template for additional work history -->
 <xsl:template match="work-history-more">
-<h2>
-	<a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
-</h2>
+  <xsl:param name="showDetailsLink" select="'notnull'"/>
+
+  <xsl:choose>
+    <xsl:when test="boolean($showDetailsLink)">
+      <h2>
+          <a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
+      </h2>
+    </xsl:when>
+  </xsl:choose>
 
 <div id="work-history-more" class="work-history-more" style="display: none;">
   <xsl:apply-templates select="company"/>
