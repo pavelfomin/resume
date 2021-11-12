@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2020/06/18 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2021/11/11 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -25,7 +25,7 @@
        Operating Systems
       </type>
       <value>
-       Linux (Ubuntu, Mint, Redhat, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
+       Linux (Ubuntu, Redhat, CentOS, SUSE), Unix (Solaris, AIX, SCO), Mac OS X, MS Windows
       </value>
     </skill>
     <skill id="lng">
@@ -41,20 +41,17 @@
        Frameworks
       </type>
 <skill-details>
-      <main-detail description="JSE/JEE">
-       JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
-      </main-detail>
-      <main-detail description="Spring">
-       Spring Boot 1.x/2.x, Spring Core 2/3/4/5, MVC, JDBC Template, Security, Web Services, Rest Template, AMQP, Spring Data, Spring Data Solr
-      </main-detail>
+    <main-detail description="Spring">
+     Spring Boot 1.x/2.x, Spring Core 2/3/4/5, MVC / REST, Spring Security, Spring Data, Spring Kafka
+    </main-detail>
+      <value description="JSE/JEE">
+          JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
+      </value>
       <value description="Web">
        Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
       </value>
       <value description="Mobile">
        Android SDK
-      </value>
-      <value description="XML">
-       SOAP, JAXB 2.x, <a href="http://ws.apache.org/wss4j/">Apache WSS4J</a>, Axis 1.4, Castor 0.9/1.2, JDOM
       </value>
       <value description="ORM">
        Hibernate 3/4/5, Gorm
@@ -78,15 +75,7 @@
        Riak, MongoDB
       </value>
       <value description="Relational">
-       Oracle 7-12c, MySQL, MS SQL Server, Sybase
-      </value>
-    </skill>
-    <skill id="srv">
-      <type>
-       Application Servers
-      </type>
-      <value>
-       Tomcat 3-9, Jetty, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+       CockroachDB, Oracle 7-12c, MySQL, MS SQL Server, Sybase
       </value>
     </skill>
     <skill id="tls">
@@ -94,26 +83,26 @@
        Tools
       </type>
 <skill-details>
-      <main-detail description="IDE">
-          IntelliJ, Eclipse, Emacs
-      </main-detail>
+    <main-detail description="Build">
+        Gradle, Maven, Ivy, Ant, GNU Make
+    </main-detail>
+    <main-detail description="Continuous integration">
+        GitHub Actions, Bitbucket Pipelines, Drone, Jenkins / Hudson, Bamboo, Concourse
+    </main-detail>
+    <main-detail description="VM / Cloud">
+        Docker, Chef, PCF, Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack, OpenShift
+    </main-detail>
+    <main-detail description="IDE">
+        IntelliJ, Eclipse, Emacs
+    </main-detail>
       <value description="Modeling">
        ObjectAid Eclipse Plugin, Together Control/Architect, OptimalJ, Telelogic Tau UML, Rational Rose Designer, Visio Diagram Designer, Sybase Power Designer 6.1, Oracle Designer
       </value>
       <value description="Messaging">
-	   RabbitMQ, 2lemetry, IBM MQ
+	   Kafka, RabbitMQ, 2lemetry, IBM MQ
       </value>
       <value description="Monitor/Profile">
 	   VisualVM, DynaTrace, Optimizeit
-      </value>
-      <value description="Build">
-	   Gradle, Maven, Ivy, Ant, GNU Make
-      </value>
-      <value description="Continuous integration">
-	   Drone, Jenkins / Hudson, Bamboo, Concourse
-      </value>
-      <value description="VM / Cloud">
-	   Docker, Chef, PCF, Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack
       </value>
       <value description="Revision Control">
        Git, SVN, CVS, MKS, PVCS, RCS, VSS
@@ -132,6 +121,14 @@
       </value>
 </skill-details>
     </skill>
+  <skill id="srv">
+      <type>
+          Application Servers
+      </type>
+      <value>
+          Tomcat 3-9, Jetty, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+      </value>
+  </skill>
     <skill id="Methodologies">
       <type>
        Methodologies
@@ -168,7 +165,25 @@
     </company>
     -->
 
-	<company id="aimia" name="Aimia Loyalty Solutions" url="http://www.aimia.com" department="Product Engineering" position="Consultant" startDate="11/2019" endDate="Present">
+  <company id="bby" name="Best Buy" url="http://www.bestbuy.com" department="Inventory Staging" position="Consultant" startDate="07/2020" endDate="Present">
+      <assignment id="ist">
+          <assignment-environment>
+              Tomcat, Kafka, AWS, Openshift, Docker, Linux, Mac OS X, CockroachDB
+          </assignment-environment>
+          <assignment-tools>
+              JDK 11, Spring Boot 2.x, Gradle, IntelliJ, Emacs, Git, Grafana, ELK Stack, Jira, Slack
+          </assignment-tools>
+          <assignment-description>
+              Led the design and development of the Inventory Staging applications as part of a larger effort to create a next generation
+              order management system based on the distributed, scalable and highly available order processing services.
+              New architecture and design was based on the distributed event streaming platform Kafka,
+              highly scalable CockroachDB and Spring based microservices increasing fault tolerance, scalability and availability of new order management applications.
+              Helped with establishing best practices in the test driven development, build and release automation using Git, Gradle, Jenkins and GitHub Actions.
+          </assignment-description>
+      </assignment>
+  </company>
+
+	<company id="aimia" name="Aimia Loyalty Solutions" url="http://www.aimia.com" department="Product Engineering" position="Consultant" startDate="11/2019" endDate="07/2020">
       <assignment id="aimia">
         <assignment-environment>
             Jetty, AWS, Docker, Linux, Mac OS X, MySQL
