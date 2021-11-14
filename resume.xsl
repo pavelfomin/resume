@@ -1,87 +1,37 @@
-head	1.5;
-access;
-symbols
-	start:1.1.1.1 vstart:1.1.1;
-locks; strict;
-comment	@# @;
-
-
-1.5
-date	2006.09.10.22.25.31;	author pfomin;	state Exp;
-branches;
-next	1.4;
-
-1.4
-date	2006.09.10.22.06.39;	author pfomin;	state Exp;
-branches;
-next	1.3;
-
-1.3
-date	2006.09.10.22.02.10;	author pfomin;	state Exp;
-branches;
-next	1.2;
-
-1.2
-date	2006.09.10.21.57.59;	author pfomin;	state Exp;
-branches;
-next	1.1;
-
-1.1
-date	2006.09.10.21.31.29;	author pfomin;	state Exp;
-branches
-	1.1.1.1;
-next	;
-
-1.1.1.1
-date	2006.09.10.21.31.29;	author pfomin;	state Exp;
-branches;
-next	;
-
-
-desc
-@@
-
-
-1.5
-log
-@Added comment for the Firefox/Mozilla browsers about JS
-@
-text
-@<?xml version="1.0"?>
+<?xml version="1.0"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output method="html" indent="yes" />
-
-<!-- $Revision: 1.4 $" $Date: 2006/09/10 22:06:39 $ -->
 
 <xsl:template match="resume">
 <html>
   <head>
     <META name="robots" content="noarchive" />
     <title>
-      <xsl:value-of select="concat(@@name, ', ', @@title)"/>
+      <xsl:value-of select="concat(@name, ', ', @title)"/>
     </title>
-    <link rel="stylesheet" href="../main.css" type="text/css" />
-    <script language="JavaScript" src="../js/layers.js"></script>
-    <script language="JavaScript" src="../js/util.js"></script>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script language="JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script language="JavaScript" src="js/resume.js"></script>
   </head>
   <body>
     <center>
-      <xsl:apply-templates select="@@name"/>
-      <xsl:apply-templates select="@@title"/>
+      <xsl:apply-templates select="@name"/>
+      <xsl:apply-templates select="@title"/>
       <xsl:apply-templates select="contact-list"/>
     </center>
 
     <xsl:apply-templates select="profile"/>
     <xsl:apply-templates select="skill-list"/>
     <xsl:apply-templates select="work-history"/>
+    <xsl:apply-templates select="work-history-more"/>
     <xsl:apply-templates select="education"/>
 
     <xsl:call-template name="footer">
       <xsl:with-param name="email">
-        <xsl:value-of select="concat(@@email, '@@', @@domain)"/>
+        <xsl:value-of select="concat(@email, '@', @domain)"/>
       </xsl:with-param>
       <xsl:with-param name="updated">
-        <xsl:value-of select="@@updated"/>
+        <xsl:value-of select="@updated"/>
       </xsl:with-param>
     </xsl:call-template>
 
@@ -90,14 +40,14 @@ text
 </xsl:template>
 
 <!-- template for name -->
-<xsl:template match="@@name">
+<xsl:template match="@name">
 <div>
   <h1><xsl:value-of select="."/></h1>
 </div>
 </xsl:template>
 
 <!-- template for title -->
-<xsl:template match="@@title">
+<xsl:template match="@title">
 <div>
   <h2><xsl:value-of select="."/></h2>
 </div>
@@ -112,13 +62,9 @@ text
 
     <!-- add email address as a contact info -->
     <xsl:choose>
-      <xsl:when test="../@@email">
-        <xsl:call-template name="render-contact">
-          <xsl:with-param name="type">Email</xsl:with-param>
-          <xsl:with-param name="value">
-            <xsl:value-of select="concat(../@@email, '@@', ../@@domain)"/>
-          </xsl:with-param>
-        </xsl:call-template>
+      <xsl:when test="../@email">
+    	<b>Email: </b>
+    	<span class="email" data-user="{../@email}" data-domain="{../@domain}"/>
       </xsl:when>
     </xsl:choose>
   
@@ -129,10 +75,10 @@ text
 <xsl:template match="contact">
   <xsl:call-template name="render-contact">
     <xsl:with-param name="type">
-      <xsl:value-of select="@@type"/>
+      <xsl:value-of select="@type"/>
     </xsl:with-param>
     <xsl:with-param name="value">
-      <xsl:value-of select="@@value"/>
+      <xsl:value-of select="@value"/>
     </xsl:with-param>
   </xsl:call-template>
 </xsl:template>
@@ -142,16 +88,20 @@ text
   <xsl:param name="type"/>
   <xsl:param name="value"/>
 
-  <b><xsl:value-of select="concat($type, ': ')"/></b>
+  <b><xsl:value-of select="$type"/>: </b>
 
   <xsl:choose>
-    <xsl:when test="contains($value, '@@')">
-      <xsl:call-template name="writeEmail">
-        <xsl:with-param name="email">
-          <xsl:value-of select="$value"/>
-        </xsl:with-param>
-      </xsl:call-template>
+    <xsl:when test="contains($value, 'http')">
+        <xsl:call-template name="formatURL">
+          <xsl:with-param name="url">
+            <xsl:value-of select="$value"/>
+          </xsl:with-param>
+          <xsl:with-param name="protocol">
+            <xsl:value-of select="'http://'"/>
+          </xsl:with-param>
+        </xsl:call-template>
     </xsl:when>
+
     <xsl:otherwise>
       <xsl:value-of select="$value"/>
     </xsl:otherwise>
@@ -215,27 +165,46 @@ text
   <td width="150" valign="top" nowrap="1">
     <xsl:call-template name="back-reference">
       <xsl:with-param name="id">
-        <xsl:value-of select="concat('skill_', @@id)"/>
+        <xsl:value-of select="concat('skill_', @id)"/>
       </xsl:with-param>
     </xsl:call-template>
     <b><xsl:value-of select="type"/></b>
   </td>
   <td valign="top">
     <xsl:apply-templates select="value"/>
+    <xsl:apply-templates select="skill-details"/>
   </td>
 </tr>
 </xsl:template>
 
+<!-- template for skill details -->
+<xsl:template match="skill-details">
+  <xsl:param name="showDetailsLink" select="'notnull'"/>
+
+  <xsl:apply-templates select="main-detail"/>
+
+  <xsl:choose>
+    <xsl:when test="boolean($showDetailsLink)">
+      <a href="#" class="action-show {../@id}-details" data-element-id="{../@id}-details">More details</a>
+    </xsl:when>
+  </xsl:choose>
+
+  <span id="{../@id}-details" class="{../@id}-details" style="display: none;">
+    <xsl:apply-templates select="value"/>
+    <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
+  </span>
+</xsl:template>
+
 <!-- template for skill value -->
-<xsl:template match="value">
-  <xsl:apply-templates select="@@description"/>
+<xsl:template match="value|main-detail">
+  <xsl:apply-templates select="@description"/>
 
   <!--allow the embedded html tags to be processed-->
   <xsl:apply-templates /><br/>
 </xsl:template>
 
 <!-- template for skill value description -->
-<xsl:template match="@@description">
+<xsl:template match="@description">
   <b><xsl:value-of select="concat(., ':')"/></b>
 </xsl:template>
 
@@ -256,6 +225,26 @@ text
 </div>
 </xsl:template>
 
+<!-- template for additional work history -->
+<xsl:template match="work-history-more">
+  <xsl:param name="showDetailsLink" select="'notnull'"/>
+
+  <xsl:choose>
+    <xsl:when test="boolean($showDetailsLink)">
+      <h2>
+          <a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
+      </h2>
+    </xsl:when>
+  </xsl:choose>
+
+<div id="work-history-more" class="work-history-more" style="display: none;">
+  <xsl:apply-templates select="company"/>
+  <h2>
+	  <a href="#" class="action-hide" data-element-id="work-history-more">Less work history</a>
+  </h2>
+</div>
+</xsl:template>
+
 <!-- template for company -->
 <xsl:template match="company">
 <div class="level1">
@@ -264,31 +253,31 @@ text
       <td class="position">
         <xsl:call-template name="back-reference">
           <xsl:with-param name="id">
-            <xsl:value-of select="concat('work_history_', @@id)"/>
+            <xsl:value-of select="concat('work_history_', @id)"/>
           </xsl:with-param>
         </xsl:call-template>
 
         <xsl:call-template name="formatURL">
           <xsl:with-param name="url">
-            <xsl:value-of select="@@url"/>
+            <xsl:value-of select="@url"/>
           </xsl:with-param>
           <xsl:with-param name="name">
-            <xsl:value-of select="@@name"/>
+            <xsl:value-of select="@name"/>
           </xsl:with-param>
           <xsl:with-param name="protocol">
             <xsl:value-of select="'http://'"/>
           </xsl:with-param>
         </xsl:call-template>
 
-        <xsl:apply-templates select="@@department"/>
+        <xsl:apply-templates select="@department"/>
       </td>
     </tr>
     <tr>
       <td class="position">
-        <xsl:value-of select="@@position"/>
+        <xsl:value-of select="@position"/>
       </td>
       <td align="right" class="position">
-        <xsl:value-of select="concat(@@startDate, ' - ', @@endDate)"/>
+        <xsl:value-of select="concat(@startDate, ' - ', @endDate)"/>
       </td>
     </tr>
   </table>
@@ -302,23 +291,23 @@ text
   <font class="client">
     <xsl:call-template name="back-reference">
       <xsl:with-param name="id">
-        <xsl:value-of select="concat('work_history_', ../@@id, '_', @@id)"/>
+        <xsl:value-of select="concat('work_history_', ../@id, '_', @id)"/>
       </xsl:with-param>
     </xsl:call-template>
 
     <xsl:call-template name="formatURL">
       <xsl:with-param name="url">
-        <xsl:value-of select="@@url"/>
+        <xsl:value-of select="@url"/>
       </xsl:with-param>
       <xsl:with-param name="name">
-        <xsl:value-of select="@@name"/>
+        <xsl:value-of select="@name"/>
       </xsl:with-param>
       <xsl:with-param name="protocol">
         <xsl:value-of select="'http://'"/>
       </xsl:with-param>
     </xsl:call-template>
     
-    <xsl:apply-templates select="@@department"/>
+    <xsl:apply-templates select="@department"/>
   </font>
 
   <table cellspacing="0" cellpadding="0">
@@ -333,7 +322,7 @@ text
 </xsl:template>
 
 <!-- template for department -->
-<xsl:template match="@@department">
+<xsl:template match="@department">
   <xsl:call-template name="addNotNull">
     <xsl:with-param name="prefix">
       <xsl:value-of select="', '"/>
@@ -377,9 +366,7 @@ text
   <xsl:choose>
     <xsl:when test="boolean($showDetailsLink) 
                     and boolean(../assignment-details)">
-      <a href="" onclick="return showDiv('{../@@id}-details', 'show');">
-        More...
-      </a>
+      <a href="#" class="action-show {../@id}-details" data-element-id="{../@id}-details">More details</a>
     </xsl:when>
   </xsl:choose>
 </div>
@@ -388,8 +375,11 @@ text
 <!-- template for assignment details -->
 <xsl:template match="assignment-details">
 
-<div id="{../@@id}-details" style="display: none;">
+<div id="{../@id}-details" class="{../@id}-details" style="display: none;">
   <xsl:apply-templates select="detail"/>
+  <div class="level3">
+	  <a href="#" class="action-hide" data-element-id="{../@id}-details">Hide details</a>
+  </div>
 </div>
 </xsl:template>
 
@@ -424,17 +414,25 @@ text
 
   <xsl:call-template name="formatURL">
     <xsl:with-param name="url">
-      <xsl:value-of select="@@url"/>
+      <xsl:value-of select="@url"/>
     </xsl:with-param>
     <xsl:with-param name="name">
-      <xsl:value-of select="@@school"/>
+      <xsl:value-of select="@school"/>
     </xsl:with-param>
     <xsl:with-param name="protocol">
       <xsl:value-of select="'http://'"/>
     </xsl:with-param>
   </xsl:call-template>
 
-  <br/><b><xsl:value-of select="concat(@@award, ', ', @@year)"/></b>
+  <br/>
+  	<b>
+		<xsl:value-of select="@award"/>
+		<xsl:choose>
+			<xsl:when test="@year">
+				<xsl:value-of select="concat(', ', @year)" />
+			</xsl:when>
+		</xsl:choose>
+  	</b>
   <br/><xsl:value-of select="."/>
 </div>
 </xsl:template>
@@ -502,7 +500,6 @@ text
 
 <!-- footer's template -->
 <xsl:template name="footer">
-  <xsl:param name="email"/>
   <xsl:param name="updated"/>
 
   <hr/>
@@ -512,112 +509,14 @@ text
     Last modified: <xsl:value-of select="substring-before(substring-after($updated, ':'), '$')"/>
     <xsl:text>  </xsl:text>
 
-    <xsl:call-template name="writeEmail">
-      <xsl:with-param name="email">
-        <xsl:value-of select="$email"/>
-      </xsl:with-param>
-    </xsl:call-template>
-
   </div>
 </xsl:template>
   
 <!-- html anchor tag template -->
 <xsl:template match="a">
-  <a href="{@@href}" class="tool" target="_blank">
+  <a href="{@href}" class="tool" target="_blank">
     <xsl:value-of select="text()"/>
   </a>
 </xsl:template>
 
-<!-- email template -->
-<xsl:template name="writeEmail">
-  <xsl:param name="email"/>
-
-  <!-- the following script will not work in Firefox/Mozilla 
-   comment out for Firefox -->
-  <script language="JavaScript">
-    writeEmail("<xsl:value-of select="substring-before($email, '@@')"/>",
-               "<xsl:value-of select="substring-after($email, '@@')"/>");
-  </script>
-
-</xsl:template>
-
 </xsl:stylesheet>
-@
-
-
-1.4
-log
-@Fixed double keyword substitution.
-@
-text
-@d5 1
-a5 1
-<!-- $Revision: 1.3 $" $Date: 2006/09/10 22:02:10 $ -->
-d486 2
-@
-
-
-1.3
-log
-@Added revision/date keywords. Moved revision history from the file into CVS:
- 07/03/06 Removed email from contact list, split resume@@email into email and domain attributes. Enhanced contact-list template to add email as a contact if resume@@email is specified.
- 03/22/04 META robots noarchive added
- 03/10/04 template writeEmail added to 'hide' the email address
- 02/11/04 html anchor template added and value-of select="." replaced with apply-templates for skill value, assignment-description, and assignment-details. Also parameter showDetailsLink added to the assignment-description template.
-@
-text
-@d5 1
-a5 1
-<!-- $Revision: 1.2 $" $Date: 2006/09/10 21:39:02 $ -->
-d463 1
-a463 1
-    Last modified: <xsl:value-of select="substring-before(substring-after($updated, '$Date: 2006/09/10 21:57:59 $')"/>
-@
-
-
-1.2
-log
-@Replaced document.lastModified with value of the attribute "updated" filled by CVS Date keyword.
-@
-text
-@d5 2
-d463 1
-a463 1
-    Last modified: <xsl:value-of select="substring-before(substring-after($updated, '$Date:'), '$')"/>
-a493 7
-
-<!--
- 07/03/06 Removed email from contact list, split resume@@email into email and domain attributes. Enhanced contact-list template to add email as a contact if resume@@email is specified.
- 03/22/04 META robots noarchive added
- 03/10/04 template writeEmail added to 'hide' the email address
- 02/11/04 html anchor template added and value-of select="." replaced with apply-templates for skill value, assignment-description, and assignment-details. Also parameter showDetailsLink added to the assignment-description template.
--->
-@
-
-
-1.1
-log
-@Initial revision
-@
-text
-@d32 3
-d455 1
-d460 2
-a461 4
-    Last modified:
-    <script language="JavaScript">
-//      document.write(document.lastModified);
-    </script>
-d483 1
-a483 1
-  
-d488 1
-@
-
-
-1.1.1.1
-log
-@Imported source
-@
-text
-@@
