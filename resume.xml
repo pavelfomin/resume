@@ -63,7 +63,7 @@
 	   SLF4J, Logback, Log4j, Apache Commons Logging, Java Logging API
       </value>
       <value description="Testing">
-	   JUnit, Mockito, Spock, DbUnit, JaCoCo, Cobertura, Emma
+        Spock, JUnit, Mockito, DbUnit, JaCoCo, Cobertura, Emma
       </value>
 </skill-details>
     </skill>
@@ -75,7 +75,7 @@
        Riak, MongoDB
       </value>
       <value description="Relational">
-       CockroachDB, Oracle 7-12c, MySQL, MS SQL Server, Sybase
+          Postgres, CockroachDB, Oracle 7-12c, MySQL, MS SQL Server, Sybase
       </value>
     </skill>
     <skill id="tls">
@@ -165,7 +165,23 @@
     </company>
     -->
 
-  <company id="bby" name="Best Buy" url="http://www.bestbuy.com" department="Inventory Staging" position="Consultant" startDate="07/2020" endDate="Present">
+  <company id="dbee-trg-las" name="Target Corporation" url="http://www.target.com" department="Outbound Warehousing Load and Ship" position="Consultant" startDate="02/2022" endDate="01/2023">
+      <assignment id="las">
+          <assignment-environment>
+              Kafka, Kubernetes (TAP), Docker, Linux, Mac OS X, Postgres
+          </assignment-environment>
+          <assignment-tools>
+              JDK 11/17, Java, Groovy, Kotlin, Micronaut, Gradle, IntelliJ, Emacs, Git, Grafana, ELK Stack, Jira, Slack
+          </assignment-tools>
+          <assignment-description>
+              Implemented a number of business and technical initiatives improving efficiency, reliability, maintainability and scalability of the distributed,
+              event driven technical stack. Reduced technical debt by minimizing code duplication, streamlining CI/CD pipeline and
+              establishing best practices in the test driven development.
+          </assignment-description>
+      </assignment>
+  </company>
+
+  <company id="bby" name="Best Buy" url="http://www.bestbuy.com" department="Inventory Staging" position="Consultant" startDate="07/2020" endDate="01/2022">
       <assignment id="ist">
           <assignment-environment>
               Tomcat, Kafka, AWS, Openshift, Docker, Linux, Mac OS X, CockroachDB
@@ -361,36 +377,36 @@ Designed and developed software solutions for multiple projects in agile develop
       </assignment>
     </company>
 
-    <company id="metris" name="HSBC (former Metris Companies)" url="http://www.metriscompanies.com/" department="Enterprise Application Management" position="Lead J2EE Developer (Senior Consultant, Business Systems)" startDate="07/2004" endDate="10/2007">
-      <assignment id="metris">
-        <assignment-environment>
-          J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
-        </assignment-environment>
-        <assignment-tools> 
-          JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
-        </assignment-tools> 
-        <assignment-description>
-Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
-        </assignment-description>
-        <assignment-details>
-          <detail>
-            Led the design and development effort of the Internet applications including customer facing (C2B) and partner XML based (B2B) solutions. Responsible for Webcache/Apache setup for all of the Internet sites. Led migration of the 24/7 Internet environment from one data center to another and then later from Apache/Resin to OAS 10g platform. After HSBC acquisition, led the migration of the Metris web applications from OAS 10g to the HSBC Websphere environment.
-          </detail>
-          <detail>
-             Created fully automated, extendable build and deployment process based on Ant's templated approach and CVS to support release based applications deployments. Administrated the CVS based source code repository.
-          </detail>
-          <detail>
-             Installed, configured and administrated Bugzilla, a defect tracking software used by the development, QA and business teams. Installed and 
-administrated the MySQL database server required by Bugzilla.
-          </detail>
-        </assignment-details>
-      </assignment>
-    </company>
-
   </work-history>
   
   <work-history-more>
-    <company id="compuware" name="Compuware Corporation" url="http://www.compuware.com" department="Professional Services" position="Senior Java Developer, Full Time Consultant" startDate="07/2001" endDate="07/2004">
+      <company id="metris" name="HSBC (former Metris Companies)" url="http://www.metriscompanies.com/" department="Enterprise Application Management" position="Lead J2EE Developer (Senior Consultant, Business Systems)" startDate="07/2004" endDate="10/2007">
+          <assignment id="metris">
+              <assignment-environment>
+                  J2EE, OAS 10g Portal, Websphere 6.x/5.x, Resin 2.x, Tomcat 4.x, Apache 1.3, Oracle 10g, IBM MQ, Windows XP, Linux (RedHat), AIX
+              </assignment-environment>
+              <assignment-tools>
+                  JDK 1.4, JSP, Servlet, Struts 1.1, Spring 2.0, Hibernate 3.0, JDBC, XML, XSLT, Ant 1.6, Maven, Log4j, JUnit, Eclipse, RAD, Emacs, CVS, PVCS, MKS, Together Architect, MS Visio, UML, Optimizeit Enterprise Suite (Profiler), Bugzilla
+              </assignment-tools>
+              <assignment-description>
+                  Led the design and development effort to bring aboard a number of the business partners critical for the credit card accounts acquisition business. Created new and redesigned existing web based applications in the Internet and Intranet portal environment. Created fully automated application release and deployment management process based on Ant's templated approach and CVS. Led a number of migrations of the Internet environment from the web applications side.
+              </assignment-description>
+              <assignment-details>
+                  <detail>
+                      Led the design and development effort of the Internet applications including customer facing (C2B) and partner XML based (B2B) solutions. Responsible for Webcache/Apache setup for all of the Internet sites. Led migration of the 24/7 Internet environment from one data center to another and then later from Apache/Resin to OAS 10g platform. After HSBC acquisition, led the migration of the Metris web applications from OAS 10g to the HSBC Websphere environment.
+                  </detail>
+                  <detail>
+                      Created fully automated, extendable build and deployment process based on Ant's templated approach and CVS to support release based applications deployments. Administrated the CVS based source code repository.
+                  </detail>
+                  <detail>
+                      Installed, configured and administrated Bugzilla, a defect tracking software used by the development, QA and business teams. Installed and
+                      administrated the MySQL database server required by Bugzilla.
+                  </detail>
+              </assignment-details>
+          </assignment>
+      </company>
+
+      <company id="compuware" name="Compuware Corporation" url="http://www.compuware.com" department="Professional Services" position="Senior Java Developer, Full Time Consultant" startDate="07/2001" endDate="07/2004">
 
       <assignment id="chp" name="HealthPartners" url="http://www.healthpartners.com" department="Center of Health Promotion">
         <assignment-environment>
