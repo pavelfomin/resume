@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2021/11/11 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2025/05/04 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -12,7 +12,7 @@
      Over 10 years of software design and development experience in diverse industry environment
     </entry>
     <entry>
-     Strong expertise in Java and JEE architecture with various Application and Web servers
+     Strong expertise in JVM based and cloud architecture
     </entry>
     <entry>
      Solid RDBMS and NoSQL background
@@ -33,7 +33,7 @@
        Languages
       </type>
       <value>
-       Java 1.1-11, Groovy, Bash, SQL, HTML, JavaScript, CSS
+       Java 1.1-17, Groovy, Kotlin, Bash, SQL, HTML, JavaScript, CSS
       </value>
     </skill>
     <skill id="frameworks">
@@ -42,11 +42,8 @@
       </type>
 <skill-details>
     <main-detail description="Spring">
-     Spring Boot 1.x/2.x, Spring Core 2/3/4/5, MVC / REST, Spring Security, Spring Data, Spring Kafka
+     Spring Boot 1.x-3.x, Spring Core, Spring REST MVC / WebFlux, Spring Security, Spring Data, Spring Kafka
     </main-detail>
-      <value description="JSE/JEE">
-          JAX-RS, JAX-WS, JDBC, JMS, JMX, EJB, JSP, JSTL, JSF, Servlets
-      </value>
       <value description="Web">
        Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
       </value>
@@ -54,7 +51,7 @@
        Android SDK
       </value>
       <value description="ORM">
-       Hibernate 3/4/5, Gorm
+       Hibernate, Gorm
       </value>
       <value description="Caching">
 	   Ehcache 2, Memcached 2, Akamai
@@ -63,7 +60,7 @@
 	   SLF4J, Logback, Log4j, Apache Commons Logging, Java Logging API
       </value>
       <value description="Testing">
-        Spock, JUnit, Mockito, DbUnit, JaCoCo, Cobertura, Emma
+        Spock, JUnit, Mockito, JaCoCo
       </value>
 </skill-details>
     </skill>
@@ -116,9 +113,6 @@
       <value description="Agile Project Management">
        Jira GreenHopper, Version One, Rally, XPlanner
       </value>
-      <value description="Wiki">
-	   Atlassian Confluence, <a href="http://www.dokuwiki.org/">DokuWiki</a>
-      </value>
 </skill-details>
     </skill>
   <skill id="srv">
@@ -126,7 +120,7 @@
           Application Servers
       </type>
       <value>
-          Tomcat 3-9, Jetty, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
+          Tomcat 3-10, Jetty, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
       </value>
   </skill>
     <skill id="Methodologies">
@@ -142,7 +136,7 @@
        Industries
       </type>
       <value>
-	   Retail, Loyalty Management, Medical supplies, Education, Finance, Banking, E-commerce, Healthcare, Medical Software, Software Development, Energy Management, Telematics
+          Healthcare, Retail, Loyalty Management, Medical supplies, Education, Finance, Banking, E-commerce, Medical Software, Software Development, Energy Management, Telematics
       </value>
     </skill>
   </skill-list>
@@ -165,7 +159,25 @@
     </company>
     -->
 
-  <company id="dbee-trg-las" name="Target Corporation" url="http://www.target.com" department="Outbound Warehousing Load and Ship" position="Consultant" startDate="02/2022" endDate="01/2023">
+      <company id="dbee-prm" name="Prime Therapeutics" url="https://www.primetherapeutics.com" department="Rebates Management" position="Consultant" startDate="01/2023" endDate="Present">
+          <assignment id="prm">
+              <assignment-environment>
+                  Kafka, GCP, GKE, Cloud Foundry, Docker, Linux, Mac OS X, Postgres, Big Query
+              </assignment-environment>
+              <assignment-tools>
+                  JDK 17, Java, Groovy, Spring Boot, Gradle, IntelliJ, Git, Jira
+              </assignment-tools>
+              <assignment-description>
+                  Spearheaded the development of the cross-cutting technology solutions for the new Rebates Platform, significantly reducing integration complexity for product teams.
+                  Developed shared libraries to expedite the adoption of common technology solutions and patterns, including Kafka, BigQuery, Google Cloud Storage, and HashiCorp Vault integration.
+                  Created reusable GitHub actions and workflows, streamlining CI/CD automation and reducing complexity.
+                  Implemented product specific solutions leveraging Kafka event streaming architecture.
+                  Migrated applications from Cloud Foundry to Google Cloud Platform (GCP).
+              </assignment-description>
+          </assignment>
+      </company>
+
+      <company id="dbee-trg-las" name="Target Corporation" url="http://www.target.com" department="Outbound Warehousing Load and Ship" position="Consultant" startDate="02/2022" endDate="01/2023">
       <assignment id="las">
           <assignment-environment>
               Kafka, Kubernetes (TAP), Docker, Linux, Mac OS X, Postgres
@@ -181,7 +193,7 @@
       </assignment>
   </company>
 
-  <company id="bby" name="Best Buy" url="http://www.bestbuy.com" department="Inventory Staging" position="Consultant" startDate="07/2020" endDate="01/2022">
+  <company id="dbee-bby" name="Best Buy" url="http://www.bestbuy.com" department="Inventory Staging" position="Consultant" startDate="07/2020" endDate="01/2022">
       <assignment id="ist">
           <assignment-environment>
               Tomcat, Kafka, AWS, Openshift, Docker, Linux, Mac OS X, CockroachDB
@@ -199,7 +211,7 @@
       </assignment>
   </company>
 
-	<company id="aimia" name="Aimia Loyalty Solutions" url="http://www.aimia.com" department="Product Engineering" position="Consultant" startDate="11/2019" endDate="07/2020">
+	<company id="dbee-aimia" name="Aimia Loyalty Solutions" url="http://www.aimia.com" department="Product Engineering" position="Consultant" startDate="11/2019" endDate="07/2020">
       <assignment id="aimia">
         <assignment-environment>
             Jetty, AWS, Docker, Linux, Mac OS X, MySQL
@@ -349,37 +361,37 @@
       </assignment>
     </company>
 
-    <company id="moneygram" name="MoneyGram International" url="http://www.moneygram.com/" department="Systems Development" position="Lead Developer (Software Engineer IV)" startDate="10/2007" endDate="12/2011">
-      <assignment id="moneygram">
-        <assignment-environment>
-          JEE, Websphere Application Server 7.x/6.x/5.x, Tomcat 4.x/6.x, Websphere Portal 6.1, Oracle, IBM MQ, Windows XP, Linux
-        </assignment-environment>
-        <assignment-tools> 
-          JDK 1.4/1.5/1.6, Spring (MVC), JSP, JSF, Portlet, Servlet, Ajax, jQuery, Wicket 1.2, Struts, JAX-WS, Axis 1.4, Ehcache 2, JDBC, XML, Ant, Log4j, JUnit, WSS4J, Castor 0.9/1.2, SoapUI, Eclipse, RAD 6/7/8, Emacs, CVS, Git, UML, Hudson, DokuWiki, Rally, XPlanner
-        </assignment-tools> 
-        <assignment-description>
-Led the design and development of the JAX-WS based web services layer for the new Web Point of Entry system (Web POE). Created two prototypes of the new web site using JSF 2 and Spring MVC 3 frameworks. The Spring MVC based prototype became the foundation for the Web POE. Created the device authentication component using the signed java applet technology to enhance the security of the Web POE site. Demonstrated the Eclipse and Tomcat servlet container efficiency for the web development while supporting the deployment of the same code base on Websphere application server.
-        </assignment-description>
-        <assignment-details>
-          <detail>
-Implemented the continuous build and deployment processes using Ant and Hudson. Automated deployments simplified the builds and deployments of the applications drastically reducing the time and effort spent on the deployments by the developers, qa personel and administrators, and allowed greater development and testing scalability.
-          </detail>
-          <detail>
-Led the design and development of the web services layer for the new redesigned MoneyGramOnline money transfer web site. Created the user interface components using Portal and JSF technologies.
-          </detail>
-          <detail>
-Led the web services non-repudiation requirement implementation based on OASIS Web Services Security and the global compliance implementation of the consumer identity and transaction rules engine.
-          </detail>
-          <detail>
-Designed and developed software solutions for multiple projects in agile development environment including creation of the Money Transfer Notification Service, Transaction Loader and enhancements to the money transfer service, AgentConnect.
-          </detail>
-        </assignment-details>
-      </assignment>
-    </company>
-
   </work-history>
   
   <work-history-more>
+      <company id="moneygram" name="MoneyGram International" url="http://www.moneygram.com/" department="Systems Development" position="Lead Developer (Software Engineer IV)" startDate="10/2007" endDate="12/2011">
+          <assignment id="moneygram">
+              <assignment-environment>
+                  JEE, Websphere Application Server 7.x/6.x/5.x, Tomcat 4.x/6.x, Websphere Portal 6.1, Oracle, IBM MQ, Windows XP, Linux
+              </assignment-environment>
+              <assignment-tools>
+                  JDK 1.4/1.5/1.6, Spring (MVC), JSP, JSF, Portlet, Servlet, Ajax, jQuery, Wicket 1.2, Struts, JAX-WS, Axis 1.4, Ehcache 2, JDBC, XML, Ant, Log4j, JUnit, WSS4J, Castor 0.9/1.2, SoapUI, Eclipse, RAD 6/7/8, Emacs, CVS, Git, UML, Hudson, DokuWiki, Rally, XPlanner
+              </assignment-tools>
+              <assignment-description>
+                  Led the design and development of the JAX-WS based web services layer for the new Web Point of Entry system (Web POE). Created two prototypes of the new web site using JSF 2 and Spring MVC 3 frameworks. The Spring MVC based prototype became the foundation for the Web POE. Created the device authentication component using the signed java applet technology to enhance the security of the Web POE site. Demonstrated the Eclipse and Tomcat servlet container efficiency for the web development while supporting the deployment of the same code base on Websphere application server.
+              </assignment-description>
+              <assignment-details>
+                  <detail>
+                      Implemented the continuous build and deployment processes using Ant and Hudson. Automated deployments simplified the builds and deployments of the applications drastically reducing the time and effort spent on the deployments by the developers, qa personel and administrators, and allowed greater development and testing scalability.
+                  </detail>
+                  <detail>
+                      Led the design and development of the web services layer for the new redesigned MoneyGramOnline money transfer web site. Created the user interface components using Portal and JSF technologies.
+                  </detail>
+                  <detail>
+                      Led the web services non-repudiation requirement implementation based on OASIS Web Services Security and the global compliance implementation of the consumer identity and transaction rules engine.
+                  </detail>
+                  <detail>
+                      Designed and developed software solutions for multiple projects in agile development environment including creation of the Money Transfer Notification Service, Transaction Loader and enhancements to the money transfer service, AgentConnect.
+                  </detail>
+              </assignment-details>
+          </assignment>
+      </company>
+
       <company id="metris" name="HSBC (former Metris Companies)" url="http://www.metriscompanies.com/" department="Enterprise Application Management" position="Lead J2EE Developer (Senior Consultant, Business Systems)" startDate="07/2004" endDate="10/2007">
           <assignment id="metris">
               <assignment-environment>
