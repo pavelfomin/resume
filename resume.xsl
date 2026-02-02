@@ -3,17 +3,7 @@
 <xsl:output method="html" indent="yes" />
 
 <xsl:template match="resume">
-<html>
-  <head>
-    <META name="robots" content="noarchive" />
-    <title>
-      <xsl:value-of select="concat(@name, ', ', @title)"/>
-    </title>
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <script language="JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script language="JavaScript" src="js/resume.js"></script>
-  </head>
-  <body>
+
     <center>
       <xsl:apply-templates select="@name"/>
       <xsl:apply-templates select="@title"/>
@@ -35,8 +25,6 @@
       </xsl:with-param>
     </xsl:call-template>
 
-  </body>
-</html>
 </xsl:template>
 
 <!-- template for name -->
