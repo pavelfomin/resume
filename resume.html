@@ -56,10 +56,14 @@
         <!-- More Work History section (Uses the same logic as details) -->
         <div id="more-work-section" style="display:none;">
             <div id="more-history-toggle">
-                <a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
+                <h2>
+                    <a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
+                </h2>
                 <div id="work-history-more" class="work-history-more" style="display:none;">
                     <div class="more-content"></div>
-                    <a href="#" class="action-hide" data-element-id="work-history-more">Less work history</a>
+                    <h2>
+                        <a href="#" class="action-hide" data-element-id="work-history-more">Less work history</a>
+                    </h2>
                 </div>
             </div>
         </div>
@@ -92,18 +96,17 @@
             <tr class="env-row"><td align="right" valign="top"><b>Environment:</b>&nbsp;</td><td class="env-val"></td></tr>
             <tr class="tools-row"><td align="right" valign="top"><b>Tools:</b>&nbsp;</td><td class="tools-val"></td></tr>
         </table>
-        <div class="asgn-desc level3"></div>
-
-        <!-- Assignment Details Toggle Template -->
-<!--        <div class="details-wrapper">-->
+        <div class="asgn-desc level3">
+            <span class="desc-text"></span> <!-- Target for XML text -->
             <a href="#" class="action-show" style="display:none;">More details</a>
-            <div class="details-body" style="display:none;">
-                <div class="details-content"></div>
-                <div class="level3">
-                    <a href="#" class="action-hide">Hide details</a>
-                </div>
+        </div>
+
+        <div class="details-body" style="display:none;">
+            <div class="details-content"></div>
+            <div class="level3">
+                <a href="#" class="action-hide">Hide details</a>
             </div>
-<!--        </div>-->
+        </div>
     </div>
 
     <div id="edu-template" class="level1">

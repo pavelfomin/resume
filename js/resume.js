@@ -155,12 +155,13 @@ function processCompanies($nodes, $container) {
             const $a = $("#assignment-template").clone().removeAttr('id');
             const aid = $asgn.attr("id");
             const detailsId = aid + "-details";
+            const $descDiv = $a.find(".asgn-desc");
 
             // Header & Env/Tools
             $a.find(".asgn-header").html(formatURL($asgn.attr("url"), $asgn.attr("name")));
             $a.find(".env-val").text($asgn.find("assignment-environment").text().trim());
             $a.find(".tools-val").text($asgn.find("assignment-tools").text().trim());
-            $a.find(".asgn-desc").html($asgn.find("assignment-description").html());
+            $descDiv.find(".desc-text").html($asgn.find("assignment-description").html());
 
             // Details Toggle Logic
             const $details = $asgn.find("assignment-details");
