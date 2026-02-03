@@ -48,6 +48,50 @@
             </table>
         </div>
     </div>
+
+    <!-- Work History -->
+    <div id="work-history-container">
+        <h2>Work History</h2>
+        <div id="main-work"></div>
+
+        <div id="more-work-section" style="display:none;">
+            <h2 class="toggle-header"><a href="#" class="action-show" data-element-id="work-history-more">More work history</a></h2>
+            <div id="work-history-more" style="display:none;"></div>
+            <h2 class="toggle-header"><a href="#" class="action-hide" data-element-id="work-history-more" style="display:none;">Less work history</a></h2>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div id="education-container">
+        <h2>Education</h2>
+        <div class="education-list"></div>
+    </div>
+</div>
+
+
+<!-- Templates (Hidden) -->
+<div id="templates" style="display:none;">
+    <div id="company-template" class="level1">
+        <table width="95%">
+            <tr><td class="comp-header position"></td></tr>
+            <tr><td class="comp-pos position"></td><td class="comp-date position" align="right"></td></tr>
+        </table>
+        <div class="assignments-container"></div>
+    </div>
+
+    <div id="assignment-template" class="level2">
+        <div class="asgn-header client"></div>
+        <table class="env-tools-table">
+            <tr class="env-row"><td align="right" valign="top"><b>Environment:</b>&nbsp;</td><td class="env-val"></td></tr>
+            <tr class="tools-row"><td align="right" valign="top"><b>Tools:</b>&nbsp;</td><td class="tools-val"></td></tr>
+        </table>
+        <div class="asgn-desc level3"></div>
+        <div class="asgn-details-box" style="display:none;"></div>
+    </div>
+
+    <div id="edu-template" class="level1">
+        <span class="edu-school"></span><br/><b class="edu-award"></b><br/><span class="edu-desc"></span>
+    </div>
 </div>
 
 </body>

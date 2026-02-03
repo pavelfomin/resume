@@ -5,8 +5,11 @@ $(document).ready(function() {
         url: "resume.xml",
         dataType: "xml",
         success: function(xml) {
-            renderProfile(xml);
-            renderSkills(xml);
+            const $xml = $(xml);
+            renderProfile($xml);
+            renderSkills($xml);
+            renderWorkHistory($xml);
+            renderEducation($xml);
         }
     });
 
@@ -34,12 +37,12 @@ $(document).ready(function() {
 	});
 });
 
-function renderProfile(xml) {
+function renderProfile($xml) {
     const $list = $("#profile-container .client");
     // Find our template and keep a reference to it
     const $template = $list.find("li.profile-entry").first();
 
-    $(xml).find("profile entry").each(function() {
+    $xml.find("profile entry").each(function() {
         const entryText = $(this).text().trim();
 
         if (entryText) {
@@ -55,11 +58,11 @@ function renderProfile(xml) {
     });
 }
 
-function renderSkills(xml) {
+function renderSkills($xml) {
     const $table = $("#skills-container table");
     const $rowTemplate = $table.find(".skill-row");
 
-    $(xml).find("skill-list skill").each(function() {
+    $xml.find("skill-list skill").each(function() {
         const $skill = $(this);
         const id = $skill.attr("id");
         const type = $skill.find("type").text().trim();
@@ -120,4 +123,73 @@ function formatDetail($node) {
     const $item = $("#detail-template").clone().children();
     const prefix = desc ? "<b>" + desc + ":</b> " : "";
     return prefix + htmlContent + "<br/>";
+}
+
+function renderWorkHistory($xml) {
+    processCompanyNodes($xml.find("work-history > company"), $("#main-work"));
+    const $more = $xml.find("work-history-more > company");
+    if ($more.length > 0) {
+        $("#more-work-section").show();
+        processCompanyNodes($more, $("#work-history-more"));
+    }
+}
+
+function processCompanyNodes($nodes, $target) {
+    $nodes.each(function() {
+        const $comp = $(this);
+        const $c = $("#company-template").clone().removeAttr('id');
+
+        let head = formatURL($comp.attr("url"), $comp.attr("name"));
+        if ($comp.attr("department")) head += `, ${$comp.attr("department")}`;
+        $c.find(".comp-header").html(head);
+        $c.find(".comp-pos").text($comp.attr("position"));
+        $c.find(".comp-date").text(`${$comp.attr("startDate")} - ${$comp.attr("endDate")}`);
+
+        $comp.find("assignment").each(function() {
+            const $a = $("#assignment-template").clone().removeAttr('id');
+            const aid = $(this).attr("id");
+            let aHead = formatURL($(this).attr("url"), $(this).attr("name"));
+            if ($(this).attr("department")) aHead += `, ${$(this).attr("department")}`;
+
+            $a.find(".asgn-header").html(aHead);
+            $a.find(".env-val").text($(this).find("assignment-environment").text().trim());
+            $a.find(".tools-val").text($(this).find("assignment-tools").text().trim());
+
+            const $desc = $a.find(".asgn-desc").html($(this).find("assignment-description").html());
+            const $details = $(this).find("assignment-details");
+            if ($details.length > 0) {
+                const did = aid + "-details";
+                $desc.append(` <a href="#" class="action-show" data-element-id="${did}">More details</a>`);
+                const $box = $a.find(".asgn-details-box").attr("id", did).addClass(did);
+                $details.find("detail").each(function() {
+                    $box.append($('<div class="level3">').html($(this).html()));
+                });
+                $box.append(`<div class="level3"><a href="#" class="action-hide" data-element-id="${did}">Hide details</a></div>`);
+            }
+            $c.find(".assignments-container").append($a);
+        });
+        $target.append($c);
+    });
+}
+
+function renderEducation($xml) {
+    const $target = $("#education-container .education-list");
+    $xml.find("education degree").each(function() {
+        const $e = $("#edu-template").clone().removeAttr('id');
+        $e.find(".edu-school").html(formatURL($(this).attr("url"), $(this).attr("school")));
+        $e.find(".edu-award").text($(this).attr("award") + ($(this).attr("year") ? `, ${$(this).attr("year")}` : ""));
+        $e.find(".edu-desc").text($(this).text().trim());
+        $target.append($e);
+    });
+}
+
+function formatDetailNode($node) {
+    const desc = $node.attr("description");
+    const prefix = desc ? `<b>${desc}:</b> ` : "";
+    return $(`<div class="detail-line">${prefix}${$node.html()}</div>`);
+}
+
+function formatURL(url, name) {
+    if (!url) return name || "";
+    return `<a href="${url.startsWith('http') ? url : 'http://'+url}" target="_blank">${name || url}</a>`;
 }
