@@ -49,15 +49,19 @@
         </div>
     </div>
 
-    <!-- Work History -->
     <div id="work-history-container">
         <h2>Work History</h2>
         <div id="main-work"></div>
 
+        <!-- More Work History section (Uses the same logic as details) -->
         <div id="more-work-section" style="display:none;">
-            <h2 class="toggle-header"><a href="#" class="action-show" data-element-id="work-history-more">More work history</a></h2>
-            <div id="work-history-more" style="display:none;"></div>
-            <h2 class="toggle-header"><a href="#" class="action-hide" data-element-id="work-history-more" style="display:none;">Less work history</a></h2>
+            <div id="more-history-toggle">
+                <a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
+                <div id="work-history-more" class="work-history-more" style="display:none;">
+                    <div class="more-content"></div>
+                    <a href="#" class="action-hide" data-element-id="work-history-more">Less work history</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -72,21 +76,34 @@
 <!-- Templates (Hidden) -->
 <div id="templates" style="display:none;">
     <div id="company-template" class="level1">
-        <table width="95%">
+        <table width="95%" cellspacing="0" cellpadding="0">
             <tr><td class="comp-header position"></td></tr>
-            <tr><td class="comp-pos position"></td><td class="comp-date position" align="right"></td></tr>
+            <tr>
+                <td class="comp-pos position"></td>
+                <td class="comp-date position" align="right"></td>
+            </tr>
         </table>
         <div class="assignments-container"></div>
     </div>
 
     <div id="assignment-template" class="level2">
         <div class="asgn-header client"></div>
-        <table class="env-tools-table">
+        <table>
             <tr class="env-row"><td align="right" valign="top"><b>Environment:</b>&nbsp;</td><td class="env-val"></td></tr>
             <tr class="tools-row"><td align="right" valign="top"><b>Tools:</b>&nbsp;</td><td class="tools-val"></td></tr>
         </table>
         <div class="asgn-desc level3"></div>
-        <div class="asgn-details-box" style="display:none;"></div>
+
+        <!-- Assignment Details Toggle Template -->
+<!--        <div class="details-wrapper">-->
+            <a href="#" class="action-show" style="display:none;">More details</a>
+            <div class="details-body" style="display:none;">
+                <div class="details-content"></div>
+                <div class="level3">
+                    <a href="#" class="action-hide">Hide details</a>
+                </div>
+            </div>
+<!--        </div>-->
     </div>
 
     <div id="edu-template" class="level1">

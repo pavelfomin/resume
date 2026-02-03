@@ -126,49 +126,65 @@ function formatDetail($node) {
 }
 
 function renderWorkHistory($xml) {
-    processCompanyNodes($xml.find("work-history > company"), $("#main-work"));
-    const $more = $xml.find("work-history-more > company");
-    if ($more.length > 0) {
+    // 1. Process Main History
+    processCompanies($xml.find("work-history > company"), $("#main-work"));
+
+    // 2. Process More History
+    const $moreNodes = $xml.find("work-history-more > company");
+    if ($moreNodes.length > 0) {
         $("#more-work-section").show();
-        processCompanyNodes($more, $("#work-history-more"));
+        processCompanies($moreNodes, $("#work-history-more .more-content"));
     }
 }
 
-function processCompanyNodes($nodes, $target) {
+function processCompanies($nodes, $container) {
     $nodes.each(function() {
         const $comp = $(this);
         const $c = $("#company-template").clone().removeAttr('id');
 
+        // Setup Company Header
         let head = formatURL($comp.attr("url"), $comp.attr("name"));
         if ($comp.attr("department")) head += `, ${$comp.attr("department")}`;
         $c.find(".comp-header").html(head);
         $c.find(".comp-pos").text($comp.attr("position"));
         $c.find(".comp-date").text(`${$comp.attr("startDate")} - ${$comp.attr("endDate")}`);
 
+        // Process Assignments
         $comp.find("assignment").each(function() {
+            const $asgn = $(this);
             const $a = $("#assignment-template").clone().removeAttr('id');
-            const aid = $(this).attr("id");
-            let aHead = formatURL($(this).attr("url"), $(this).attr("name"));
-            if ($(this).attr("department")) aHead += `, ${$(this).attr("department")}`;
+            const aid = $asgn.attr("id");
+            const detailsId = aid + "-details";
 
-            $a.find(".asgn-header").html(aHead);
-            $a.find(".env-val").text($(this).find("assignment-environment").text().trim());
-            $a.find(".tools-val").text($(this).find("assignment-tools").text().trim());
+            // Header & Env/Tools
+            $a.find(".asgn-header").html(formatURL($asgn.attr("url"), $asgn.attr("name")));
+            $a.find(".env-val").text($asgn.find("assignment-environment").text().trim());
+            $a.find(".tools-val").text($asgn.find("assignment-tools").text().trim());
+            $a.find(".asgn-desc").html($asgn.find("assignment-description").html());
 
-            const $desc = $a.find(".asgn-desc").html($(this).find("assignment-description").html());
-            const $details = $(this).find("assignment-details");
+            // Details Toggle Logic
+            const $details = $asgn.find("assignment-details");
             if ($details.length > 0) {
-                const did = aid + "-details";
-                $desc.append(` <a href="#" class="action-show" data-element-id="${did}">More details</a>`);
-                const $box = $a.find(".asgn-details-box").attr("id", did).addClass(did);
+                // Configure Show link
+                $a.find(".action-show")
+                  .addClass(detailsId)
+                  .data("elementId", detailsId)
+                  .show();
+
+                // Configure Details Body
+                const $body = $a.find(".details-body").addClass(detailsId);
                 $details.find("detail").each(function() {
-                    $box.append($('<div class="level3">').html($(this).html()));
+                    $body.find(".details-content").append($('<div class="level3">').html($(this).html()));
                 });
-                $box.append(`<div class="level3"><a href="#" class="action-hide" data-element-id="${did}">Hide details</a></div>`);
+
+                // Configure Hide link
+                $body.find(".action-hide").data("elementId", detailsId);
             }
+
             $c.find(".assignments-container").append($a);
         });
-        $target.append($c);
+
+        $container.append($c);
     });
 }
 
