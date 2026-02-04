@@ -10,6 +10,7 @@ $(document).ready(function() {
             renderSkills($xml);
             renderWorkHistory($xml);
             renderEducation($xml);
+            renderFooter($xml);
         }
     });
 
@@ -200,6 +201,21 @@ function renderEducation($xml) {
         $e.find(".edu-desc").text($(this).text().trim());
         $target.append($e);
     });
+}
+
+function renderFooter($xml) {
+    const resume = $xml.find("resume")
+    const rawDate = resume.attr("updated") || ""; // "$Date: 2025/05/04 $"
+
+    // JS equivalent of substring-after(':') and substring-before('$')
+    let cleanDate = "";
+    if (rawDate.includes(":") && rawDate.includes("$")) {
+        cleanDate = rawDate.split(":")[1].split("$")[0].trim();
+    } else {
+        cleanDate = rawDate; // Fallback if format is different
+    }
+
+    $("#footer .last-modified").text(cleanDate);
 }
 
 function formatDetailNode($node) {
