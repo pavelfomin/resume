@@ -6,12 +6,13 @@ $(document).ready(function() {
         dataType: "xml",
         success: function(xml) {
             const $xml = $(xml);
-            renderHeader($xml);
-            renderProfile($xml);
-            renderSkills($xml);
-            renderWorkHistory($xml);
-            renderEducation($xml);
-            renderFooter($xml);
+            const $resume = $xml.find("resume")
+            renderHeader($resume);
+            renderProfile($resume);
+            renderSkills($resume);
+            renderWorkHistory($resume);
+            renderEducation($resume);
+            renderFooter($resume);
         }
     });
 
@@ -32,9 +33,8 @@ $(document).ready(function() {
 	});
 });
 
-function renderHeader($xml) {
+function renderHeader($resume) {
     const $header = $("#header-container");
-    const $resume = $xml.find("resume")
 
     // 1. Set Name and Title from root attributes using new header-name class
     $header.find(".header-name").text($resume.attr("name"));
@@ -70,6 +70,8 @@ function renderHeader($xml) {
         $emailSpan.attr("data-domain", domain);
         $emailSpan.text(user +"@"+ domain);
     }
+
+    $header.show();
 }
 
 function renderProfile($xml) {
@@ -237,9 +239,8 @@ function renderEducation($xml) {
     });
 }
 
-function renderFooter($xml) {
-    const resume = $xml.find("resume")
-    const rawDate = resume.attr("updated") || ""; // "$Date: 2025/05/04 $"
+function renderFooter($resume) {
+    const rawDate = $resume.attr("updated") || ""; // "$Date: 2025/05/04 $"
 
     // JS equivalent of substring-after(':') and substring-before('$')
     let cleanDate = "";
@@ -249,7 +250,9 @@ function renderFooter($xml) {
         cleanDate = rawDate; // Fallback if format is different
     }
 
-    $("#footer .last-modified").text(cleanDate);
+    const $footer = $("#footer-container");
+    $footer.find("#footer .last-modified").text(cleanDate);
+    $footer.show();
 }
 
 function formatDetailNode($node) {
