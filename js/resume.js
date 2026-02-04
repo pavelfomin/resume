@@ -158,7 +158,9 @@ function processCompanies($nodes, $container) {
             const $descDiv = $a.find(".asgn-desc");
 
             // Header & Env/Tools
-            $a.find(".asgn-header").html(formatURL($asgn.attr("url"), $asgn.attr("name")));
+            let head = formatURL($asgn.attr("url"), $asgn.attr("name"));
+            if ($asgn.attr("department")) head += `, ${$asgn.attr("department")}`;
+            $a.find(".asgn-header").html(head);
             $a.find(".env-val").text($asgn.find("assignment-environment").text().trim());
             $a.find(".tools-val").text($asgn.find("assignment-tools").text().trim());
             $descDiv.find(".desc-text").html($asgn.find("assignment-description").html());
