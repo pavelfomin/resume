@@ -7,10 +7,11 @@ $(document).ready(function() {
         success: function(xml) {
             const $xml = $(xml);
             const $resume = $xml.find("resume")
+            const showDetails = getUrlParameter('showDetails') !== 'false';
             renderHeader($resume);
             renderProfile($resume);
-            renderSkills($resume);
-            renderWorkHistory($resume);
+            renderSkills($resume, showDetails);
+            renderWorkHistory($resume, showDetails);
             renderEducation($resume);
             renderFooter($resume);
         }
@@ -95,7 +96,7 @@ function renderProfile($xml) {
     });
 }
 
-function renderSkills($xml) {
+function renderSkills($xml, showDetails) {
     const $table = $("#skills-container table");
     const $rowTemplate = $table.find(".skill-row");
 
@@ -123,28 +124,30 @@ function renderSkills($xml) {
                 $content.append(formatDetail($(this)));
             });
 
-            // Render "More details" toggle section
-            const $moreDetails = $("#more-details-template").clone().children();
-            const detailsId = id + "-details";
+            if(showDetails) {
+                // Render "More details" toggle section
+                const $moreDetails = $("#more-details-template").clone().children();
+                const detailsId = id + "-details";
 
-            // Setup Show Link
-            $moreDetails.filter(".action-show")
-                .addClass(detailsId)
-                .attr("data-element-id", detailsId);
+                // Setup Show Link
+                $moreDetails.filter(".action-show")
+                    .addClass(detailsId)
+                    .attr("data-element-id", detailsId);
 
-            // Setup Hidden Body
-            const $body = $moreDetails.filter(".details-body")
-                .addClass(detailsId)
-                .attr("id", detailsId);
+                // Setup Hidden Body
+                const $body = $moreDetails.filter(".details-body")
+                    .addClass(detailsId)
+                    .attr("id", detailsId);
 
-            $details.find("value").each(function() {
-                $body.find(".details-content").append(formatDetail($(this)));
-            });
+                $details.find("value").each(function() {
+                    $body.find(".details-content").append(formatDetail($(this)));
+                });
 
-            // Setup Hide Link
-            $body.find(".action-hide").attr("data-element-id", detailsId);
+                // Setup Hide Link
+                $body.find(".action-hide").attr("data-element-id", detailsId);
 
-            $content.append($moreDetails);
+                $content.append($moreDetails);
+            }
         });
 
         $table.append($row);
@@ -162,19 +165,19 @@ function formatDetail($node) {
     return prefix + htmlContent + "<br/>";
 }
 
-function renderWorkHistory($xml) {
+function renderWorkHistory($xml, showDetails) {
     // 1. Process Main History
-    processCompanies($xml.find("work-history > company"), $("#main-work"));
+    processCompanies($xml.find("work-history > company"), $("#main-work"), showDetails);
 
     // 2. Process More History
     const $moreNodes = $xml.find("work-history-more > company");
-    if ($moreNodes.length > 0) {
+    if (showDetails && $moreNodes.length > 0) {
         $("#more-work-section").show();
-        processCompanies($moreNodes, $("#work-history-more .more-content"));
+        processCompanies($moreNodes, $("#work-history-more .more-content"), showDetails);
     }
 }
 
-function processCompanies($nodes, $container) {
+function processCompanies($nodes, $container, showDetails) {
     $nodes.each(function() {
         const $comp = $(this);
         const $c = $("#company-template").clone().removeAttr('id');
@@ -204,7 +207,7 @@ function processCompanies($nodes, $container) {
 
             // Details Toggle Logic
             const $details = $asgn.find("assignment-details");
-            if ($details.length > 0) {
+            if (showDetails && $details.length > 0) {
                 // Configure Show link
                 $a.find(".action-show")
                   .addClass(detailsId)
@@ -264,4 +267,9 @@ function formatDetailNode($node) {
 function formatURL(url, name) {
     if (!url) return name || "";
     return `<a href="${url.startsWith('http') ? url : 'http://'+url}" target="_blank">${name || url}</a>`;
+}
+
+function getUrlParameter(name) {
+    const params = new URLSearchParams(window.location.search);
+    return params.get(name);
 }
