@@ -212,14 +212,7 @@
 <xsl:template match="work-history">
 <div>
   <h2>
-    <xsl:call-template name="back-reference">
-      <xsl:with-param name="id">
-        <xsl:value-of select="'work_history'"/>
-      </xsl:with-param>
-      <xsl:with-param name="label">
-        <xsl:value-of select="'Work History'"/>
-      </xsl:with-param>
-    </xsl:call-template>
+      Work History
   </h2>
   <xsl:apply-templates select="company"/>
 </div>
@@ -227,16 +220,9 @@
 
 <!-- template for additional work history -->
 <xsl:template match="work-history-more">
-  <xsl:param name="showDetailsLink" select="'notnull'"/>
-
-  <xsl:choose>
-    <xsl:when test="boolean($showDetailsLink)">
       <h2>
           <a href="#" class="action-show work-history-more" data-element-id="work-history-more">More work history</a>
       </h2>
-    </xsl:when>
-  </xsl:choose>
-
 <div id="work-history-more" class="work-history-more" style="display: none;">
   <xsl:apply-templates select="company"/>
   <h2>
@@ -251,11 +237,6 @@
   <table width="95%" cellspacing="0" cellpadding="0">
     <tr>
       <td class="position">
-        <xsl:call-template name="back-reference">
-          <xsl:with-param name="id">
-            <xsl:value-of select="concat('work_history_', @id)"/>
-          </xsl:with-param>
-        </xsl:call-template>
 
         <xsl:call-template name="formatURL">
           <xsl:with-param name="url">
@@ -289,12 +270,6 @@
 <xsl:template match="assignment">
 <div class="level2">
   <font class="client">
-    <xsl:call-template name="back-reference">
-      <xsl:with-param name="id">
-        <xsl:value-of select="concat('work_history_', ../@id, '_', @id)"/>
-      </xsl:with-param>
-    </xsl:call-template>
-
     <xsl:call-template name="formatURL">
       <xsl:with-param name="url">
         <xsl:value-of select="@url"/>
@@ -357,15 +332,13 @@
 
 <!-- template for assignment description -->
 <xsl:template match="assignment-description">
-  <xsl:param name="showDetailsLink" select="'notnull'"/>
 
 <div class="level3">
   <!--allow the embedded html tags to be processed-->
   <xsl:apply-templates />
 
   <xsl:choose>
-    <xsl:when test="boolean($showDetailsLink) 
-                    and boolean(../assignment-details)">
+    <xsl:when test="boolean(../assignment-details)">
       <a href="#" class="action-show {../@id}-details" data-element-id="{../@id}-details">More details</a>
     </xsl:when>
   </xsl:choose>
