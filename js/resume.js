@@ -6,6 +6,7 @@ $(document).ready(function() {
         dataType: "xml",
         success: function(xml) {
             const $xml = $(xml);
+            renderHeader($xml);
             renderProfile($xml);
             renderSkills($xml);
             renderWorkHistory($xml);
@@ -37,6 +38,46 @@ $(document).ready(function() {
 		return false; //to avoid href action
 	});
 });
+
+function renderHeader($xml) {
+    const $header = $("#header-container");
+    const $resume = $xml.find("resume")
+
+    // 1. Set Name and Title from root attributes using new header-name class
+    $header.find(".header-name").text($resume.attr("name"));
+    $header.find(".header-title").text($resume.attr("title"));
+
+    // 2. Process Contact List
+    const $contactItems = $header.find(".contact-items");
+    $contactItems.empty();
+
+    $resume.find("contact-list contact").each(function() {
+        const type = $(this).attr("type");
+        const val = $(this).attr("value");
+
+        const $span = $("<span>").html(`<b>${type}: </b>`);
+
+        if (val && val.startsWith("http")) {
+            $span.append(formatURL(val, val));
+        } else {
+            $span.append(document.createTextNode(val));
+        }
+
+        $span.append("<br/>");
+        $contactItems.append($span);
+    });
+
+    // 3. Email Logic
+    const user = $resume.attr("email");
+    const domain = $resume.attr("domain");
+
+    if (user && domain) {
+        const $emailSpan = $header.find(".email");
+        $emailSpan.attr("data-user", user);
+        $emailSpan.attr("data-domain", domain);
+        $emailSpan.text(user +"@"+ domain);
+    }
+}
 
 function renderProfile($xml) {
     const $list = $("#profile-container .client");
