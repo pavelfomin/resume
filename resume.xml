@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2025/05/04 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2026/02/04 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -9,7 +9,7 @@
 
   <profile>
     <entry>
-     Over 10 years of software design and development experience in diverse industry environment
+     Over 20 years of software design and development experience in diverse industry environment
     </entry>
     <entry>
      Strong expertise in JVM and cloud architecture
@@ -33,7 +33,7 @@
        Languages
       </type>
       <value>
-       Java 1.1-17, Groovy, Kotlin, Bash, SQL, HTML, JavaScript, CSS
+       Java 1.1-21, Groovy, Kotlin, Bash, SQL, HTML, JavaScript, CSS
       </value>
     </skill>
     <skill id="frameworks">
@@ -42,7 +42,7 @@
       </type>
 <skill-details>
     <main-detail description="Spring">
-     Spring Boot 1.x-3.x, Spring Core, Spring REST MVC / WebFlux, Spring Security, Spring Data, Spring Kafka
+     Spring Boot 1.x-4.x, Spring Core, Spring REST MVC / WebFlux, Spring Security, Spring Data, Spring Kafka
     </main-detail>
       <value description="Web">
        Spring MVC, SiteMesh, Freemarker, Velocity, Struts 1.x, Wicket 1.2, jQuery, JSON
@@ -86,8 +86,8 @@
     <main-detail description="Continuous integration">
         GitHub Actions, Bitbucket Pipelines, Drone, Jenkins / Hudson, Bamboo, Concourse
     </main-detail>
-    <main-detail description="VM / Cloud">
-        Docker, Chef, PCF, Vagrant, Puppet, Oracle VirtualBox, Amazon EC2, OpenStack, OpenShift
+    <main-detail description="Cloud">
+        GCP, Amazon EC2, OpenShift, OpenStack
     </main-detail>
     <main-detail description="IDE">
         IntelliJ, Eclipse, Emacs
@@ -115,20 +115,12 @@
       </value>
 </skill-details>
     </skill>
-  <skill id="srv">
-      <type>
-          Application Servers
-      </type>
-      <value>
-          Tomcat 3-10, Jetty, Liferay Portal Server 6.2, IBM Websphere Application Server 4/5/6/7, IBM Websphere Portal Server 6.1, OAS 10g, Resin, <a href="http://www.bea.com/products/index.html">BEA Weblogic 4.5.1/5.1/6.1</a>, <a href="http://www.borland.com/appserver/">Borland Inprise Application Server 4.x</a>, JBoss, Apache Web Server, Oracle Web Server 2.1.1
-      </value>
-  </skill>
     <skill id="Methodologies">
       <type>
-       Methodologies
+        Methodologies
       </type>
       <value>
-	   Agile, SCRUM, Kanban, Test Driven Development
+        Test Driven Development, Agile, SCRUM, Kanban
       </value>
     </skill>
     <skill id="Industries">
@@ -159,13 +151,13 @@
     </company>
     -->
 
-      <company id="dbee-prm" name="Prime Therapeutics" url="https://www.primetherapeutics.com" department="Rebates Management" position="Consultant" startDate="01/2023" endDate="Present">
+      <company id="dbee-prm" name="Prime Therapeutics" url="https://www.primetherapeutics.com" department="Rebates Management" position="Consultant" startDate="01/2023" endDate="12/2025">
           <assignment id="prm">
               <assignment-environment>
-                  Kafka, GCP, GKE, Cloud Foundry, Docker, Linux, Mac OS X, Postgres, Big Query
+                  Kafka, GCP (GKE, GCS, Big Query), Cloud Foundry, Docker, Linux, Mac OS X, Postgres
               </assignment-environment>
               <assignment-tools>
-                  JDK 17, Java, Groovy, Spring Boot, Gradle, IntelliJ, Git, Jira
+                  JDK 17/21, Java, Groovy, Spring Boot, Gradle, IntelliJ, Git, Jira
               </assignment-tools>
               <assignment-description>
                   Spearheaded the development of the cross-cutting technology solutions for the new Rebates Platform, significantly reducing integration complexity for product teams.
