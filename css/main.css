@@ -55,15 +55,11 @@
 .assignment {
     border-spacing: 0;
 }
-.env-row td {
-    padding: 0;
-}
-.env-row td:first-child {
-    text-align: right;
-}
+.env-row td,
 .tools-row td {
     padding: 0;
 }
+.env-row td:first-child,
 .tools-row td:first-child {
     text-align: right;
 }
