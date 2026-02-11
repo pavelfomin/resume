@@ -32,13 +32,13 @@
     <div id="skills-container">
         <h2>Skills Summary</h2>
         <div class="level1">
-            <table border="0">
+            <table class="skill">
                 <!-- template row -->
                 <tr class="skill-row" style="display:none;">
-                    <td width="150" valign="top" nowrap="1">
+                    <td class="skill-type-header" nowrap="1">
                         <b class="skill-type"></b>
                     </td>
-                    <td class="skill-content" valign="top">
+                    <td class="skill-content">
 
                         <!-- Helper hidden templates for nested details -->
                         <div style="display:none;">
@@ -98,11 +98,11 @@
 <!-- Templates (Hidden) -->
 <div id="templates" style="display:none;">
     <div id="company-template" class="level1">
-        <table width="95%" cellspacing="0" cellpadding="0">
+        <table class="company">
             <tr><td class="comp-header position"></td></tr>
             <tr>
                 <td class="comp-pos position"></td>
-                <td class="comp-date position" align="right"></td>
+                <td class="comp-date position"></td>
             </tr>
         </table>
         <div class="assignments-container"></div>
@@ -110,9 +110,9 @@
 
     <div id="assignment-template" class="level2">
         <div class="asgn-header client"></div>
-        <table cellpadding="0" cellspacing="0">
-            <tr class="env-row"><td align="right" valign="top"><b>Environment:</b>&nbsp;</td><td class="env-val"></td></tr>
-            <tr class="tools-row"><td align="right" valign="top"><b>Tools:</b>&nbsp;</td><td class="tools-val"></td></tr>
+        <table class="assignment">
+            <tr class="env-row"><td><b>Environment:</b>&nbsp;</td><td class="env-val"></td></tr>
+            <tr class="tools-row"><td><b>Tools:</b>&nbsp;</td><td class="tools-val"></td></tr>
         </table>
         <div class="asgn-desc level3">
             <span class="desc-text"></span> <!-- Target for XML text -->
