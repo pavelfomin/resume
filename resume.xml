@@ -639,19 +639,5 @@ Major projects included Integrated Bank System and Smart Credit/Debit Card Payme
     <degree school="Novosibirsk State Technical University, Novosibirsk, Russia" url="http://en.nstu.ru/" award="M.S. in Computer Science and B.S. in Mathematics">
       Evaluated by International Education Evaluation, Inc. (REF # 116-0369)
     </degree>
-<!--
-    <degree school="Oracle University" url="http://www.oracle.com/" award="Oracle Application Server Administration course" year="2005"/>
-    <degree school="Red Hat, Inc." url="http://www.redhat.com/" award="RH033 - Red Hat Linux Essentials, Red Hat Enterprise Linux 4 course" year="2005"/>
--->
-    <degree school="Red Hat, Inc." url="http://www.redhat.com/" award="RH133 - System Administration, Red Hat Enterprise Linux 4 course" year="2005">
-       Successfully completed all Red Hat Certified Technician program requirements and is certified as a Red Hat Certified Technician, Red Hat Enterprise Linux 4.
-    </degree>
-
-    <degree school="The George Washington University School of Business" url="http://www.gwu.edu/" award="Managing IT Projects course" year="2006"/>
-
-    <degree school="The George Washington University School of Business" url="http://www.gwu.edu/" award="IT Risk Management course" year="2007"/>
-
-    <degree school="Object Partners" url="http://www.objectpartners.com/" award="Groovy and Grails" year="2012"/>
-
   </education>
 </resume>
