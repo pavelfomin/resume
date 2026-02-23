@@ -30,6 +30,10 @@
   .position { font-size: 12pt;}
   .client { font-size: 11pt;}
 
+.header {
+    text-align: center;
+}
+
 .skill {
     border-collapse: collapse;
     border: none;
