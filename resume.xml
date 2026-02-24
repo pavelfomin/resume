@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2026/02/23 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2026/02/24 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
@@ -317,45 +317,45 @@
       </assignment>
     </company>
     
-    <company id="opi" name="Object Partners" url="http://www.objectpartners.com/" department="Professional Services" position="Senior Consultant" startDate="12/2011" endDate="10/2013">
-      <assignment id="mnd" name="Menards" url="http://www.menards.com/" department="Web Development">
-        <assignment-environment>
-		  JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
-        </assignment-environment>
-        <assignment-tools>
-		  JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
-        </assignment-tools> 
-        <assignment-description>
-		  Added new features to the Menards e-commerce web site and internal web site administration tool.
-        </assignment-description>
-      </assignment>
-      <assignment id="pnt" name="PeopleNet" url="http://www.peoplenetonline.com/" department="Backend Services Development">
-        <assignment-environment>
-		  JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
-        </assignment-environment>
-        <assignment-tools>
-		  JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
-        </assignment-tools> 
-        <assignment-description>
-		 Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
-        </assignment-description>
-      </assignment>
-      <assignment id="rnb" name="Room and Board" url="http://www.roomandboard.com/" department="Web Development">
-        <assignment-environment>
-		  JEE, Tomcat 7.x, Oracle 11, Akamai, Windows 7, Linux
-        </assignment-environment>
-        <assignment-tools>
-		  JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira
-        </assignment-tools> 
-        <assignment-description>
-		  Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
-        </assignment-description>
-      </assignment>
-    </company>
-
   </work-history>
   
   <work-history-more>
+      <company id="opi" name="Object Partners" url="http://www.objectpartners.com/" department="Professional Services" position="Senior Consultant" startDate="12/2011" endDate="10/2013">
+          <assignment id="mnd" name="Menards" url="http://www.menards.com/" department="Web Development">
+              <assignment-environment>
+                  JEE, Tomcat 7.x (tcServer), MySQL, Windows 7, Linux
+              </assignment-environment>
+              <assignment-tools>
+                  JDK 1.6, Spring 3.1, JDBC, JSP, Velocity, jQuery, Maven, Log4j, JUnit, Mockito 1.9, Hibernate 3.6, Eclipse (Indigo), Emacs, SVN, Jenkins, Redmine, CodeCollaborator
+              </assignment-tools>
+              <assignment-description>
+                  Added new features to the Menards e-commerce web site and internal web site administration tool.
+              </assignment-description>
+          </assignment>
+          <assignment id="pnt" name="PeopleNet" url="http://www.peoplenetonline.com/" department="Backend Services Development">
+              <assignment-environment>
+                  JEE, Tomcat 7.x, MySQL, MS Sql Server, Linux, Windows 7, Amazon EC2
+              </assignment-environment>
+              <assignment-tools>
+                  JDK 1.6, Spring 3.1, Log4j, JUnit, Mockito 1.9, RabbitMQ, 2lemetry, Eclipse (Indigo), Emacs, SVN, Maven, Jenkins, Version One
+              </assignment-tools>
+              <assignment-description>
+                  Developed new and modified existing components of the asynchronous back-end services. Created RabbitMQ AMQP based guaranteed message delivery queuing Proof-of-Concept solution, deployed to local data center and to Amazon EC2 environment. Created facade for 2lemetry m2m rest api. Created new components for the custom load test engine to perform the load testing of the new services.
+              </assignment-description>
+          </assignment>
+          <assignment id="rnb" name="Room and Board" url="http://www.roomandboard.com/" department="Web Development">
+              <assignment-environment>
+                  JEE, Tomcat 7.x, Oracle 11, Akamai, Windows 7, Linux
+              </assignment-environment>
+              <assignment-tools>
+                  JDK 1.6, Spring 3.1, JDBC, JSP, SiteMesh, Freemarker 2.3, jQuery, Memcache, Ivy, Log4j, JUnit, Mockito 1.9, DbUnit 2.4, Groovy, OpenORM, Eclipse (Indigo), Emacs, SVN, Bamboo, Crucible, Jira
+              </assignment-tools>
+              <assignment-description>
+                  Developed new and modified existing components of the web site and internal web site administration tool. Focused primarily on the controller and backend services. Helped to design and implement the data versioning feature in the database schema. Created new and enhanced existing components of the UI layer using HTML, JSP, Freemarker, JavaScript and jQuery.
+              </assignment-description>
+          </assignment>
+      </company>
+
       <company id="moneygram" name="MoneyGram International" url="http://www.moneygram.com/" department="Systems Development" position="Lead Developer (Software Engineer IV)" startDate="10/2007" endDate="12/2011">
           <assignment id="moneygram">
               <assignment-environment>
