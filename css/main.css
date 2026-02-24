@@ -95,6 +95,7 @@ a.tool {
 .env-row td,
 .tools-row td {
   padding: 0;
+  vertical-align: top;
 }
 
 .env-row td:first-child,
