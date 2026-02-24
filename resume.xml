@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="resume.xsl"?>
 
-<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2026/02/04 $">
+<resume name="Pavel V. Fomin" title="Information Technology Consultant" email="pfomin-resume" domain="yahoo.com" updated="$Date: 2026/02/23 $">
   <contact-list>
     <contact type="Location" value="Plymouth, MN, USA"/>
     <contact type="LinkedIn" value="http://www.linkedin.com/in/pfomin"/>
